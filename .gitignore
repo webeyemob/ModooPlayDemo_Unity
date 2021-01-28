@@ -2,6 +2,19 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+
+ModooPlayDemo_UnityAndroid/launcher/build/
+ModooPlayDemo_Unity/Temp/
+ModooPlayDemo_UnityAndroid/unityLibrary/build/
+ModooPlayDemo_Unity/Temp/
+ModooPlayDemo_Unity/Logs
+ModooPlayDemo_UnityAndroid/launcher/build/
+ModooPlayDemo_UnityAndroid/.idea/
+ModooPlayDemo_Unity/Library/ShaderCache
+ModooPlayDemo_Unity/Library/Artifacts
+ModooPlayDemo_Unity/Library/PackageCache
+ModooPlayDemo_Unity/Library/PlayerDataCache
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
