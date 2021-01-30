@@ -1,6 +1,0 @@
-framework module PrivacyPolicy {
-  umbrella header "PrivacyPolicy.h"
-
-  export *
-  module * { export * }
-}

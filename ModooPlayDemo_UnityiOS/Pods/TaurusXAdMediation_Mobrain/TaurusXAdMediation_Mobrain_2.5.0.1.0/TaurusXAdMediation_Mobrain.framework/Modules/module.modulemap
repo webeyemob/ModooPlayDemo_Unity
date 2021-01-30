@@ -1,6 +1,0 @@
-framework module TaurusXAdMediation_Mobrain {
-  umbrella header "TaurusXAdMediation_Mobrain.h"
-
-  export *
-  module * { export * }
-}

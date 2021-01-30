@@ -1,6 +1,0 @@
-framework module TGCTaurusXAds {
-  umbrella header "TGCTaurusXAds.h"
-
-  export *
-  module * { export * }
-}

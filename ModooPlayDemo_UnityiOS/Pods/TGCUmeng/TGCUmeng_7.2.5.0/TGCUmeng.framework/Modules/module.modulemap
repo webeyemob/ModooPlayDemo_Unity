@@ -1,6 +1,0 @@
-framework module TGCUmeng {
-  umbrella header "TGCUmeng.h"
-
-  export *
-  module * { export * }
-}

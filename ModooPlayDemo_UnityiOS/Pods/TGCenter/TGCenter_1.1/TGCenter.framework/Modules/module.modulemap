@@ -1,6 +1,0 @@
-framework module TGCenter {
-  umbrella header "TGCenter.h"
-
-  export *
-  module * { export * }
-}
