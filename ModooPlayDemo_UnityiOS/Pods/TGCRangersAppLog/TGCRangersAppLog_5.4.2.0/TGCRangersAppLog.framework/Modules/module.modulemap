@@ -1,0 +1,6 @@
+framework module TGCRangersAppLog {
+  umbrella header "TGCRangersAppLog.h"
+
+  export *
+  module * { export * }
+}

@@ -4,15 +4,26 @@ namespace TGCenterSdk.Api
 
         public InitConfig() { }
 
+        
+        #region Common Config
         // Show debug log in test process.
         public bool DebugMode;
-
-        // Channel for Umeng, RangersAppLog
-        public string Channel;
 
         // ModooPlay AppId
         public string AppId;
 
+        // Custom Day1Retention
+        public Day1Retention Day1Retention;
+        #endregion
+
+
+        #region Android Config
+        // Channel for Umeng, RangersAppLog
+        public string Channel;
+        #endregion
+        
+
+        #region  iOS Config
         // iOS Apple AppID
         public string AppleAppID;
 
@@ -26,8 +37,6 @@ namespace TGCenterSdk.Api
         public string RangersAppLogAppId;
         // RangersAppLog AppName
         public string RangersAppLogAppName;
-
-        // Custom Day1Retention
-        public Day1Retention Day1Retention;
+        #endregion
     }
 }

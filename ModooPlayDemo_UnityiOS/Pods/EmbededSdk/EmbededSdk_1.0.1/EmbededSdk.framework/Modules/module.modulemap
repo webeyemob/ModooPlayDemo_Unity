@@ -1,0 +1,6 @@
+framework module EmbededSdk {
+  umbrella header "EmbededSdk.h"
+
+  export *
+  module * { export * }
+}

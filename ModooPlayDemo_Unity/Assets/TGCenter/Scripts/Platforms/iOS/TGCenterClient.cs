@@ -19,11 +19,21 @@ namespace TGCenterSdk.Platforms.iOS
         private TGCenterClient() { }
 
         public void Init(InitConfig config) {
+            IntPtr configPtr = Externs.TGCCreateInitConfig();
 
+            Externs.TGCSetInitConfig_DebugMode(configPtr, config.DebugMode);
+            Externs.TGCSetInitConfig_AppId(configPtr, config.AppId);
+            Externs.TGCSetInitConfig_AppleAppID(configPtr, config.AppleAppID);
+            Externs.TGCSetInitConfig_UmengAppKey(configPtr, config.UmengAppKey);
+            Externs.TGCSetInitConfig_AppsFlyerDevKey(configPtr, config.AppsFlyerDevKey);
+            Externs.TGCSetInitConfig_RangersAppLogAppId(configPtr, config.RangersAppLogAppId);
+            Externs.TGCSetInitConfig_RangersAppLogAppName(configPtr, config.RangersAppLogAppName);
+
+            Externs.TGCInit(configPtr);
         }
         
         public bool IsUserAgreePolicy() {
-            return false;
+            return Externs.TGCIsUserAgreePolicy();
         }
     }
 }

@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637474297590000000
+      ticks: 637474870380000000
     m_Hash: 3617124489
   m_LockFileStatus:
     m_FilePath: /Users/hang.wang/WebEye/TGCenter/ModooPlayDemo_Unity/ModooPlayDemo_Unity/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637474297630000000
+      ticks: 637474870420000000
     m_Hash: 2539088996
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

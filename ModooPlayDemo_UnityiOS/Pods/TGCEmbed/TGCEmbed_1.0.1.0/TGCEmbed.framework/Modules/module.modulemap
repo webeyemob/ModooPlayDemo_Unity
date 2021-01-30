@@ -1,0 +1,6 @@
+framework module TGCEmbed {
+  umbrella header "TGCEmbed.h"
+
+  export *
+  module * { export * }
+}

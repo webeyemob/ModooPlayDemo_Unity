@@ -1,0 +1,92 @@
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace TGCenterSdk.Platforms.iOS
+{
+    internal class Externs
+    {
+
+        #region Common
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCRelease(IntPtr obj);
+        #endregion
+        
+
+        #region TGCenter
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCInit(IntPtr initConfig);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern bool TGCIsUserAgreePolicy();
+        #endregion
+
+
+        #region TGCInitConfig
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern IntPtr TGCCreateInitConfig();
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_DebugMode(IntPtr config, bool debugMode);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_AppId(IntPtr config, string appId);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_AppleAppID(IntPtr config, string appleAppID);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_UmengAppKey(IntPtr config, string umengAppKey);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_AppsFlyerDevKey(IntPtr config, string appsFlyerDevKey);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_RangersAppLogAppId(IntPtr config, string rangersAppLogAppId);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_RangersAppLogAppName(IntPtr config, string rangersAppLogAppName);
+        #endregion
+
+
+        #region PrivacyPolicyHelper
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCPrivacyShowDialog(IntPtr clientPtr, 
+            PrivacyPolicyHelperClient.TGCPrivacyAgreeCallback agreeCallback,
+            PrivacyPolicyHelperClient.TGCPrivacyDisagreeCallback disagreeCallback);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCPrivacyJumpToUserAgreement();
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCPrivacyJumpToPrivacyPolicy();
+        #endregion
+    }
+}

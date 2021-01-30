@@ -1,0 +1,6 @@
+framework module TGCAppsFlyer {
+  umbrella header "TGCAppsFlyer.h"
+
+  export *
+  module * { export * }
+}

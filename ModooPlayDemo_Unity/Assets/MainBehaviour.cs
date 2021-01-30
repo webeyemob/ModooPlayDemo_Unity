@@ -65,16 +65,20 @@ public class MainBehaviour : MonoBehaviour
         InitConfig config = new InitConfig();
         // 在测试阶段，应用可以开启调试日志，来查看各组件是否正确运行
         config.DebugMode = true;
-        config.Channel = Channle;
 
-        // 下面的参数仅 iOS 需要配置
-        if (Application.platform == RuntimePlatform.IPhonePlayer) {
-            config.AppId = "";
-            config.AppleAppID = "";
-            config.UmengAppKey = "";
-            config.AppsFlyerDevKey = "";
-            config.RangersAppLogAppId = "";
-            config.RangersAppLogAppName = "";
+        if (Application.platform == RuntimePlatform.Android) {
+            config.Channel = Channle;
+        } else {
+            // 下面的参数仅 iOS 需要配置
+            config.AppId = "taurusx_app_id";
+            config.AppleAppID = "1526771294";
+            config.UmengAppKey = "5f046cf7895cca9f07000035";
+            config.AppsFlyerDevKey = "DdWbxT9VRELdEsZiAcnGea";
+            config.RangersAppLogAppId = "190309";
+            config.RangersAppLogAppName = "bqlmgfios";
+
+            Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 6, 48);
+            config.Day1Retention = retention;
         }
 
         TGCenter.Init(config);
@@ -102,7 +106,6 @@ public class MainBehaviour : MonoBehaviour
     }
 
     // App 也可以自定义《用户协议和隐私政策》对话框
-    // 在用户操作后，调用 DealDialogAgreeResult() 方法
     private void ShowCustomPolicyDialog() {
     }
 
