@@ -1,6 +1,0 @@
-framework module TGCPrivacy {
-  umbrella header "TGCPrivacy.h"
-
-  export *
-  module * { export * }
-}

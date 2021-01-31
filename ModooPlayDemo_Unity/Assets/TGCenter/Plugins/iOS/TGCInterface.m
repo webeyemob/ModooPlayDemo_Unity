@@ -92,4 +92,38 @@ void TGCSetInitConfig_RangersAppLogAppName(TGCTypeInitConfigRef initConfig, cons
     TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
     internalConfig.rangersAppLogAppName = TGCStringFromUTF8String(rangersAppLogAppName);
 }
+
+void TGCSetInitConfig_Day1Retention(TGCTypeInitConfigRef initConfig, TGCTypeDay1RetentionRef retention) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    TGCDay1Retention *internalRetention = (__bridge TGCDay1Retention *)retention;
+    internalConfig.day1Retention = internalRetention;
+}
 #pragma mark - TGCInitConfig
+
+
+#pragma mark - TGCDay1Retention
+TGCTypeDay1RetentionRef TGCCreateDay1Retention() {
+    TGCDay1Retention *retention = [[TGCDay1Retention alloc] init];
+    [TGCObjectCache.sharedInstance.references setObject:retention forKey:[retention tgCenter_referenceKey]];
+    return (__bridge TGCTypeDay1RetentionRef)retention;
+}
+
+void TGCSetDay1Retention_Type(TGCTypeDay1RetentionRef retention, int type) {
+    TGCDay1Retention *internalRetention = (__bridge TGCDay1Retention *)retention;
+    if (type == 1) {
+        internalRetention.type = TGC_DAY1_RETENTION_HOUR;
+    } else if (type == 2) {
+        internalRetention.type = TGC_DAY1_RETENTION_NATURE_DAY;
+    }
+}
+
+void TGCSetDay1Retention_StartCount(TGCTypeDay1RetentionRef retention, int startCount) {
+    TGCDay1Retention *internalRetention = (__bridge TGCDay1Retention *)retention;
+    internalRetention.startCount = startCount;
+}
+
+void TGCSetDay1Retention_EndCount(TGCTypeDay1RetentionRef retention, int endCount) {
+    TGCDay1Retention *internalRetention = (__bridge TGCDay1Retention *)retention;
+    internalRetention.endCount = endCount;
+}
+#pragma mark - TGCDay1Retention

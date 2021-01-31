@@ -3,7 +3,7 @@ PODS:
     - AppsFlyerFramework/Main (= 6.1.4)
   - AppsFlyerFramework/Main (6.1.4)
   - DataFlyer (1.0.8)
-  - EmbededSdk (1.0.1):
+  - EmbededSdk (1.0.2):
     - EventsIOSdk
     - TaurusXAds
   - EventsIOSdk (1.0.2)
@@ -39,12 +39,14 @@ PODS:
     - NathAds (~> 1.1.9)
   - TGCAppsFlyer (6.1.4.0):
     - AppsFlyerFramework (= 6.1.4)
-  - TGCEmbed (1.0.1.0):
-    - EmbededSdk (= 1.0.1)
-  - TGCenter (1.1):
+  - TGCEmbed (1.0.2.0):
+    - EmbededSdk
+  - TGCenter (1.2)
+  - TGCPrivacy (1.2.0):
     - PrivacyPolicy (= 1.2)
-    - TGCEmbed (= 1.0.1.0)
   - TGCRangersAppLog (5.4.2.0)
+  - TGCTaurusXAds (2.0.3.0):
+    - TaurusXAds
   - TGCUmeng (7.2.5.0):
     - UMAPM (= 1.1.0)
     - "UMCAnalyticsGame (= 7.2.5+G)"
@@ -72,8 +74,11 @@ DEPENDENCIES:
   - TaurusXAdMediation_Mobrain
   - TaurusXAdMediation_TikTok
   - TGCAppsFlyer
+  - TGCEmbed
   - TGCenter
+  - TGCPrivacy
   - TGCRangersAppLog
+  - TGCTaurusXAds
   - TGCUmeng
 
 SPEC REPOS:
@@ -100,7 +105,9 @@ SPEC REPOS:
     - TGCAppsFlyer
     - TGCEmbed
     - TGCenter
+    - TGCPrivacy
     - TGCRangersAppLog
+    - TGCTaurusXAds
     - TGCUmeng
     - UMAPM
     - UMCAnalyticsGame
@@ -111,7 +118,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AppsFlyerFramework: ed1a754b74739bafbcb0d8235d6bc4f0ffe2e0ec
   DataFlyer: 3c4be94b4ef0c2221052ab437299879bc187e1a0
-  EmbededSdk: f9bee7fb6ca058e1951ac58ad7ea6e5cc9b0e18c
+  EmbededSdk: b4f279d786b5d1e53bf0375b64c5f9db26329f5a
   EventsIOSdk: 8620d22cb1303422a393c58c1cc526bec98cc0ab
   GDTMobSDK: 8153fd4ed7f16be4786923226487ff60f0344a4f
   KSAdSDK: 6ea07f8c86e3861f25235a18cec6b0c843a79dee
@@ -128,9 +135,11 @@ SPEC CHECKSUMS:
   TaurusXAdMediation_TikTok: 0b1e412a56fab3e2d41a8bea1a113e5aa03e12c0
   TaurusXAds: 056bedb98a1b4a8e34546a1d86df67ca87bcfe79
   TGCAppsFlyer: 4092f5f28e3296728d0dd35ae1bd61ee20e4409b
-  TGCEmbed: f74e3b1c1dbc1664700f9c5461394e5457fcb649
-  TGCenter: f5b164e4814958c079e51c2c4b38e9ec4900bb29
+  TGCEmbed: e8e1318ccbe8cfa7e7785516576cef2bd9d99273
+  TGCenter: 800ccc9f25ab501b28534b8474a0c37246364e2e
+  TGCPrivacy: d9521f9b4c42b5df31e12974a7be1af1b69b02fd
   TGCRangersAppLog: 5bee186dc29659279f97bc2ec4112e4e51a31000
+  TGCTaurusXAds: b5d2748245dee7c3421b5eaa36cddf2a07dd6d76
   TGCUmeng: 35c1b439f1fc0779f4625f2e819969d34ccfd1e9
   UMAPM: 2b966cff744dccdd9e2ed99efafce280be30833c
   UMCAnalyticsGame: 49acd11780082d916407c605f68710d54fb78afc
@@ -138,6 +147,6 @@ SPEC CHECKSUMS:
   UMCCommonLog: 9b7ddde5d14a52fc1986ba5ac3121b8b2f433638
   UMDevice: 28d21a568c8e8322e5a03bbd53b138d0c098d3b3
 
-PODFILE CHECKSUM: e94ccb9dfde0f3e6bbfc1ee3a82987d28c49822e
+PODFILE CHECKSUM: 1b6385e431105fdb1978a5c4b8cd4c91143d190a
 
 COCOAPODS: 1.10.1

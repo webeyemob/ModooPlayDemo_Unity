@@ -77,7 +77,7 @@ public class MainBehaviour : MonoBehaviour
             config.RangersAppLogAppId = "190309";
             config.RangersAppLogAppName = "bqlmgfios";
 
-            Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 6, 48);
+            Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
             config.Day1Retention = retention;
         }
 

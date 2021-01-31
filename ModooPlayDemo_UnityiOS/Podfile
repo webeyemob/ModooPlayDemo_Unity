@@ -26,6 +26,12 @@ target 'UnityFramework' do
   # ModooPlay
   pod 'TGCenter'
   
+  # 隐私
+  pod 'TGCPrivacy'
+  
+  # ModooPlay 事件统计
+  pod 'TGCEmbed'
+  
   # Umeng
   pod 'TGCUmeng'
   
@@ -37,7 +43,7 @@ target 'UnityFramework' do
   pod 'RangersAppLog', '5.4.2',:subspecs => ['Core','Log','Unique']
 
   # 广告聚合
-#  pod 'TGCTaurusXAds'
+  pod 'TGCTaurusXAds'
   # 穿山甲
   pod 'TaurusXAdMediation_TikTok'
   # 优量汇

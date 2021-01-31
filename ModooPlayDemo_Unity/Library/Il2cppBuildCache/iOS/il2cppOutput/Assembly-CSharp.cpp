@@ -364,12 +364,12 @@ struct  InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47  : public RuntimeOb
 public:
 	// System.Boolean TGCenterSdk.Api.InitConfig::DebugMode
 	bool ___DebugMode_0;
-	// System.String TGCenterSdk.Api.InitConfig::AppId
-	String_t* ___AppId_1;
 	// TGCenterSdk.Api.Day1Retention TGCenterSdk.Api.InitConfig::Day1Retention
-	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * ___Day1Retention_2;
+	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * ___Day1Retention_1;
 	// System.String TGCenterSdk.Api.InitConfig::Channel
-	String_t* ___Channel_3;
+	String_t* ___Channel_2;
+	// System.String TGCenterSdk.Api.InitConfig::AppId
+	String_t* ___AppId_3;
 	// System.String TGCenterSdk.Api.InitConfig::AppleAppID
 	String_t* ___AppleAppID_4;
 	// System.String TGCenterSdk.Api.InitConfig::UmengAppKey
@@ -390,31 +390,31 @@ public:
 		___DebugMode_0 = value;
 	}
 
-	inline static int32_t get_offset_of_AppId_1() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppId_1)); }
-	inline String_t* get_AppId_1() const { return ___AppId_1; }
-	inline String_t** get_address_of_AppId_1() { return &___AppId_1; }
-	inline void set_AppId_1(String_t* value)
+	inline static int32_t get_offset_of_Day1Retention_1() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Day1Retention_1)); }
+	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * get_Day1Retention_1() const { return ___Day1Retention_1; }
+	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 ** get_address_of_Day1Retention_1() { return &___Day1Retention_1; }
+	inline void set_Day1Retention_1(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * value)
 	{
-		___AppId_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___AppId_1), (void*)value);
+		___Day1Retention_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Day1Retention_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Day1Retention_2() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Day1Retention_2)); }
-	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * get_Day1Retention_2() const { return ___Day1Retention_2; }
-	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 ** get_address_of_Day1Retention_2() { return &___Day1Retention_2; }
-	inline void set_Day1Retention_2(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * value)
+	inline static int32_t get_offset_of_Channel_2() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Channel_2)); }
+	inline String_t* get_Channel_2() const { return ___Channel_2; }
+	inline String_t** get_address_of_Channel_2() { return &___Channel_2; }
+	inline void set_Channel_2(String_t* value)
 	{
-		___Day1Retention_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Day1Retention_2), (void*)value);
+		___Channel_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Channel_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Channel_3() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Channel_3)); }
-	inline String_t* get_Channel_3() const { return ___Channel_3; }
-	inline String_t** get_address_of_Channel_3() { return &___Channel_3; }
-	inline void set_Channel_3(String_t* value)
+	inline static int32_t get_offset_of_AppId_3() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppId_3)); }
+	inline String_t* get_AppId_3() const { return ___AppId_3; }
+	inline String_t** get_address_of_AppId_3() { return &___AppId_3; }
+	inline void set_AppId_3(String_t* value)
 	{
-		___Channel_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Channel_3), (void*)value);
+		___AppId_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___AppId_3), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_AppleAppID_4() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppleAppID_4)); }
@@ -1930,6 +1930,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_AppsFlyerDevKey
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAppId_mC1DF1C6D8ABDD475939ADB3A32607914B6E7B1C7 (intptr_t ___config0, String_t* ___rangersAppLogAppId1, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_RangersAppLogAppName(System.IntPtr,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAppName_m4C032095A1DE1921811AAFA37C21F9F8A57E3ED9 (intptr_t ___config0, String_t* ___rangersAppLogAppName1, const RuntimeMethod* method);
+// System.IntPtr TGCenterSdk.Platforms.iOS.Externs::TGCCreateDay1Retention()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0 (const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_Type(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_Type_m3B7916E4DCBAF3ABB52020CB12D7CB7CCAA063B0 (intptr_t ___retention0, int32_t ___type1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_StartCount(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_StartCount_m06973A8C99ED9BBCC36861E10A69420030DF15A1 (intptr_t ___retention0, int32_t ___startCount1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_EndCount(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_EndCount_mBB41BCABD0864AF1841D6314A8A7CCF4F1D93ED5 (intptr_t ___retention0, int32_t ___endCount1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_Day1Retention(System.IntPtr,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900 (intptr_t ___config0, intptr_t ___retention1, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCInit(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC (intptr_t ___initConfig0, const RuntimeMethod* method);
 // System.Boolean TGCenterSdk.Platforms.iOS.Externs::TGCIsUserAgreePolicy()
@@ -1954,6 +1964,11 @@ IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_UmengAppKey(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_AppsFlyerDevKey(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_RangersAppLogAppId(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_RangersAppLogAppName(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_Day1Retention(intptr_t, intptr_t);
+IL2CPP_EXTERN_C intptr_t DEFAULT_CALL TGCCreateDay1Retention();
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_Type(intptr_t, int32_t);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_StartCount(intptr_t, int32_t);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_EndCount(intptr_t, int32_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyShowDialog(intptr_t, Il2CppMethodPointer, Il2CppMethodPointer);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToUserAgreement();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToPrivacyPolicy();
@@ -2397,6 +2412,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAp
 	____rangersAppLogAppName1_marshaled = NULL;
 
 }
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_Day1Retention(System.IntPtr,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900 (intptr_t ___config0, intptr_t ___retention1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, intptr_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_Day1Retention)(___config0, ___retention1);
+
+}
+// System.IntPtr TGCenterSdk.Platforms.iOS.Externs::TGCCreateDay1Retention()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0 (const RuntimeMethod* method)
+{
+	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(TGCCreateDay1Retention)();
+
+	return returnValue;
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_Type(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_Type_m3B7916E4DCBAF3ABB52020CB12D7CB7CCAA063B0 (intptr_t ___retention0, int32_t ___type1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetDay1Retention_Type)(___retention0, ___type1);
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_StartCount(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_StartCount_m06973A8C99ED9BBCC36861E10A69420030DF15A1 (intptr_t ___retention0, int32_t ___startCount1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetDay1Retention_StartCount)(___retention0, ___startCount1);
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_EndCount(System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_EndCount_mBB41BCABD0864AF1841D6314A8A7CCF4F1D93ED5 (intptr_t ___retention0, int32_t ___endCount1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetDay1Retention_EndCount)(___retention0, ___endCount1);
+
+}
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCPrivacyShowDialog(System.IntPtr,TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyAgreeCallback,TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyDisagreeCallback)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCPrivacyShowDialog_mCBC4F18984C8E25FCCA862C2AFB4A9B36B942194 (intptr_t ___clientPtr0, TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA * ___agreeCallback1, TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E * ___disagreeCallback2, const RuntimeMethod* method)
 {
@@ -2685,7 +2746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_3 = V_0;
 		String_t* L_4 = __this->get_Channle_4();
 		NullCheck(L_3);
-		L_3->set_Channel_3(L_4);
+		L_3->set_Channel_2(L_4);
 		// } else {
 		goto IL_0077;
 	}
@@ -2695,7 +2756,7 @@ IL_0024:
 		// config.AppId = "taurusx_app_id";
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_5 = V_0;
 		NullCheck(L_5);
-		L_5->set_AppId_1(_stringLiteralBACA6ED684147F8B0664B128B7F454E0771447DE);
+		L_5->set_AppId_3(_stringLiteralBACA6ED684147F8B0664B128B7F454E0771447DE);
 		// config.AppleAppID = "1526771294";
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_6 = V_0;
 		NullCheck(L_6);
@@ -2716,15 +2777,15 @@ IL_0024:
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_10 = V_0;
 		NullCheck(L_10);
 		L_10->set_RangersAppLogAppName_8(_stringLiteral8BE379FCCAE7759F182D2E0FDD1565B9F41370C9);
-		// Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 6, 48);
+		// Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
 		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_11 = (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 *)il2cpp_codegen_object_new(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3_il2cpp_TypeInfo_var);
-		Day1Retention__ctor_m5AC87C6754EAD4FF846E084887A8AC84649DA7D8(L_11, 1, 6, ((int32_t)48), /*hidden argument*/NULL);
+		Day1Retention__ctor_m5AC87C6754EAD4FF846E084887A8AC84649DA7D8(L_11, 1, 4, ((int32_t)38), /*hidden argument*/NULL);
 		V_1 = L_11;
 		// config.Day1Retention = retention;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_12 = V_0;
 		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_13 = V_1;
 		NullCheck(L_12);
-		L_12->set_Day1Retention_2(L_13);
+		L_12->set_Day1Retention_1(L_13);
 	}
 
 IL_0077:
@@ -3515,7 +3576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_Init_m80098C11E59C97CB4E2
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_13 = L_12;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_14 = ___config0;
 		NullCheck(L_14);
-		String_t* L_15 = L_14->get_Channel_3();
+		String_t* L_15 = L_14->get_Channel_2();
 		NullCheck(L_13);
 		ArrayElementTypeCheck (L_13, L_15);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_15);
@@ -3525,7 +3586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_Init_m80098C11E59C97CB4E2
 		// Day1Retention day1Retention = config.Day1Retention;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_17 = ___config0;
 		NullCheck(L_17);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_18 = L_17->get_Day1Retention_2();
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_18 = L_17->get_Day1Retention_1();
 		V_1 = L_18;
 		// if(day1Retention != null) {
 		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_19 = V_1;
@@ -3695,54 +3756,109 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient__ctor_mD59CDDCD152E21CCAB
 // System.Void TGCenterSdk.Platforms.iOS.TGCenterClient::Init(TGCenterSdk.Api.InitConfig)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_Init_mF54DAE431EE6FEDAFA39F0DE1188228C80900097 (TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9 * __this, InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * ___config0, const RuntimeMethod* method)
 {
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	intptr_t V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	{
 		// IntPtr configPtr = Externs.TGCCreateInitConfig();
 		intptr_t L_0;
 		L_0 = Externs_TGCCreateInitConfig_m76F31ED1EE75BFFBF2FBC598B4CAFAC04847ABDF(/*hidden argument*/NULL);
+		V_0 = (intptr_t)L_0;
 		// Externs.TGCSetInitConfig_DebugMode(configPtr, config.DebugMode);
-		intptr_t L_1 = (intptr_t)L_0;
+		intptr_t L_1 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_2 = ___config0;
 		NullCheck(L_2);
 		bool L_3 = L_2->get_DebugMode_0();
 		Externs_TGCSetInitConfig_DebugMode_m3C60CA74838730B5605C43F254C7BB13DB14218A((intptr_t)L_1, L_3, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_AppId(configPtr, config.AppId);
-		intptr_t L_4 = (intptr_t)L_1;
+		intptr_t L_4 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_5 = ___config0;
 		NullCheck(L_5);
-		String_t* L_6 = L_5->get_AppId_1();
+		String_t* L_6 = L_5->get_AppId_3();
 		Externs_TGCSetInitConfig_AppId_m79A28C237AD73D049498776862601252568AE409((intptr_t)L_4, L_6, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_AppleAppID(configPtr, config.AppleAppID);
-		intptr_t L_7 = (intptr_t)L_4;
+		intptr_t L_7 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_8 = ___config0;
 		NullCheck(L_8);
 		String_t* L_9 = L_8->get_AppleAppID_4();
 		Externs_TGCSetInitConfig_AppleAppID_mA99EACF9D3B913E007A5EF79CA40FDFABC32A7D4((intptr_t)L_7, L_9, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_UmengAppKey(configPtr, config.UmengAppKey);
-		intptr_t L_10 = (intptr_t)L_7;
+		intptr_t L_10 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_11 = ___config0;
 		NullCheck(L_11);
 		String_t* L_12 = L_11->get_UmengAppKey_5();
 		Externs_TGCSetInitConfig_UmengAppKey_m80CE1DCFC4565693F34ECBBE62B54B99CF589663((intptr_t)L_10, L_12, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_AppsFlyerDevKey(configPtr, config.AppsFlyerDevKey);
-		intptr_t L_13 = (intptr_t)L_10;
+		intptr_t L_13 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_14 = ___config0;
 		NullCheck(L_14);
 		String_t* L_15 = L_14->get_AppsFlyerDevKey_6();
 		Externs_TGCSetInitConfig_AppsFlyerDevKey_m9B3CD629FF1C4B4258A124071A2CDD58891FE71D((intptr_t)L_13, L_15, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_RangersAppLogAppId(configPtr, config.RangersAppLogAppId);
-		intptr_t L_16 = (intptr_t)L_13;
+		intptr_t L_16 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_17 = ___config0;
 		NullCheck(L_17);
 		String_t* L_18 = L_17->get_RangersAppLogAppId_7();
 		Externs_TGCSetInitConfig_RangersAppLogAppId_mC1DF1C6D8ABDD475939ADB3A32607914B6E7B1C7((intptr_t)L_16, L_18, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_RangersAppLogAppName(configPtr, config.RangersAppLogAppName);
-		intptr_t L_19 = (intptr_t)L_16;
+		intptr_t L_19 = V_0;
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_20 = ___config0;
 		NullCheck(L_20);
 		String_t* L_21 = L_20->get_RangersAppLogAppName_8();
 		Externs_TGCSetInitConfig_RangersAppLogAppName_m4C032095A1DE1921811AAFA37C21F9F8A57E3ED9((intptr_t)L_19, L_21, /*hidden argument*/NULL);
+		// if (config.Day1Retention != null) {
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_22 = ___config0;
+		NullCheck(L_22);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_23 = L_22->get_Day1Retention_1();
+		if (!L_23)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		// IntPtr retentionPtr = Externs.TGCCreateDay1Retention();
+		intptr_t L_24;
+		L_24 = Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0(/*hidden argument*/NULL);
+		V_1 = (intptr_t)L_24;
+		// Externs.TGCSetDay1Retention_Type(retentionPtr, (int)config.Day1Retention.RetentionType);
+		intptr_t L_25 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_26 = ___config0;
+		NullCheck(L_26);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_27 = L_26->get_Day1Retention_1();
+		NullCheck(L_27);
+		int32_t L_28;
+		L_28 = Day1Retention_get_RetentionType_mD0C2642097219905B831A051D675EE715FF6A4B5_inline(L_27, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_Type_m3B7916E4DCBAF3ABB52020CB12D7CB7CCAA063B0((intptr_t)L_25, L_28, /*hidden argument*/NULL);
+		// Externs.TGCSetDay1Retention_StartCount(retentionPtr, config.Day1Retention.StartCount);
+		intptr_t L_29 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_30 = ___config0;
+		NullCheck(L_30);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_31 = L_30->get_Day1Retention_1();
+		NullCheck(L_31);
+		int32_t L_32;
+		L_32 = Day1Retention_get_StartCount_mC49554BBEBB0F46D8B1DBBD920E195382086B189_inline(L_31, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_StartCount_m06973A8C99ED9BBCC36861E10A69420030DF15A1((intptr_t)L_29, L_32, /*hidden argument*/NULL);
+		// Externs.TGCSetDay1Retention_EndCount(retentionPtr, config.Day1Retention.EndCount);
+		intptr_t L_33 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_34 = ___config0;
+		NullCheck(L_34);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_35 = L_34->get_Day1Retention_1();
+		NullCheck(L_35);
+		int32_t L_36;
+		L_36 = Day1Retention_get_EndCount_m5DB2D2F36A24B0E04F4BF7BAE1E195689C896556_inline(L_35, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_EndCount_mBB41BCABD0864AF1841D6314A8A7CCF4F1D93ED5((intptr_t)L_33, L_36, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_Day1Retention(configPtr, retentionPtr);
+		intptr_t L_37 = V_0;
+		intptr_t L_38 = V_1;
+		Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900((intptr_t)L_37, (intptr_t)L_38, /*hidden argument*/NULL);
+	}
+
+IL_00a2:
+	{
 		// Externs.TGCInit(configPtr);
-		Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC((intptr_t)L_19, /*hidden argument*/NULL);
+		intptr_t L_39 = V_0;
+		Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC((intptr_t)L_39, /*hidden argument*/NULL);
 		// }
 		return;
 	}

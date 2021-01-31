@@ -4,13 +4,10 @@ namespace TGCenterSdk.Api
 
         public InitConfig() { }
 
-        
+
         #region Common Config
         // Show debug log in test process.
         public bool DebugMode;
-
-        // ModooPlay AppId
-        public string AppId;
 
         // Custom Day1Retention
         public Day1Retention Day1Retention;
@@ -24,6 +21,9 @@ namespace TGCenterSdk.Api
         
 
         #region  iOS Config
+        // ModooPlay AppId
+        public string AppId;
+        
         // iOS Apple AppID
         public string AppleAppID;
 

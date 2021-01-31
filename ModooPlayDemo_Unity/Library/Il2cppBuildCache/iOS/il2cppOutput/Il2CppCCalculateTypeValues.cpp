@@ -8938,12 +8938,12 @@ struct  InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47  : public RuntimeOb
 public:
 	// System.Boolean TGCenterSdk.Api.InitConfig::DebugMode
 	bool ___DebugMode_0;
-	// System.String TGCenterSdk.Api.InitConfig::AppId
-	String_t* ___AppId_1;
 	// TGCenterSdk.Api.Day1Retention TGCenterSdk.Api.InitConfig::Day1Retention
-	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * ___Day1Retention_2;
+	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * ___Day1Retention_1;
 	// System.String TGCenterSdk.Api.InitConfig::Channel
-	String_t* ___Channel_3;
+	String_t* ___Channel_2;
+	// System.String TGCenterSdk.Api.InitConfig::AppId
+	String_t* ___AppId_3;
 	// System.String TGCenterSdk.Api.InitConfig::AppleAppID
 	String_t* ___AppleAppID_4;
 	// System.String TGCenterSdk.Api.InitConfig::UmengAppKey
@@ -8964,31 +8964,31 @@ public:
 		___DebugMode_0 = value;
 	}
 
-	inline static int32_t get_offset_of_AppId_1() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppId_1)); }
-	inline String_t* get_AppId_1() const { return ___AppId_1; }
-	inline String_t** get_address_of_AppId_1() { return &___AppId_1; }
-	inline void set_AppId_1(String_t* value)
+	inline static int32_t get_offset_of_Day1Retention_1() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Day1Retention_1)); }
+	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * get_Day1Retention_1() const { return ___Day1Retention_1; }
+	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 ** get_address_of_Day1Retention_1() { return &___Day1Retention_1; }
+	inline void set_Day1Retention_1(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * value)
 	{
-		___AppId_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___AppId_1), (void*)value);
+		___Day1Retention_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Day1Retention_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Day1Retention_2() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Day1Retention_2)); }
-	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * get_Day1Retention_2() const { return ___Day1Retention_2; }
-	inline Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 ** get_address_of_Day1Retention_2() { return &___Day1Retention_2; }
-	inline void set_Day1Retention_2(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * value)
+	inline static int32_t get_offset_of_Channel_2() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Channel_2)); }
+	inline String_t* get_Channel_2() const { return ___Channel_2; }
+	inline String_t** get_address_of_Channel_2() { return &___Channel_2; }
+	inline void set_Channel_2(String_t* value)
 	{
-		___Day1Retention_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Day1Retention_2), (void*)value);
+		___Channel_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Channel_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Channel_3() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___Channel_3)); }
-	inline String_t* get_Channel_3() const { return ___Channel_3; }
-	inline String_t** get_address_of_Channel_3() { return &___Channel_3; }
-	inline void set_Channel_3(String_t* value)
+	inline static int32_t get_offset_of_AppId_3() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppId_3)); }
+	inline String_t* get_AppId_3() const { return ___AppId_3; }
+	inline String_t** get_address_of_AppId_3() { return &___AppId_3; }
+	inline void set_AppId_3(String_t* value)
 	{
-		___Channel_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Channel_3), (void*)value);
+		___AppId_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___AppId_3), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_AppleAppID_4() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___AppleAppID_4)); }

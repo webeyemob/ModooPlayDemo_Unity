@@ -29,6 +29,16 @@ namespace TGCenterSdk.Platforms.iOS
             Externs.TGCSetInitConfig_RangersAppLogAppId(configPtr, config.RangersAppLogAppId);
             Externs.TGCSetInitConfig_RangersAppLogAppName(configPtr, config.RangersAppLogAppName);
 
+            if (config.Day1Retention != null) {
+                IntPtr retentionPtr = Externs.TGCCreateDay1Retention();
+
+                Externs.TGCSetDay1Retention_Type(retentionPtr, (int)config.Day1Retention.RetentionType);
+                Externs.TGCSetDay1Retention_StartCount(retentionPtr, config.Day1Retention.StartCount);
+                Externs.TGCSetDay1Retention_EndCount(retentionPtr, config.Day1Retention.EndCount);
+
+                Externs.TGCSetInitConfig_Day1Retention(configPtr, retentionPtr);
+            }
+
             Externs.TGCInit(configPtr);
         }
         
