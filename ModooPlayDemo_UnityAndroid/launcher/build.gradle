@@ -37,6 +37,8 @@ tgCenter {
                 mobrain_ylh     : false, // 穿山甲聚合-优量汇
                 mobrain_kuaishou: false  // 穿山甲聚合-快手
         ]
+
+        antiAddiction true
     }
 }
 
@@ -55,7 +57,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 30
 //        applicationId 'com.modooplay.demo.unity'
 //        applicationId 'io.hyperhug.mr.slice.cn'
