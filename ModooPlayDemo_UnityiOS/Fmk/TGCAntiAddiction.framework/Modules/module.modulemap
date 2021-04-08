@@ -1,0 +1,6 @@
+framework module TGCAntiAddiction {
+  umbrella header "TGCAntiAddiction.h"
+
+  export *
+  module * { export * }
+}

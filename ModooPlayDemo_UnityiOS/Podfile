@@ -60,6 +60,6 @@ target 'UnityFramework' do
   pod 'TaurusXAdMediation_KuaiShou'
   
   # 游戏防沉迷
-  pod 'AntiAddictionKit'
+  pod 'AntiAddiction'
   
 end

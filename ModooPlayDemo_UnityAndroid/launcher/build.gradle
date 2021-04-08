@@ -38,13 +38,14 @@ tgCenter {
                 mobrain_kuaishou: false  // 穿山甲聚合-快手
         ]
 
-        antiAddiction true
+        gameAntiAddiction true
     }
 }
 
 dependencies {
     implementation project(':unityLibrary')
     implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.tgcenter.unified:sdk:1.9'
 }
 
 android {

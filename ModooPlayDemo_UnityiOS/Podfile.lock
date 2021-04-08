@@ -7,22 +7,23 @@ PODS:
   - Ads-Global/BUFoundation (3.4.2.3)
   - Ads-Global/Domestic (3.4.2.3)
   - Ads-Global/International (3.4.2.3)
-  - AntiAddictionKit (1.1.5)
+  - AntiAddiction (1.0.0):
+    - EventsIOSdk
   - AppsFlyerFramework (6.1.4):
     - AppsFlyerFramework/Main (= 6.1.4)
   - AppsFlyerFramework/Main (6.1.4)
   - DataFlyer (1.0.8)
-  - EmbededSdk (1.0.2):
-    - EventsIOSdk
+  - EmbededSdk (1.0.4):
+    - EventsIOSdk (~> 1.0.3)
     - TaurusXAds
-  - EventsIOSdk (1.0.2)
+  - EventsIOSdk (1.0.6)
   - GDTMobSDK (4.12.3):
     - GDTMobSDK/GDTMobSDK (= 4.12.3)
   - GDTMobSDK/GDTMobSDK (4.12.3)
   - KSAdSDK (3.3.5)
   - NathAds (1.1.9):
     - DataFlyer
-  - PrivacyPolicy (1.2)
+  - PrivacyPolicy (1.3)
   - RangersAppLog/Core (5.4.2)
   - RangersAppLog/Log (5.4.2):
     - RangersAppLog/Core
@@ -39,21 +40,21 @@ PODS:
     - TaurusXAds
   - TaurusXAdMediation_Mobrain (2.5.0.1.0):
     - TaurusXAds
-  - TaurusXAdMediation_TikTok (3.4.2.3.0):
+  - TaurusXAdMediation_TikTok (3.4.2.3.2):
     - Ads-Global (= 3.4.2.3)
     - Ads-Global/BUAdSDK (= 3.4.2.3)
     - Ads-Global/Domestic (= 3.4.2.3)
     - TaurusXAds
-  - TaurusXAds (2.0.3):
+  - TaurusXAds (2.0.4):
     - DataFlyer (= 1.0.8)
     - NathAds (~> 1.1.9)
   - TGCAppsFlyer (6.1.4.0):
     - AppsFlyerFramework (= 6.1.4)
   - TGCEmbed (1.0.2.0):
     - EmbededSdk
-  - TGCenter (1.3)
-  - TGCPrivacy (1.2.0):
-    - PrivacyPolicy (= 1.2)
+  - TGCenter (1.5)
+  - TGCPrivacy (1.3.0):
+    - PrivacyPolicy (= 1.3)
   - TGCRangersAppLog (5.4.2.0)
   - TGCTaurusXAds (2.0.3.0):
     - TaurusXAds
@@ -73,7 +74,7 @@ PODS:
   - UMDevice (1.1.0)
 
 DEPENDENCIES:
-  - AntiAddictionKit
+  - AntiAddiction
   - RangersAppLog/Core (= 5.4.2)
   - RangersAppLog/Log (= 5.4.2)
   - RangersAppLog/Unique (= 5.4.2)
@@ -97,7 +98,7 @@ SPEC REPOS:
     - RangersAppLog
   https://github.com/CocoaPods/Specs.git:
     - Ads-Global
-    - AntiAddictionKit
+    - AntiAddiction
     - AppsFlyerFramework
     - DataFlyer
     - EmbededSdk
@@ -129,15 +130,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Ads-Global: a0f83940b0114e21c6e7601d7d73f657596087dd
-  AntiAddictionKit: 49700aed4768c21685306487f8395188dd2b3ca1
+  AntiAddiction: b02f2fea4759d5912f8ed372accb8d3bd2e1cf41
   AppsFlyerFramework: ed1a754b74739bafbcb0d8235d6bc4f0ffe2e0ec
   DataFlyer: 3c4be94b4ef0c2221052ab437299879bc187e1a0
-  EmbededSdk: b4f279d786b5d1e53bf0375b64c5f9db26329f5a
-  EventsIOSdk: 8620d22cb1303422a393c58c1cc526bec98cc0ab
+  EmbededSdk: b6284537715eab9fd24083453e03f76eb5c62469
+  EventsIOSdk: 6839af89c70f51629d1f9cd514bf0878d9c520c1
   GDTMobSDK: 1e245a7a1f3960516fa8f5fb1038a349931dbd90
   KSAdSDK: 6ea07f8c86e3861f25235a18cec6b0c843a79dee
   NathAds: e28cc6d328bac16e192b25775146026be1df8a4a
-  PrivacyPolicy: ad325f3b73ea138ba28c0b770e24eb47deafbd0c
+  PrivacyPolicy: 53776cb605ae366b0cb5a9f9afc3bf8fd0eb84f2
   RangersAppLog: 8c41a5c3473017203c90a04b6b9b09033f562b8f
   TaurusXAd_Mobrain_GDT: feb6685fc23f53e10c90b23f408c240883119ab5
   TaurusXAd_Mobrain_KuaiShou: 699b5fe4a63aa14d3a72aafabdaa1ca793cdb73c
@@ -145,12 +146,12 @@ SPEC CHECKSUMS:
   TaurusXAdMediation_GDT: aee461f5378665fd1b7ebbcdbcae5e75603c47fc
   TaurusXAdMediation_KuaiShou: b3cc0ca6b9f79353f4cac729aeab6b6998cc2799
   TaurusXAdMediation_Mobrain: d95d0d4d26efcbac7e8e7ec0ff5e5dcb0bc053ff
-  TaurusXAdMediation_TikTok: c96df6fd8644b155e5f8db7c55826c80afe892a2
-  TaurusXAds: 056bedb98a1b4a8e34546a1d86df67ca87bcfe79
+  TaurusXAdMediation_TikTok: aef5facf69790cfb8cfb6c6dfc9424f17e23814c
+  TaurusXAds: 6a470012a5b3dc5b97e7a9bbd48ee4d43063fa32
   TGCAppsFlyer: 4092f5f28e3296728d0dd35ae1bd61ee20e4409b
   TGCEmbed: e8e1318ccbe8cfa7e7785516576cef2bd9d99273
-  TGCenter: 288026b60d0c5e1069e0ccb95c881ccac21064d1
-  TGCPrivacy: d9521f9b4c42b5df31e12974a7be1af1b69b02fd
+  TGCenter: 886e828e0e4146c15e464c342ce089c16b37c547
+  TGCPrivacy: 138579395c4e617c5603c6a14c7bc4cd21c673c4
   TGCRangersAppLog: 5bee186dc29659279f97bc2ec4112e4e51a31000
   TGCTaurusXAds: b5d2748245dee7c3421b5eaa36cddf2a07dd6d76
   TGCUmeng: 35c1b439f1fc0779f4625f2e819969d34ccfd1e9
@@ -160,6 +161,6 @@ SPEC CHECKSUMS:
   UMCCommonLog: 9b7ddde5d14a52fc1986ba5ac3121b8b2f433638
   UMDevice: 28d21a568c8e8322e5a03bbd53b138d0c098d3b3
 
-PODFILE CHECKSUM: d60bc61d2a02137906bb7b243a5b9a075b7bc949
+PODFILE CHECKSUM: 3b524b6bd811ac33da8861a03b9a7a15f9f3716d
 
 COCOAPODS: 1.10.1

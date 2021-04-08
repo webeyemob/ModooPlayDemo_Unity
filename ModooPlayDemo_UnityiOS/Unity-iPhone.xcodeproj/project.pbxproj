@@ -84,6 +84,8 @@
 		7E854ED799AA9682C7B301BA /* UnityEngine.InputLegacyModule_Attr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02A04D7EAEE33C4FB27CB48D /* UnityEngine.InputLegacyModule_Attr.cpp */; };
 		805D407CAAD3B5FC0BD0D8E5 /* mscorlib6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 704F45D1B2898E92300DE750 /* mscorlib6.cpp */; };
 		82204A24859E267F12E9E08D /* System.Core_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC946039157EB0EFC116B67 /* System.Core_CodeGen.c */; };
+		83ADDF98261EB49600BC9737 /* TGCAntiAddiction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ADDF97261EB49600BC9737 /* TGCAntiAddiction.framework */; };
+		83ADDF9D261ED1A000BC9737 /* AntiAddictionInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ADDF9C261ED1A000BC9737 /* AntiAddictionInterface.m */; };
 		83CEF82425C556BB009B6226 /* TGCPrivacy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CEF82325C556BB009B6226 /* TGCPrivacy.framework */; };
 		862C245020AEC7AC006FB4AD /* UnityWebRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 862C244F20AEC7AC006FB4AD /* UnityWebRequest.mm */; };
 		881B4239ADB94DE4839EF646 /* mscorlib1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD464F8B9C3BCC92C72B9342 /* mscorlib1.cpp */; };
@@ -352,6 +354,8 @@
 		830B5C100E5ED4C100C7819F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		83A647A9A4848451DEFCA18F /* UnityEngine.TextRenderingModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextRenderingModule.cpp; path = Classes/Native/UnityEngine.TextRenderingModule.cpp; sourceTree = SOURCE_ROOT; };
+		83ADDF97261EB49600BC9737 /* TGCAntiAddiction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGCAntiAddiction.framework; path = Fmk/TGCAntiAddiction.framework; sourceTree = "<group>"; };
+		83ADDF9C261ED1A000BC9737 /* AntiAddictionInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AntiAddictionInterface.m; sourceTree = "<group>"; };
 		83B2570A0E62FF8A00468741 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		83B2574B0E63022200468741 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		83CEF82325C556BB009B6226 /* TGCPrivacy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGCPrivacy.framework; path = Fmk/TGCPrivacy.framework; sourceTree = "<group>"; };
@@ -535,6 +539,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ADDF98261EB49600BC9737 /* TGCAntiAddiction.framework in Frameworks */,
 				83CEF82425C556BB009B6226 /* TGCPrivacy.framework in Frameworks */,
 				8A3831B5246956AA00CD74FD /* Metal.framework in Frameworks */,
 				9D690CCF21BFD341005026B1 /* Security.framework in Frameworks */,
@@ -575,7 +580,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				AA31BF961B55660D0013FB1B /* Data */,
@@ -601,6 +606,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83ADDF97261EB49600BC9737 /* TGCAntiAddiction.framework */,
 				83CEF82325C556BB009B6226 /* TGCPrivacy.framework */,
 				8A3831B4246956AA00CD74FD /* Metal.framework */,
 				9D0A618A21BFE7F30094DC33 /* libiconv.2.tbd */,
@@ -670,6 +676,30 @@
 			children = (
 				B73E4C9CA7922F4538364EF2 /* TGCPrivacyInterface.m */,
 				749946D6A381BAF1BC24E956 /* TGCInterface.m */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		83ADDF99261ED1A000BC9737 /* AntiAddiction */ = {
+			isa = PBXGroup;
+			children = (
+				83ADDF9A261ED1A000BC9737 /* Plugins */,
+			);
+			path = AntiAddiction;
+			sourceTree = "<group>";
+		};
+		83ADDF9A261ED1A000BC9737 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				83ADDF9B261ED1A000BC9737 /* iOS */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		83ADDF9B261ED1A000BC9737 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83ADDF9C261ED1A000BC9737 /* AntiAddictionInterface.m */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -921,6 +951,7 @@
 		D8A1C7220E80637F000160D3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				83ADDF99261ED1A000BC9737 /* AntiAddiction */,
 				AAC3E38B1A68945900F6174A /* RegisterFeatures.cpp */,
 				AAC3E38C1A68945900F6174A /* RegisterFeatures.h */,
 				03F528621B447098000F4FB8 /* Il2CppOptions.cpp */,
@@ -1073,7 +1104,7 @@
 				German,
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1172,7 +1203,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-resources.sh",
 				"${PODS_ROOT}/Ads-Global/PangleSDK/BUAdSDK.bundle",
 				"${PODS_ROOT}/NathAds/NathAds_1.1.9/NathAds.bundle",
-				"${PODS_ROOT}/TaurusXAds/TaurusXAds_2.0.3/TaurusXAds.bundle",
+				"${PODS_ROOT}/TaurusXAds/TaurusXAds_2.0.4/TaurusXAds.bundle",
 				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1217,12 +1248,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-frameworks.sh",
 				"${PODS_ROOT}/KSAdSDK/KSAdSDK.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AntiAddictionKit/AntiAddictionKit.framework/AntiAddictionKit",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSAdSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AntiAddictionKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1238,7 +1267,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-UnityFramework/Pods-UnityFramework-resources.sh",
 				"${PODS_ROOT}/Ads-Global/PangleSDK/BUAdSDK.bundle",
 				"${PODS_ROOT}/NathAds/NathAds_1.1.9/NathAds.bundle",
-				"${PODS_ROOT}/TaurusXAds/TaurusXAds_2.0.3/TaurusXAds.bundle",
+				"${PODS_ROOT}/TaurusXAds/TaurusXAds_2.0.4/TaurusXAds.bundle",
 				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1427,6 +1456,7 @@
 				DBE24F79A2B1FED50ABE587A /* mscorlib16.cpp in Sources */,
 				928341B69D0D952442CF2092 /* mscorlib2.cpp in Sources */,
 				659841338E3610420E5E50C1 /* mscorlib3.cpp in Sources */,
+				83ADDF9D261ED1A000BC9737 /* AntiAddictionInterface.m in Sources */,
 				BDB24695ABDCC0C800940ED6 /* mscorlib4.cpp in Sources */,
 				B488401A80B5F6B52F005F80 /* mscorlib5.cpp in Sources */,
 				805D407CAAD3B5FC0BD0D8E5 /* mscorlib6.cpp in Sources */,
@@ -1928,6 +1958,7 @@
 					"$(PROJECT_DIR)/Libraries",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTARGET_IPHONE_SIMULATOR=1",
@@ -2011,7 +2042,7 @@
 					"$(PROJECT_DIR)/Libraries",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTARGET_IPHONE_SIMULATOR=1",
@@ -2096,7 +2127,7 @@
 					"$(PROJECT_DIR)/Libraries",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTARGET_IPHONE_SIMULATOR=1",
@@ -2182,7 +2213,7 @@
 					"$(PROJECT_DIR)/Libraries",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTARGET_IPHONE_SIMULATOR=1",
