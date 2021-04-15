@@ -26,5 +26,12 @@ namespace TGCenterSdk.Api
         public static bool IsUserAgreePolicy() {
             return client.IsUserAgreePolicy();
         }
+
+        /**
+         * Clear cache of TGCenter SDK.
+         */
+        public static void ClearCache() {
+            client.ClearCache();
+        }
     }
 }

@@ -42,6 +42,10 @@ namespace TGCenterSdk.Platforms.Android
         public bool IsUserAgreePolicy() {
             return tgCenterClass.CallStatic<bool>("isUserAgreePolicy", Utils.GetPlayerActivity());
         }
+
+        public void ClearCache() {
+            tgCenterClass.CallStatic("clearCache", Utils.GetPlayerActivity());
+        }
         #endregion
     }
 }

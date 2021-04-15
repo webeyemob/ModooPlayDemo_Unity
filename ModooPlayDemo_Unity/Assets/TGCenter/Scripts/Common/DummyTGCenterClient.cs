@@ -9,5 +9,7 @@ namespace TGCenterSdk.Common
         public bool IsUserAgreePolicy() {
             return false;
         }
+
+        public void ClearCache() { }
     }    
 }

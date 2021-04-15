@@ -28,6 +28,11 @@ namespace TGCenterSdk.Platforms.iOS
             Externs.TGCSetInitConfig_AppsFlyerDevKey(configPtr, config.AppsFlyerDevKey);
             Externs.TGCSetInitConfig_RangersAppLogAppId(configPtr, config.RangersAppLogAppId);
             Externs.TGCSetInitConfig_RangersAppLogAppName(configPtr, config.RangersAppLogAppName);
+            Externs.TGCSetInitConfig_WeChatAppId(configPtr, config.WeChatAppId);
+            Externs.TGCSetInitConfig_WeChatUniversalLink(configPtr, config.WeChatUniversalLink);
+            Externs.TGCSetInitConfig_UdeskDomain(configPtr, config.UdeskDomain);
+            Externs.TGCSetInitConfig_UdeskAppKey(configPtr, config.UdeskAppKey);
+            Externs.TGCSetInitConfig_UdeskAppId(configPtr, config.UdeskAppId);
 
             if (config.Day1Retention != null) {
                 IntPtr retentionPtr = Externs.TGCCreateDay1Retention();
@@ -44,6 +49,10 @@ namespace TGCenterSdk.Platforms.iOS
         
         public bool IsUserAgreePolicy() {
             return Externs.TGCIsUserAgreePolicy();
+        }
+
+        public void ClearCache() {
+            Externs.TGCClearCache();
         }
     }
 }

@@ -656,8 +656,12 @@ struct ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82;
 struct ITaskCompletionAction_t7007C80B89E26C5DBB586AF8D5790801A1DDC558;
 // AntiAddictionSdk.Common.ITimeLimitClient
 struct ITimeLimitClient_tA9CE9CF36A023176694DF43EEE99A5CF51207AF3;
+// TGCenterSdk.Common.IUdeskHelperClient
+struct IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA;
 // AntiAddictionSdk.Common.IUserClient
 struct IUserClient_tE3A4C0F10567655FDB8B1194479A749040B1F619;
+// TGCenterSdk.Common.IWeChatHelperClient
+struct IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD;
 // System.Runtime.Remoting.Identity
 struct Identity_t640A44175E23F75AB432A7C00569D863BF48AAD5;
 // System.Runtime.Remoting.Messaging.IllogicalCallContext
@@ -1062,6 +1066,8 @@ struct StandardValuesCollection_tB8B2368EBF592D624D7A07BE6C539DE9BA9A1FB1;
 struct MoreInfo_t15D42286ECE8DAD0B0FE9CDC1291109300C3E727;
 // System.Uri/UriInfo
 struct UriInfo_tCB2302A896132D1F70E47C3895FAB9A0F2A6EE45;
+// TGCenterSdk.Api.WeChatHelper/LoginListener
+struct LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94;
 // Microsoft.Win32.Win32Native/WIN32_FIND_DATA
 struct WIN32_FIND_DATA_tE88493B22E1CDD2E595CA4F800949555399AB3C7;
 // System.Console/WindowsConsole/WindowsCancelHandler
@@ -6966,6 +6972,24 @@ public:
 };
 
 
+// TGCenterSdk.Common.DummyUdeskHelperClient
+struct  DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Common.DummyWeChatHelperClient
+struct  DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // System.Runtime.Remoting.Contexts.DynamicPropertyCollection
 struct  DynamicPropertyCollection_t374B470D20F1FAF60F0578EE489846E6E283984B  : public RuntimeObject
 {
@@ -9042,6 +9066,16 @@ public:
 	String_t* ___RangersAppLogAppId_7;
 	// System.String TGCenterSdk.Api.InitConfig::RangersAppLogAppName
 	String_t* ___RangersAppLogAppName_8;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatAppId
+	String_t* ___WeChatAppId_9;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatUniversalLink
+	String_t* ___WeChatUniversalLink_10;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskDomain
+	String_t* ___UdeskDomain_11;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppKey
+	String_t* ___UdeskAppKey_12;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppId
+	String_t* ___UdeskAppId_13;
 
 public:
 	inline static int32_t get_offset_of_DebugMode_0() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___DebugMode_0)); }
@@ -9122,6 +9156,51 @@ public:
 	{
 		___RangersAppLogAppName_8 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___RangersAppLogAppName_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatAppId_9() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatAppId_9)); }
+	inline String_t* get_WeChatAppId_9() const { return ___WeChatAppId_9; }
+	inline String_t** get_address_of_WeChatAppId_9() { return &___WeChatAppId_9; }
+	inline void set_WeChatAppId_9(String_t* value)
+	{
+		___WeChatAppId_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatAppId_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatUniversalLink_10() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatUniversalLink_10)); }
+	inline String_t* get_WeChatUniversalLink_10() const { return ___WeChatUniversalLink_10; }
+	inline String_t** get_address_of_WeChatUniversalLink_10() { return &___WeChatUniversalLink_10; }
+	inline void set_WeChatUniversalLink_10(String_t* value)
+	{
+		___WeChatUniversalLink_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatUniversalLink_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskDomain_11() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskDomain_11)); }
+	inline String_t* get_UdeskDomain_11() const { return ___UdeskDomain_11; }
+	inline String_t** get_address_of_UdeskDomain_11() { return &___UdeskDomain_11; }
+	inline void set_UdeskDomain_11(String_t* value)
+	{
+		___UdeskDomain_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskDomain_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppKey_12() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppKey_12)); }
+	inline String_t* get_UdeskAppKey_12() const { return ___UdeskAppKey_12; }
+	inline String_t** get_address_of_UdeskAppKey_12() { return &___UdeskAppKey_12; }
+	inline void set_UdeskAppKey_12(String_t* value)
+	{
+		___UdeskAppKey_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppKey_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppId_13() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppId_13)); }
+	inline String_t* get_UdeskAppId_13() const { return ___UdeskAppId_13; }
+	inline String_t** get_address_of_UdeskAppId_13() { return &___UdeskAppId_13; }
+	inline void set_UdeskAppId_13(String_t* value)
+	{
+		___UdeskAppId_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppId_13), (void*)value);
 	}
 };
 
@@ -17414,6 +17493,70 @@ public:
 };
 
 
+// TGCenterSdk.Api.UdeskHelper
+struct  UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IUdeskHelperClient TGCenterSdk.Api.UdeskHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields
+{
+public:
+	// TGCenterSdk.Api.UdeskHelper TGCenterSdk.Api.UdeskHelper::instance
+	UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields, ___instance_0)); }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * get_instance_0() const { return ___instance_0; }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.Android.UdeskHelperClient
+struct  UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277  : public RuntimeObject
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.UdeskHelperClient::udeskHelperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___udeskHelperClass_0;
+
+public:
+	inline static int32_t get_offset_of_udeskHelperClass_0() { return static_cast<int32_t>(offsetof(UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277, ___udeskHelperClass_0)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_udeskHelperClass_0() const { return ___udeskHelperClass_0; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_udeskHelperClass_0() { return &___udeskHelperClass_0; }
+	inline void set_udeskHelperClass_0(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___udeskHelperClass_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___udeskHelperClass_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.iOS.UdeskHelperClient
+struct  UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // System.UncNameHelper
 struct  UncNameHelper_t8588082B217370E41636ED5A9EF5A608858709E9  : public RuntimeObject
 {
@@ -17832,6 +17975,42 @@ struct  Volatile_t7A8B2983396C4500A8FC226CDB66FE9067DA4AE6  : public RuntimeObje
 public:
 
 public:
+};
+
+
+// TGCenterSdk.Api.WeChatHelper
+struct  WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IWeChatHelperClient TGCenterSdk.Api.WeChatHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields
+{
+public:
+	// TGCenterSdk.Api.WeChatHelper TGCenterSdk.Api.WeChatHelper::instance
+	WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields, ___instance_0)); }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * get_instance_0() const { return ___instance_0; }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
 };
 
 
@@ -19351,6 +19530,15 @@ public:
 
 // MainBehaviour/TimeLimitListener
 struct  TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// MainBehaviour/WeChatLoginListener
+struct  WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2  : public RuntimeObject
 {
 public:
 
@@ -44507,6 +44695,35 @@ struct WaitHandle_t1D7DD8480FD5DA4E3AF92F569890FB972D9B1842_marshaled_com : publ
 	int32_t ___hasThreadAffinity_5;
 };
 
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient
+struct  WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36  : public RuntimeObject
+{
+public:
+	// System.IntPtr TGCenterSdk.Platforms.iOS.WeChatHelperClient::helperClient
+	intptr_t ___helperClient_0;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.iOS.WeChatHelperClient::listener
+	RuntimeObject* ___listener_1;
+
+public:
+	inline static int32_t get_offset_of_helperClient_0() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___helperClient_0)); }
+	inline intptr_t get_helperClient_0() const { return ___helperClient_0; }
+	inline intptr_t* get_address_of_helperClient_0() { return &___helperClient_0; }
+	inline void set_helperClient_0(intptr_t value)
+	{
+		___helperClient_0 = value;
+	}
+
+	inline static int32_t get_offset_of_listener_1() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___listener_1)); }
+	inline RuntimeObject* get_listener_1() const { return ___listener_1; }
+	inline RuntimeObject** get_address_of_listener_1() { return &___listener_1; }
+	inline void set_listener_1(RuntimeObject* value)
+	{
+		___listener_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_1), (void*)value);
+	}
+};
+
+
 // System.WeakReference
 struct  WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76  : public RuntimeObject
 {
@@ -60513,6 +60730,36 @@ public:
 };
 
 
+// TGCenterSdk.Platforms.Android.WeChatHelperClient
+struct  WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7  : public AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.WeChatHelperClient::helperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___helperClass_4;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.Android.WeChatHelperClient::listener
+	RuntimeObject* ___listener_5;
+
+public:
+	inline static int32_t get_offset_of_helperClass_4() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___helperClass_4)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_helperClass_4() const { return ___helperClass_4; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_helperClass_4() { return &___helperClass_4; }
+	inline void set_helperClass_4(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___helperClass_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___helperClass_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_listener_5() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___listener_5)); }
+	inline RuntimeObject* get_listener_5() const { return ___listener_5; }
+	inline RuntimeObject** get_address_of_listener_5() { return &___listener_5; }
+	inline void set_listener_5(RuntimeObject* value)
+	{
+		___listener_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_5), (void*)value);
+	}
+};
+
+
 // System.Runtime.Remoting.WellKnownServiceTypeEntry
 struct  WellKnownServiceTypeEntry_t98CBB552396BFD8971C9C23000B68613B8D67F9D  : public TypeEntry_tE6A29217B055E31F4568B08F627D9BD7E4B28DE5
 {
@@ -65935,6 +66182,33 @@ public:
 };
 
 
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback
+struct  TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback
+struct  TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback
+struct  TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // System.Console/WindowsConsole/WindowsCancelHandler
 struct  WindowsCancelHandler_tFD0F0B721F93ACA04D9CD9340DA39075A8FF2ACF  : public MulticastDelegate_t
 {
@@ -71119,113 +71393,143 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize1953 = { sizeof (U3CModuleU3
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1954;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize1954 = { sizeof (U3CModuleU3E_tFDCAFCBB4B3431CFF2DC4D3E03FBFDF54EFF7E9A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1955;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1955 = { sizeof (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1955 = { sizeof (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1956;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1956 = { sizeof (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1956 = { sizeof (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1957;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1957 = { sizeof (PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1957 = { sizeof (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1958;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1958 = { sizeof (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1958 = { sizeof (PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1959;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1959 = { sizeof (ClientFactory_t94BD782533F1A5B37AA9D21857C337815D8389FA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1959 = { sizeof (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1960;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1960 = { sizeof (Externs_t3134EC717B9115532628B1F0D531CAC4F8834D1E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1960 = { sizeof (ClientFactory_t94BD782533F1A5B37AA9D21857C337815D8389FA), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1961;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1961 = { sizeof (TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA), sizeof(Il2CppMethodPointer), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1961 = { sizeof (Externs_t3134EC717B9115532628B1F0D531CAC4F8834D1E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1962;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1962 = { sizeof (TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E), sizeof(Il2CppMethodPointer), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1962 = { sizeof (TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1963;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1963 = { sizeof (PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1963 = { sizeof (TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1964;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1964 = { sizeof (TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9), -1, sizeof(TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1964 = { sizeof (PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1965;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1965 = { sizeof (PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1965 = { sizeof (TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9), -1, sizeof(TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1966;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1966 = { sizeof (TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0), -1, sizeof(TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1966 = { sizeof (UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1967;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1967 = { sizeof (Utils_tC4B2B1098A0CB683C7098180CEFDCE201D7A4E29), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1967 = { sizeof (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1968;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1968 = { sizeof (DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1968 = { sizeof (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1969;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1969 = { sizeof (DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1969 = { sizeof (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1970;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1970 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1970 = { sizeof (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1971;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1971 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1971 = { sizeof (PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1972;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1972 = { sizeof (RetentionTypes_t6A62A70C1AD3AE575AC24BD05B0A0CE0254FACE2)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1972 = { sizeof (TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0), -1, sizeof(TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1973;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1973 = { sizeof (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1973 = { sizeof (UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1974;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1974 = { sizeof (InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1974 = { sizeof (Utils_tC4B2B1098A0CB683C7098180CEFDCE201D7A4E29), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1975;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1975 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1975 = { sizeof (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1976;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1976 = { sizeof (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3), -1, sizeof(PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1976 = { sizeof (DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1977;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1977 = { sizeof (TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2), -1, sizeof(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1977 = { sizeof (DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1978;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1978 = { sizeof (ClientFactory_tA9BB9E9B992AAB39F386434272B5979538312693), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1978 = { sizeof (DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1979;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1979 = { sizeof (AntiAddictionRealNameCallback_t571F2472B7F4FDA2B625B7142A04441AA45FA294), sizeof(Il2CppMethodPointer), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1979 = { sizeof (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1980;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1980 = { sizeof (AntiAddictionTimeLimitCallback_tC94709CF8EB6A9D85FF410CF6B5B9F55A7E39ABA), sizeof(Il2CppMethodPointer), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1980 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1981;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1981 = { sizeof (AntiAddictionClient_t11FAEEBC7A7F56BE40C3C3E4E3477728AE7CD6C2), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1981 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1982;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1982 = { sizeof (Externs_t282F82D8F0B7FC45A9A7D40622EC4361F1FA2F9D), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1982 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1983;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1983 = { sizeof (LimitTipClient_t6437A4B4C61A0FC6DE0DF1FD0A1633C54E30C134), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1983 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1984;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1984 = { sizeof (RealNameResultClient_tBF949234076C9C3294A5104EF710ECE383DF2A51), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1984 = { sizeof (RetentionTypes_t6A62A70C1AD3AE575AC24BD05B0A0CE0254FACE2)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1985;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1985 = { sizeof (TimeLimitClient_t867CAAAF07D33468A9F628615761FD01851E998C), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1985 = { sizeof (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1986;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1986 = { sizeof (UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1986 = { sizeof (InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1987;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1987 = { sizeof (AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1987 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1988;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1988 = { sizeof (AndroidTimeLimitCallback_t714DA078A7FA04E959D0CF4F572CB9B34606B6B7), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1988 = { sizeof (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3), -1, sizeof(PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1989;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1989 = { sizeof (AntiAddictionClient_tBCBB7C82C199D2B807123ADAF494CD2B3620CD8D), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1989 = { sizeof (TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2), -1, sizeof(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1990;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1990 = { sizeof (LimitTipClient_t6CE7E256EC6BC4954FAB77171931D9D49B4E5125), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1990 = { sizeof (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1), -1, sizeof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1991;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1991 = { sizeof (RealNameResultClient_t28FE6782285D421A473D8786DA3B7AFE9BFC044D), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1991 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1992;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1992 = { sizeof (TimeLimitClient_t2B20BA4A4E97557CD346C1B50D9393EEA30D0919), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1992 = { sizeof (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8), -1, sizeof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1993;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1993 = { sizeof (UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1993 = { sizeof (ClientFactory_tA9BB9E9B992AAB39F386434272B5979538312693), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1994;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1994 = { sizeof (Utils_t4F719135D3815CEB909A5FA2B4E025C1F2F72F7F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1994 = { sizeof (AntiAddictionRealNameCallback_t571F2472B7F4FDA2B625B7142A04441AA45FA294), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1995;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1995 = { sizeof (DummyAntiAddictionClient_t4FAEB40FC69FAC8F29E2A2EBAC992D648E769D39), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1995 = { sizeof (AntiAddictionTimeLimitCallback_tC94709CF8EB6A9D85FF410CF6B5B9F55A7E39ABA), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1996;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1996 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1996 = { sizeof (AntiAddictionClient_t11FAEEBC7A7F56BE40C3C3E4E3477728AE7CD6C2), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1997;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1997 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1997 = { sizeof (Externs_t282F82D8F0B7FC45A9A7D40622EC4361F1FA2F9D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1998;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1998 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1998 = { sizeof (LimitTipClient_t6437A4B4C61A0FC6DE0DF1FD0A1633C54E30C134), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1999;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1999 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1999 = { sizeof (RealNameResultClient_tBF949234076C9C3294A5104EF710ECE383DF2A51), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2000;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2000 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2000 = { sizeof (TimeLimitClient_t867CAAAF07D33468A9F628615761FD01851E998C), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2001;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2001 = { sizeof (AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079), -1, sizeof(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2001 = { sizeof (UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2002;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2002 = { sizeof (LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2002 = { sizeof (AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2003;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2003 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2003 = { sizeof (AndroidTimeLimitCallback_t714DA078A7FA04E959D0CF4F572CB9B34606B6B7), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2004;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2004 = { sizeof (RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2004 = { sizeof (AntiAddictionClient_tBCBB7C82C199D2B807123ADAF494CD2B3620CD8D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2005;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2005 = { sizeof (Reason_t2012FA7CB373B081806F99C7987F8C29FFA0D1F8)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2005 = { sizeof (LimitTipClient_t6CE7E256EC6BC4954FAB77171931D9D49B4E5125), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2006;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2006 = { sizeof (TimeLimit_t34F8F02496A68C19246A6EDB732D70E8DAD79C9F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2006 = { sizeof (RealNameResultClient_t28FE6782285D421A473D8786DA3B7AFE9BFC044D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2007;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2007 = { 0, -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2007 = { sizeof (TimeLimitClient_t2B20BA4A4E97557CD346C1B50D9393EEA30D0919), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2008;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2008 = { sizeof (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2008 = { sizeof (UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2009;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2009 = { sizeof (Utils_t4F719135D3815CEB909A5FA2B4E025C1F2F72F7F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2010;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2010 = { sizeof (DummyAntiAddictionClient_t4FAEB40FC69FAC8F29E2A2EBAC992D648E769D39), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2011;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2011 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2012;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2012 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2013;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2013 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2014;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2014 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2015;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2015 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2016;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2016 = { sizeof (AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079), -1, sizeof(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_StaticFields), 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2017;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2017 = { sizeof (LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2018;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2018 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2019;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2019 = { sizeof (RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2020;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2020 = { sizeof (Reason_t2012FA7CB373B081806F99C7987F8C29FFA0D1F8)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2021;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2021 = { sizeof (TimeLimit_t34F8F02496A68C19246A6EDB732D70E8DAD79C9F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2022;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2022 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2023;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2023 = { sizeof (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

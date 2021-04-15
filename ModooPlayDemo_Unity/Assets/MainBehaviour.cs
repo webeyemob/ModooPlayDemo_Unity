@@ -36,9 +36,15 @@ public class MainBehaviour : MonoBehaviour
             PrivacyPolicyHelper.Instance.JumpToPrivacyPolicy();
         }
         y += d;
-        if (GUI.Button(new Rect(x, y, w, h), "Clear Cache", style))
+        WeChatHelper.Instance.SetLoginListener(new WeChatLoginListener());
+        if (GUI.Button(new Rect(x, y, w, h), "WeChat Login", style))
         {
-
+            WeChatLogin();
+        }
+        y += d;
+        if (GUI.Button(new Rect(x, y, w, h), "Enter Udesk", style))
+        {
+            EnterUdesk();
         }
 
         y += d;
@@ -57,6 +63,7 @@ public class MainBehaviour : MonoBehaviour
         y += d;
         if (GUI.Button(new Rect(x, y, antiW, h), "Logout", style))
         {
+            TGCenter.ClearCache();
             AntiAddiction.Logout();
             GetUserInfo(null);
         }
@@ -102,7 +109,12 @@ public class MainBehaviour : MonoBehaviour
             config.AppsFlyerDevKey = "DdWbxT9VRELdEsZiAcnGea";
             config.RangersAppLogAppId = "190309";
             config.RangersAppLogAppName = "bqlmgfios";
-
+            config.WeChatAppId = "wx841c361b2ae27a7b";
+            config.WeChatUniversalLink = "https://api-lovematchios.freeqingnovel.com/";
+            config.UdeskDomain = "wy.s2.udesk.cn";
+            config.UdeskAppKey = "c45ab77872e67e9a0b7f3113fadb62b2";
+            config.UdeskAppId = "e4f88f280c8df925";
+            
             Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
             config.Day1Retention = retention;
         }
@@ -113,6 +125,29 @@ public class MainBehaviour : MonoBehaviour
         AntiAddiction.SetTimeLimitCallback(new TimeLimitListener());
 
         GetUserInfo(null);
+    }
+
+    private void WeChatLogin() {
+        WeChatHelper.Instance.Login();
+    }
+
+    private class WeChatLoginListener : WeChatHelper.LoginListener {
+        // 登录成功
+        public void LoginSuccess(string code) {
+            Debug.Log("WeChat LoginSuccess, code: " + code);
+        }
+        // 登录失败
+        public void LoginFailed(string result) {
+            Debug.Log("WeChat LoginFailed, result: " + result);
+        }
+        // 取消登录
+        public void LoginCancel(string result) {
+            Debug.Log("WeChat LoginCancel, result: " + result);
+        }
+    }
+
+    private void EnterUdesk() {
+        UdeskHelper.Instance.EnterUdesk();
     }
 
     // 实名认证，使用 SDK 默认 UI

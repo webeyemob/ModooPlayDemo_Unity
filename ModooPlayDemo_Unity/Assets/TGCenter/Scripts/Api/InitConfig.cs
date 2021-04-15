@@ -37,6 +37,16 @@ namespace TGCenterSdk.Api
         public string RangersAppLogAppId;
         // RangersAppLog AppName
         public string RangersAppLogAppName;
+
+
+        // WeChat Login
+        public string WeChatAppId;
+        public string WeChatUniversalLink;
+
+        // Udesk
+        public string UdeskDomain;
+        public string UdeskAppKey;
+        public string UdeskAppId;
         #endregion
     }
 }

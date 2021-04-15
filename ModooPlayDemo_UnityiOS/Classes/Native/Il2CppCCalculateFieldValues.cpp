@@ -656,8 +656,12 @@ struct ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82;
 struct ITaskCompletionAction_t7007C80B89E26C5DBB586AF8D5790801A1DDC558;
 // AntiAddictionSdk.Common.ITimeLimitClient
 struct ITimeLimitClient_tA9CE9CF36A023176694DF43EEE99A5CF51207AF3;
+// TGCenterSdk.Common.IUdeskHelperClient
+struct IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA;
 // AntiAddictionSdk.Common.IUserClient
 struct IUserClient_tE3A4C0F10567655FDB8B1194479A749040B1F619;
+// TGCenterSdk.Common.IWeChatHelperClient
+struct IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD;
 // System.Runtime.Remoting.Identity
 struct Identity_t640A44175E23F75AB432A7C00569D863BF48AAD5;
 // System.Runtime.Remoting.Messaging.IllogicalCallContext
@@ -1062,6 +1066,8 @@ struct StandardValuesCollection_tB8B2368EBF592D624D7A07BE6C539DE9BA9A1FB1;
 struct MoreInfo_t15D42286ECE8DAD0B0FE9CDC1291109300C3E727;
 // System.Uri/UriInfo
 struct UriInfo_tCB2302A896132D1F70E47C3895FAB9A0F2A6EE45;
+// TGCenterSdk.Api.WeChatHelper/LoginListener
+struct LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94;
 // Microsoft.Win32.Win32Native/WIN32_FIND_DATA
 struct WIN32_FIND_DATA_tE88493B22E1CDD2E595CA4F800949555399AB3C7;
 // System.Console/WindowsConsole/WindowsCancelHandler
@@ -6966,6 +6972,24 @@ public:
 };
 
 
+// TGCenterSdk.Common.DummyUdeskHelperClient
+struct  DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Common.DummyWeChatHelperClient
+struct  DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // System.Runtime.Remoting.Contexts.DynamicPropertyCollection
 struct  DynamicPropertyCollection_t374B470D20F1FAF60F0578EE489846E6E283984B  : public RuntimeObject
 {
@@ -9042,6 +9066,16 @@ public:
 	String_t* ___RangersAppLogAppId_7;
 	// System.String TGCenterSdk.Api.InitConfig::RangersAppLogAppName
 	String_t* ___RangersAppLogAppName_8;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatAppId
+	String_t* ___WeChatAppId_9;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatUniversalLink
+	String_t* ___WeChatUniversalLink_10;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskDomain
+	String_t* ___UdeskDomain_11;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppKey
+	String_t* ___UdeskAppKey_12;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppId
+	String_t* ___UdeskAppId_13;
 
 public:
 	inline static int32_t get_offset_of_DebugMode_0() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___DebugMode_0)); }
@@ -9122,6 +9156,51 @@ public:
 	{
 		___RangersAppLogAppName_8 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___RangersAppLogAppName_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatAppId_9() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatAppId_9)); }
+	inline String_t* get_WeChatAppId_9() const { return ___WeChatAppId_9; }
+	inline String_t** get_address_of_WeChatAppId_9() { return &___WeChatAppId_9; }
+	inline void set_WeChatAppId_9(String_t* value)
+	{
+		___WeChatAppId_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatAppId_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatUniversalLink_10() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatUniversalLink_10)); }
+	inline String_t* get_WeChatUniversalLink_10() const { return ___WeChatUniversalLink_10; }
+	inline String_t** get_address_of_WeChatUniversalLink_10() { return &___WeChatUniversalLink_10; }
+	inline void set_WeChatUniversalLink_10(String_t* value)
+	{
+		___WeChatUniversalLink_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatUniversalLink_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskDomain_11() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskDomain_11)); }
+	inline String_t* get_UdeskDomain_11() const { return ___UdeskDomain_11; }
+	inline String_t** get_address_of_UdeskDomain_11() { return &___UdeskDomain_11; }
+	inline void set_UdeskDomain_11(String_t* value)
+	{
+		___UdeskDomain_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskDomain_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppKey_12() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppKey_12)); }
+	inline String_t* get_UdeskAppKey_12() const { return ___UdeskAppKey_12; }
+	inline String_t** get_address_of_UdeskAppKey_12() { return &___UdeskAppKey_12; }
+	inline void set_UdeskAppKey_12(String_t* value)
+	{
+		___UdeskAppKey_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppKey_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppId_13() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppId_13)); }
+	inline String_t* get_UdeskAppId_13() const { return ___UdeskAppId_13; }
+	inline String_t** get_address_of_UdeskAppId_13() { return &___UdeskAppId_13; }
+	inline void set_UdeskAppId_13(String_t* value)
+	{
+		___UdeskAppId_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppId_13), (void*)value);
 	}
 };
 
@@ -17414,6 +17493,70 @@ public:
 };
 
 
+// TGCenterSdk.Api.UdeskHelper
+struct  UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IUdeskHelperClient TGCenterSdk.Api.UdeskHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields
+{
+public:
+	// TGCenterSdk.Api.UdeskHelper TGCenterSdk.Api.UdeskHelper::instance
+	UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields, ___instance_0)); }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * get_instance_0() const { return ___instance_0; }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.Android.UdeskHelperClient
+struct  UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277  : public RuntimeObject
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.UdeskHelperClient::udeskHelperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___udeskHelperClass_0;
+
+public:
+	inline static int32_t get_offset_of_udeskHelperClass_0() { return static_cast<int32_t>(offsetof(UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277, ___udeskHelperClass_0)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_udeskHelperClass_0() const { return ___udeskHelperClass_0; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_udeskHelperClass_0() { return &___udeskHelperClass_0; }
+	inline void set_udeskHelperClass_0(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___udeskHelperClass_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___udeskHelperClass_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.iOS.UdeskHelperClient
+struct  UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // System.UncNameHelper
 struct  UncNameHelper_t8588082B217370E41636ED5A9EF5A608858709E9  : public RuntimeObject
 {
@@ -17832,6 +17975,42 @@ struct  Volatile_t7A8B2983396C4500A8FC226CDB66FE9067DA4AE6  : public RuntimeObje
 public:
 
 public:
+};
+
+
+// TGCenterSdk.Api.WeChatHelper
+struct  WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IWeChatHelperClient TGCenterSdk.Api.WeChatHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields
+{
+public:
+	// TGCenterSdk.Api.WeChatHelper TGCenterSdk.Api.WeChatHelper::instance
+	WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields, ___instance_0)); }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * get_instance_0() const { return ___instance_0; }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
 };
 
 
@@ -19351,6 +19530,15 @@ public:
 
 // MainBehaviour/TimeLimitListener
 struct  TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// MainBehaviour/WeChatLoginListener
+struct  WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2  : public RuntimeObject
 {
 public:
 
@@ -44507,6 +44695,35 @@ struct WaitHandle_t1D7DD8480FD5DA4E3AF92F569890FB972D9B1842_marshaled_com : publ
 	int32_t ___hasThreadAffinity_5;
 };
 
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient
+struct  WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36  : public RuntimeObject
+{
+public:
+	// System.IntPtr TGCenterSdk.Platforms.iOS.WeChatHelperClient::helperClient
+	intptr_t ___helperClient_0;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.iOS.WeChatHelperClient::listener
+	RuntimeObject* ___listener_1;
+
+public:
+	inline static int32_t get_offset_of_helperClient_0() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___helperClient_0)); }
+	inline intptr_t get_helperClient_0() const { return ___helperClient_0; }
+	inline intptr_t* get_address_of_helperClient_0() { return &___helperClient_0; }
+	inline void set_helperClient_0(intptr_t value)
+	{
+		___helperClient_0 = value;
+	}
+
+	inline static int32_t get_offset_of_listener_1() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___listener_1)); }
+	inline RuntimeObject* get_listener_1() const { return ___listener_1; }
+	inline RuntimeObject** get_address_of_listener_1() { return &___listener_1; }
+	inline void set_listener_1(RuntimeObject* value)
+	{
+		___listener_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_1), (void*)value);
+	}
+};
+
+
 // System.WeakReference
 struct  WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76  : public RuntimeObject
 {
@@ -60513,6 +60730,36 @@ public:
 };
 
 
+// TGCenterSdk.Platforms.Android.WeChatHelperClient
+struct  WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7  : public AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.WeChatHelperClient::helperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___helperClass_4;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.Android.WeChatHelperClient::listener
+	RuntimeObject* ___listener_5;
+
+public:
+	inline static int32_t get_offset_of_helperClass_4() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___helperClass_4)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_helperClass_4() const { return ___helperClass_4; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_helperClass_4() { return &___helperClass_4; }
+	inline void set_helperClass_4(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___helperClass_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___helperClass_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_listener_5() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___listener_5)); }
+	inline RuntimeObject* get_listener_5() const { return ___listener_5; }
+	inline RuntimeObject** get_address_of_listener_5() { return &___listener_5; }
+	inline void set_listener_5(RuntimeObject* value)
+	{
+		___listener_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_5), (void*)value);
+	}
+};
+
+
 // System.Runtime.Remoting.WellKnownServiceTypeEntry
 struct  WellKnownServiceTypeEntry_t98CBB552396BFD8971C9C23000B68613B8D67F9D  : public TypeEntry_tE6A29217B055E31F4568B08F627D9BD7E4B28DE5
 {
@@ -65928,6 +66175,33 @@ public:
 
 // System.UriParser/BuiltInUriParser
 struct  BuiltInUriParser_tD002C3439D3683127C216D09E22B0973AB9FDF26  : public UriParser_t6DEBE5C6CDC3C29C9019CD951C7ECEBD6A5D3E3A
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback
+struct  TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback
+struct  TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback
+struct  TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD  : public MulticastDelegate_t
 {
 public:
 
@@ -78082,34 +78356,43 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1950[7] =
 	FABRIKChain2D_t005A8D2E350FD757389CE28D0253E6D8EFCD5D59::get_offset_of_subChainIndices_5() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	FABRIKChain2D_t005A8D2E350FD757389CE28D0253E6D8EFCD5D59::get_offset_of_worldPositions_6() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1957[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1958[1] = 
 {
 	PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA::get_offset_of_behaviour_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1958[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1959[1] = 
 {
 	MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6::get_offset_of_Channle_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1963[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1964[2] = 
 {
 	PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0::get_offset_of_helperClient_0(),
 	PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0::get_offset_of_listener_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1964[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1965[1] = 
 {
 	TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9_StaticFields::get_offset_of_instance_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1965[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1970[2] = 
+{
+	WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36::get_offset_of_helperClient_0(),
+	WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36::get_offset_of_listener_1(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1971[2] = 
 {
 	PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9::get_offset_of_helper_4(),
 	PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9::get_offset_of_listener_5(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1966[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1972[2] = 
 {
 	TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0_StaticFields::get_offset_of_instance_0(),
 	TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0::get_offset_of_tgCenterClass_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1967[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1973[1] = 
+{
+	UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277::get_offset_of_udeskHelperClass_0(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1974[10] = 
 {
 	0,
 	0,
@@ -78117,20 +78400,29 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1967[6] =
 	0,
 	0,
 	0,
+	0,
+	0,
+	0,
+	0,
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1972[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1975[2] = 
+{
+	WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7::get_offset_of_helperClass_4(),
+	WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7::get_offset_of_listener_5(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1984[3] = 
 {
 	RetentionTypes_t6A62A70C1AD3AE575AC24BD05B0A0CE0254FACE2::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1973[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1985[3] = 
 {
 	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3::get_offset_of_U3CRetentionTypeU3Ek__BackingField_0(),
 	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3::get_offset_of_U3CStartCountU3Ek__BackingField_1(),
 	Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3::get_offset_of_U3CEndCountU3Ek__BackingField_2(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1974[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1986[14] = 
 {
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_DebugMode_0(),
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_Day1Retention_1(),
@@ -78141,87 +78433,102 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1974[9] =
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_AppsFlyerDevKey_6(),
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_RangersAppLogAppId_7(),
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_RangersAppLogAppName_8(),
+	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_WeChatAppId_9(),
+	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_WeChatUniversalLink_10(),
+	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_UdeskDomain_11(),
+	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_UdeskAppKey_12(),
+	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47::get_offset_of_UdeskAppId_13(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1976[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1988[2] = 
 {
 	PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_StaticFields::get_offset_of_instance_0(),
 	PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3::get_offset_of_client_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1977[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1989[1] = 
 {
 	TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_StaticFields::get_offset_of_client_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1981[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1990[2] = 
+{
+	UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields::get_offset_of_instance_0(),
+	UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1::get_offset_of_client_1(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1992[2] = 
+{
+	WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields::get_offset_of_instance_0(),
+	WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8::get_offset_of_client_1(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1996[3] = 
 {
 	AntiAddictionClient_t11FAEEBC7A7F56BE40C3C3E4E3477728AE7CD6C2::get_offset_of_mAntiAddictionClientPtr_0(),
 	AntiAddictionClient_t11FAEEBC7A7F56BE40C3C3E4E3477728AE7CD6C2::get_offset_of_realNameCallback_1(),
 	AntiAddictionClient_t11FAEEBC7A7F56BE40C3C3E4E3477728AE7CD6C2::get_offset_of_timeLimitCallback_2(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1983[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1998[1] = 
 {
 	LimitTipClient_t6437A4B4C61A0FC6DE0DF1FD0A1633C54E30C134::get_offset_of_LimitTip_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1984[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1999[1] = 
 {
 	RealNameResultClient_tBF949234076C9C3294A5104EF710ECE383DF2A51::get_offset_of_Result_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1985[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2000[1] = 
 {
 	TimeLimitClient_t867CAAAF07D33468A9F628615761FD01851E998C::get_offset_of_TimeLimit_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1986[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2001[2] = 
 {
 	UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5::get_offset_of_User_0(),
 	UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5::get_offset_of_Result_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1987[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2002[1] = 
 {
 	AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745::get_offset_of_Callback_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1988[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2003[1] = 
 {
 	AndroidTimeLimitCallback_t714DA078A7FA04E959D0CF4F572CB9B34606B6B7::get_offset_of_Callback_4(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1989[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2004[1] = 
 {
 	AntiAddictionClient_tBCBB7C82C199D2B807123ADAF494CD2B3620CD8D::get_offset_of_AntiAddiction_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1990[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2005[1] = 
 {
 	LimitTipClient_t6CE7E256EC6BC4954FAB77171931D9D49B4E5125::get_offset_of_LimitTip_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1991[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2006[1] = 
 {
 	RealNameResultClient_t28FE6782285D421A473D8786DA3B7AFE9BFC044D::get_offset_of_Result_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1992[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2007[1] = 
 {
 	TimeLimitClient_t2B20BA4A4E97557CD346C1B50D9393EEA30D0919::get_offset_of_TimeLimit_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1993[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2008[2] = 
 {
 	UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE::get_offset_of_User_0(),
 	UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE::get_offset_of_Result_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1994[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2009[3] = 
 {
 	0,
 	0,
 	0,
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2001[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2016[1] = 
 {
 	AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_StaticFields::get_offset_of_Client_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2002[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2017[1] = 
 {
 	LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD::get_offset_of_Client_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2004[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2019[1] = 
 {
 	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619::get_offset_of_mClient_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2005[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2020[6] = 
 {
 	Reason_t2012FA7CB373B081806F99C7987F8C29FFA0D1F8::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -78230,11 +78537,11 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2005[6] =
 	0,
 	0,
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2006[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2021[1] = 
 {
 	TimeLimit_t34F8F02496A68C19246A6EDB732D70E8DAD79C9F::get_offset_of_mClient_0(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2008[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2023[1] = 
 {
 	User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD::get_offset_of_mClient_0(),
 };

@@ -17,7 +17,6 @@ namespace TGCenterSdk.Platforms.iOS
 
         public PrivacyPolicyHelperClient() {
             helperClient = (IntPtr)GCHandle.Alloc(this);
-
         }
 
 

@@ -7,5 +7,7 @@ namespace TGCenterSdk.Common
         void Init(InitConfig config);
 
         bool IsUserAgreePolicy();
+
+        void ClearCache();
     }
 }

@@ -48,6 +48,10 @@ void TGCInit(TGCTypeInitConfigRef initConfig) {
 BOOL TGCIsUserAgreePolicy() {
     return [TGCenterSdk.sharedInstance isUserAgreePolicy];
 }
+
+void TGCClearCache() {
+    return [TGCenterSdk.sharedInstance clearCache];
+}
 #pragma mark - TGCenterSdk
 
 
@@ -91,6 +95,31 @@ void TGCSetInitConfig_RangersAppLogAppId(TGCTypeInitConfigRef initConfig, const 
 void TGCSetInitConfig_RangersAppLogAppName(TGCTypeInitConfigRef initConfig, const char *rangersAppLogAppName) {
     TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
     internalConfig.rangersAppLogAppName = TGCStringFromUTF8String(rangersAppLogAppName);
+}
+
+void TGCSetInitConfig_WeChatAppId(TGCTypeInitConfigRef initConfig, const char *weChatAppId) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    internalConfig.weChatAppId = TGCStringFromUTF8String(weChatAppId);
+}
+
+void TGCSetInitConfig_WeChatUniversalLink(TGCTypeInitConfigRef initConfig, const char *weChatUniversalLink) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    internalConfig.weChatUniversalLink = TGCStringFromUTF8String(weChatUniversalLink);
+}
+
+void TGCSetInitConfig_UdeskDomain(TGCTypeInitConfigRef initConfig, const char *udeskDomain) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    internalConfig.udeskDomain = TGCStringFromUTF8String(udeskDomain);
+}
+
+void TGCSetInitConfig_UdeskAppKey(TGCTypeInitConfigRef initConfig, const char *udeskAppKey) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    internalConfig.udeskAppKey = TGCStringFromUTF8String(udeskAppKey);
+}
+
+void TGCSetInitConfig_UdeskAppId(TGCTypeInitConfigRef initConfig, const char *udeskAppId) {
+    TGCInitConfig *internalConfig = (__bridge TGCInitConfig *)initConfig;
+    internalConfig.udeskAppId = TGCStringFromUTF8String(udeskAppId);
 }
 
 void TGCSetInitConfig_Day1Retention(TGCTypeInitConfigRef initConfig, TGCTypeDay1RetentionRef retention) {

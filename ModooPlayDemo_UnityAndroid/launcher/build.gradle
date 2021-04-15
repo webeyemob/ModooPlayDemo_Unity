@@ -9,7 +9,8 @@ apply plugin: 'com.tgcenter.unified'
 tgCenter {
     config {
         // 从 ModooPlay 平台获取 appId
-        appId "c3f098eb-60dc-4208-bde4-50f18b0f465d"
+//        appId "5eec3bf0-e62a-43c2-9640-06ceb303f6ef"
+        appId "b0eeba31-88e6-478c-b0c9-77ee11b4cec8"
     }
 
     dependencies {
@@ -22,30 +23,37 @@ tgCenter {
         // 仅头条投放深度转化需要 RangersAppLog
         rangersAppLog_Lite_cn true
 
+        // 游戏防沉迷
+        gameAntiAddiction true
+
+        // 微信登录
+        weChat true
+
+        // 客服系统
+        udesk true
+
         // 广告
         taurusXAds true
         // 不同的渠道需要集成的 Network 不一样，请务必正确配置
         taurusXAdsNetwork = [
-                toutiao         : true,  // 穿山甲
-                ylh             : true,  // 优量汇
-                kuaishou        : true,  // 快手
-                oppo            : false, // OPPO
-                vivo            : false, // vivo
-                xiaomi          : false, // 小米
-                mobrain         : false, // 穿山甲聚合
-                mobrain_toutiao : false, // 穿山甲聚合-穿山甲
-                mobrain_ylh     : false, // 穿山甲聚合-优量汇
-                mobrain_kuaishou: false  // 穿山甲聚合-快手
+                mobrain          : true, // 穿山甲聚合
+                mobrain_toutiao  : true, // 穿山甲聚合-穿山甲
+                mobrain_ylh      : true, // 穿山甲聚合-优量汇
+                mobrain_kuaishou : true, // 穿山甲聚合-快手
+                mobrain_mintegral: true, // 穿山甲聚合-Mintegral
+                toutiao          : false, // 穿山甲
+                ylh              : false, // 优量汇
+                kuaishou         : false, // 快手
+                oppo             : false, // OPPO
+                vivo             : false, // vivo
+                xiaomi           : false  // 小米
         ]
-
-//        gameAntiAddiction true
     }
 }
 
 dependencies {
     implementation project(':unityLibrary')
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'com.tgcenter.unified:sdk:1.9'
 }
 
 android {
@@ -62,7 +70,8 @@ android {
         targetSdkVersion 30
 //        applicationId 'com.modooplay.demo.unity'
 //        applicationId 'io.hyperhug.mr.slice.cn'
-        applicationId 'com.qingma.dwqwzw'
+//        applicationId 'com.qingma.dwqwzw'
+        applicationId 'com.diamondcat.idiommaster'
         ndk {
             abiFilters 'armeabi-v7a'
         }

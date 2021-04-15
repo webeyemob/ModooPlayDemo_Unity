@@ -168,6 +168,10 @@ struct DummyAntiAddictionClient_t4FAEB40FC69FAC8F29E2A2EBAC992D648E769D39;
 struct DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839;
 // TGCenterSdk.Common.DummyTGCenterClient
 struct DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1;
+// TGCenterSdk.Common.DummyUdeskHelperClient
+struct DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06;
+// TGCenterSdk.Common.DummyWeChatHelperClient
+struct DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874;
 // AntiAddictionSdk.Platforms.iOS.Externs
 struct Externs_t282F82D8F0B7FC45A9A7D40622EC4361F1FA2F9D;
 // TGCenterSdk.Platforms.iOS.Externs
@@ -192,8 +196,12 @@ struct IRealNameResultClient_tB4462896A3DB7030B89039A41B9D030A2A1E3B1F;
 struct ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82;
 // AntiAddictionSdk.Common.ITimeLimitClient
 struct ITimeLimitClient_tA9CE9CF36A023176694DF43EEE99A5CF51207AF3;
+// TGCenterSdk.Common.IUdeskHelperClient
+struct IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA;
 // AntiAddictionSdk.Common.IUserClient
 struct IUserClient_tE3A4C0F10567655FDB8B1194479A749040B1F619;
+// TGCenterSdk.Common.IWeChatHelperClient
+struct IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD;
 // TGCenterSdk.Api.InitConfig
 struct InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47;
 // AntiAddictionSdk.Api.LimitTip
@@ -238,6 +246,12 @@ struct TimeLimitCallback_t45E382B69576F18A9C565FCBB836A444683917DB;
 struct TimeLimitClient_t2B20BA4A4E97557CD346C1B50D9393EEA30D0919;
 // AntiAddictionSdk.Platforms.iOS.TimeLimitClient
 struct TimeLimitClient_t867CAAAF07D33468A9F628615761FD01851E998C;
+// TGCenterSdk.Api.UdeskHelper
+struct UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1;
+// TGCenterSdk.Platforms.Android.UdeskHelperClient
+struct UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277;
+// TGCenterSdk.Platforms.iOS.UdeskHelperClient
+struct UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E;
 // AntiAddictionSdk.Api.User
 struct User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD;
 // AntiAddictionSdk.Platforms.Android.UserClient
@@ -246,6 +260,12 @@ struct UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE;
 struct UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+// TGCenterSdk.Api.WeChatHelper
+struct WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8;
+// TGCenterSdk.Platforms.Android.WeChatHelperClient
+struct WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7;
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient
+struct WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36;
 // AntiAddictionSdk.Platforms.Android.AntiAddictionClient/AndroidRealNameCallback
 struct AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745;
 // AntiAddictionSdk.Platforms.Android.AntiAddictionClient/AndroidTimeLimitCallback
@@ -260,12 +280,22 @@ struct PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA;
 struct RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC;
 // MainBehaviour/TimeLimitListener
 struct TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08;
+// MainBehaviour/WeChatLoginListener
+struct WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2;
 // TGCenterSdk.Api.PrivacyPolicyHelper/AgreeListener
 struct AgreeListener_t9EB04F6176FDCEEA10D8613CB95DF4B627C12460;
 // TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyAgreeCallback
 struct TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA;
 // TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyDisagreeCallback
 struct TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E;
+// TGCenterSdk.Api.WeChatHelper/LoginListener
+struct LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94;
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback
+struct TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF;
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback
+struct TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A;
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback
+struct TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD;
 
 IL2CPP_EXTERN_C RuntimeClass* AgreeListener_t9EB04F6176FDCEEA10D8613CB95DF4B627C12460_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var;
@@ -284,6 +314,8 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il
 IL2CPP_EXTERN_C RuntimeClass* DummyAntiAddictionClient_t4FAEB40FC69FAC8F29E2A2EBAC992D648E769D39_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IAntiAddictionClient_t8A81CDB2D72E0FF2CD586E1B10B7BC39958AEDAA_il2cpp_TypeInfo_var;
@@ -292,13 +324,16 @@ IL2CPP_EXTERN_C RuntimeClass* IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694
 IL2CPP_EXTERN_C RuntimeClass* IRealNameResultClient_tB4462896A3DB7030B89039A41B9D030A2A1E3B1F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ITimeLimitClient_tA9CE9CF36A023176694DF43EEE99A5CF51207AF3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IUserClient_tE3A4C0F10567655FDB8B1194479A749040B1F619_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LimitTipClient_t6437A4B4C61A0FC6DE0DF1FD0A1633C54E30C134_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LimitTipClient_t6CE7E256EC6BC4954FAB77171931D9D49B4E5125_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9_il2cpp_TypeInfo_var;
@@ -312,6 +347,9 @@ IL2CPP_EXTERN_C RuntimeClass* RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var;
@@ -320,20 +358,25 @@ IL2CPP_EXTERN_C RuntimeClass* TimeLimitClient_t2B20BA4A4E97557CD346C1B50D9393EEA
 IL2CPP_EXTERN_C RuntimeClass* TimeLimitClient_t867CAAAF07D33468A9F628615761FD01851E998C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeLimit_t34F8F02496A68C19246A6EDB732D70E8DAD79C9F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UserClient_t34C98041DA8CAF42A5F3509756F7814AA9696FE5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UserClient_t93F1B9B5458115963B533A542534460DFA5C47EE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00954A73839D9575B977D6B7EA4B260B673A2FCB;
 IL2CPP_EXTERN_C String_t* _stringLiteral01D337CE6AE508AC41656644063FE9925EBC46FB;
 IL2CPP_EXTERN_C String_t* _stringLiteral0271545B7AD2BC9BAAE4A02D8D7F5883CE4C09E1;
-IL2CPP_EXTERN_C String_t* _stringLiteral030BA20BD3303BA3A366F08049FB32193FD0EA8F;
 IL2CPP_EXTERN_C String_t* _stringLiteral048639C4B744282682B9A88543E35ED9C374CAF6;
 IL2CPP_EXTERN_C String_t* _stringLiteral06F6DBCB7FFEE255438B4AC7A5C1DEE040406FBA;
 IL2CPP_EXTERN_C String_t* _stringLiteral0857B67E5F628D79E605E4FA501E38EB16E3D71F;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7;
 IL2CPP_EXTERN_C String_t* _stringLiteral0BEE2DBE24919FD195E4DCB7B1B3BCAA615CBFE1;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E6852CA88224C0B29708BE69F8D388FDC6C8F1F;
-IL2CPP_EXTERN_C String_t* _stringLiteral10F2BD5742BCE93C3AC253225B935BAB2400DA44;
 IL2CPP_EXTERN_C String_t* _stringLiteral11BEF66A6E304E5AB263A39F7B2C0B72640B9F99;
 IL2CPP_EXTERN_C String_t* _stringLiteral12B430DB41F91D1EA6B6CEEAC4093543B23F6B0C;
 IL2CPP_EXTERN_C String_t* _stringLiteral19589C94FA78F7254C39EA4B8684AE7D21FA3B11;
@@ -341,31 +384,37 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1A5E706D6D83A6D9E3357CFF9C00B8924AAECD36
 IL2CPP_EXTERN_C String_t* _stringLiteral1C7A9E8795DAC93A625C23D6E9F2BC7332ABF459;
 IL2CPP_EXTERN_C String_t* _stringLiteral1DCBAE11305777652139FDD4BF5B5EABF8971C3D;
 IL2CPP_EXTERN_C String_t* _stringLiteral2063737B07B6658BC2E1EC3128D4E09E57CA123E;
-IL2CPP_EXTERN_C String_t* _stringLiteral269D03B0D65AAA6DE7A1ED2198B67CD556EE6B7A;
+IL2CPP_EXTERN_C String_t* _stringLiteral2522B200396EDFABB4603B843C243BA25007C97E;
+IL2CPP_EXTERN_C String_t* _stringLiteral262E0CE41CC5D10F364D7AA4B616817F449EA8A1;
+IL2CPP_EXTERN_C String_t* _stringLiteral26F22FD63112831520DDB8406C27CCE0FA761274;
 IL2CPP_EXTERN_C String_t* _stringLiteral29879F13B63E2A34513E90952D0B0CFB393E0BA6;
 IL2CPP_EXTERN_C String_t* _stringLiteral2A8BD72A3B5FB3F82BB10212457E738180ED3280;
+IL2CPP_EXTERN_C String_t* _stringLiteral2C73CD266BD0DD2E02068233B9A42E7619231EBD;
 IL2CPP_EXTERN_C String_t* _stringLiteral2DD29020EAFE2343EEFDE7BDC40A5314E499EE23;
+IL2CPP_EXTERN_C String_t* _stringLiteral30F4DA2C9CA52D04D1B2EDD80796CCB6BC4A8A3E;
 IL2CPP_EXTERN_C String_t* _stringLiteral326319459C523C190CABB64F235BA57C39A00757;
 IL2CPP_EXTERN_C String_t* _stringLiteral392E8D6CEA8941066573D022495F1506A79D8C8A;
-IL2CPP_EXTERN_C String_t* _stringLiteral3DE4E33001D66F488D312800D96D1F0F48A95791;
+IL2CPP_EXTERN_C String_t* _stringLiteral3964927F1C570D70B8850DD9841300DE550C8640;
+IL2CPP_EXTERN_C String_t* _stringLiteral3A637E736FCED73E57035306FE138D083DB52041;
 IL2CPP_EXTERN_C String_t* _stringLiteral40FD924DF5A07AE8FD159437D8515044F35310A3;
-IL2CPP_EXTERN_C String_t* _stringLiteral420100FF7BE6008D5D5DE9287150E23E2950C807;
 IL2CPP_EXTERN_C String_t* _stringLiteral4435287BC80303EE8F6D9A6B8B55BC42AF84E9E3;
-IL2CPP_EXTERN_C String_t* _stringLiteral44CFD9D049C36A5A3FC2003C8D84BE1219A6259F;
 IL2CPP_EXTERN_C String_t* _stringLiteral44F1E7DB2E8AAD233857868896DFEFE5A63EECEF;
 IL2CPP_EXTERN_C String_t* _stringLiteral471B50FA688E88BD7F26C166FDFB8EFC4497186B;
+IL2CPP_EXTERN_C String_t* _stringLiteral4B7C7541DA82E493491B5A98241F7D44FBE3D125;
 IL2CPP_EXTERN_C String_t* _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078;
+IL2CPP_EXTERN_C String_t* _stringLiteral4DB8F0670E08D550071EC9B5A306FEEC1BA4A17C;
 IL2CPP_EXTERN_C String_t* _stringLiteral514D8AA63A446A54F62078A74562DD8BF48ED9B8;
 IL2CPP_EXTERN_C String_t* _stringLiteral5472B9531A1EFF24ABE63A5D7A0C524FF663B73E;
-IL2CPP_EXTERN_C String_t* _stringLiteral57C4B5E39EEE4C2D3B9B2A98EBE68ED6BD5BA1CE;
 IL2CPP_EXTERN_C String_t* _stringLiteral591717969A5E5E3B077255142EBD573FD6015D85;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493;
 IL2CPP_EXTERN_C String_t* _stringLiteral60BF3505E2EDB331E2840B7F36A04726AA986FF6;
 IL2CPP_EXTERN_C String_t* _stringLiteral6555C23A7B70EB80DF387380D361B1CEA086130D;
 IL2CPP_EXTERN_C String_t* _stringLiteral69110FD81DEC55762693325F932101FB62664E5F;
 IL2CPP_EXTERN_C String_t* _stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9;
+IL2CPP_EXTERN_C String_t* _stringLiteral6FE1B74AD5BC7DF8579488B3845F1B8286D595FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral70EE6BB1D172A87933F3222A4A739221C3327F94;
 IL2CPP_EXTERN_C String_t* _stringLiteral74157E713F0EC92C4DDB68A67AC1F6EE2F625622;
+IL2CPP_EXTERN_C String_t* _stringLiteral75BA3DA7C1C4DC4A9990A152252D09ABA525831F;
 IL2CPP_EXTERN_C String_t* _stringLiteral78A60C68335BFADC659417D949DEF46DDCF71CC2;
 IL2CPP_EXTERN_C String_t* _stringLiteral78BB85A2C5FD23C3F3375CE877742B653DB9DE8F;
 IL2CPP_EXTERN_C String_t* _stringLiteral7A00E59294AD906535DB79E533FC401D34929E41;
@@ -375,20 +424,23 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7FDD57A554F4937B1372DCDFBB149567C0704967
 IL2CPP_EXTERN_C String_t* _stringLiteral80BFDED53A798895F66F7586BB93FB843218DB76;
 IL2CPP_EXTERN_C String_t* _stringLiteral816649F10AD961C87CC9969F931E6AE96A0CA44D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE;
-IL2CPP_EXTERN_C String_t* _stringLiteral86A22D3A576D7C99132992E5DD9D118173CB4078;
+IL2CPP_EXTERN_C String_t* _stringLiteral8725E979B4EDD9E0E1B24157C93070FC93DDB599;
 IL2CPP_EXTERN_C String_t* _stringLiteral879D6723690680B427E42F00420202B9EF4B9344;
 IL2CPP_EXTERN_C String_t* _stringLiteral88633FD98EF4561059DF9E30FE3C67941EE9C728;
-IL2CPP_EXTERN_C String_t* _stringLiteral8A5286F19216034A832BB9FF50370EE89D6CFD2C;
 IL2CPP_EXTERN_C String_t* _stringLiteral8BE379FCCAE7759F182D2E0FDD1565B9F41370C9;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F0DA9736ED3CFBCF1ED7146B3DC6BBC0C246B0C;
 IL2CPP_EXTERN_C String_t* _stringLiteral90BB3508BCAE83C31763E49B8E52D0C9F9D42BCF;
+IL2CPP_EXTERN_C String_t* _stringLiteral914EB038D7017D5392E02DCB16225EE56BC35FC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral92A0367A0299056CA05B86632AFA0D8FA9C6BF91;
+IL2CPP_EXTERN_C String_t* _stringLiteral93C5618990903CF3D33660256B203153E1F12DED;
 IL2CPP_EXTERN_C String_t* _stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D93D803FB842EE12670D6A132A15FFE068CB8C3;
 IL2CPP_EXTERN_C String_t* _stringLiteralA2386659D2348915EDCA322DAAA24484B2395745;
 IL2CPP_EXTERN_C String_t* _stringLiteralA733C7FC19A8317471D21AD091D1A9A6F973A728;
 IL2CPP_EXTERN_C String_t* _stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A;
 IL2CPP_EXTERN_C String_t* _stringLiteralADCE9D802257F1CBE6265709F193EEF1E5E93FEB;
+IL2CPP_EXTERN_C String_t* _stringLiteralB17F070EC432B1EEC61D3E3FF8C260D4D8F3B867;
+IL2CPP_EXTERN_C String_t* _stringLiteralBA80BCF886CB2525055EF06C50CEE5CF5A0775A7;
 IL2CPP_EXTERN_C String_t* _stringLiteralBAB1AB454E7DBE6DCCF432CE9B800E808EEA9D9E;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE7162E4BAE8032C5093B8B018AE7798DECB26D0;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE8DA04BB93EE2298F881F3DCBF427FF992AA9FE;
@@ -398,28 +450,33 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC57DA5652F526BF9C151C73EAE7E58AD7C4B560F
 IL2CPP_EXTERN_C String_t* _stringLiteralC6CB66E2462037E56D9C3EE58E0744985E1D989E;
 IL2CPP_EXTERN_C String_t* _stringLiteralC863856C9521A05D41581EC332076959F9CE17E2;
 IL2CPP_EXTERN_C String_t* _stringLiteralC8C1F8993C105E3086D93D9BFCC205A34765F689;
-IL2CPP_EXTERN_C String_t* _stringLiteralCABEDC89A46B23A1F89529079CC521895A09DA70;
 IL2CPP_EXTERN_C String_t* _stringLiteralCB6B631A27E8DE83322A720A005A4E44388FA818;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBC9687C3B3CF86630538F360E45F87AE0B9FA62;
-IL2CPP_EXTERN_C String_t* _stringLiteralCEE9D315C8A295238AAB2260CA2895944013F51E;
+IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
+IL2CPP_EXTERN_C String_t* _stringLiteralCF589F7E1FD41DA1FF76E40FABA716840062A1E6;
 IL2CPP_EXTERN_C String_t* _stringLiteralCFD98E61D945837836DFBB54F47FFA7AA58CDD3D;
-IL2CPP_EXTERN_C String_t* _stringLiteralD197841CCDB5B2B59A46C09F9EE18BF0F15C3D00;
 IL2CPP_EXTERN_C String_t* _stringLiteralD59876AEF3D62D1EDFA870BD90F3F21453232AB4;
 IL2CPP_EXTERN_C String_t* _stringLiteralD7271F72CB0B464DF5A3DE56C471BA9D6E0D6BA3;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA544BFFC213471BAEF6EA6E55DCA05DBDE92A4D;
+IL2CPP_EXTERN_C String_t* _stringLiteralDAB79893B837210AD0063EA38A28622295003BD2;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC71B380AFF23A38F6029B32B61C6943CB960350;
 IL2CPP_EXTERN_C String_t* _stringLiteralDD83E4D7E4A366812BEFCF32EC0A645CCBD99851;
 IL2CPP_EXTERN_C String_t* _stringLiteralDEBDCFEF1F8F50CFA8608E6F59C480A01AC2250B;
+IL2CPP_EXTERN_C String_t* _stringLiteralE451D44E035919265CFAE9DA11AEBDA42AFA5A26;
 IL2CPP_EXTERN_C String_t* _stringLiteralE4C8060854D45C499CA600A040743349CA59B022;
 IL2CPP_EXTERN_C String_t* _stringLiteralE74B5E4D0CE52F386C4A57C9B6466BD67B84D781;
 IL2CPP_EXTERN_C String_t* _stringLiteralE9D8708C21050CC7B34E033CC74A0280EF02FF65;
+IL2CPP_EXTERN_C String_t* _stringLiteralEA099F13C0A2FE9C8F9D1BD3F623387D85A9E494;
+IL2CPP_EXTERN_C String_t* _stringLiteralEB86645FD4CAF139C7CFC0A789470B8A75034AF4;
 IL2CPP_EXTERN_C String_t* _stringLiteralEE9ECEEE821B4384B9C5CA185AE74CA1F7525133;
 IL2CPP_EXTERN_C String_t* _stringLiteralF2DCEBDC0E489573EF91725019BDC803EC347578;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4830D6294E28ABBFBD453CE8D70F12B69FA8B70;
 IL2CPP_EXTERN_C String_t* _stringLiteralF89E2B8AEFEFD95D439A48449E4C25ACB8455C5B;
 IL2CPP_EXTERN_C String_t* _stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9;
 IL2CPP_EXTERN_C String_t* _stringLiteralFB6988E1177DFD343CF12618FF137D8102C66781;
+IL2CPP_EXTERN_C String_t* _stringLiteralFD4383524921CB8484EC0571FE49BBF41F7C7934;
+IL2CPP_EXTERN_C String_t* _stringLiteralFFE09F1192292D33A1796915A733C03D243DE668;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mAD48C38D66AB67D0F0274D195F4A99CB7AB589F2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC5ED59BBD9C24EFFD98D8C3819C7E15DFE08F412_RuntimeMethod_var;
@@ -433,6 +490,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* AntiAddictionClient_iOSTimeLimitCallback_mC
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRuntimeObject_m1FBC21243DF3542384C523801E8CA8A97606C747_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PrivacyPolicyHelperClient_PrivacyAgreeCallback_m24FA05F07A894D3E37B20E593D553B3A7158FCCF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PrivacyPolicyHelperClient_PrivacyDisagreeCallback_m4DFCB29D58AFF2A83D733119B94207160EA984C9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct GUIStyleState_tC89202668617B1D7884980314F293AD382B9AAD9_marshaled_com;
@@ -630,6 +690,24 @@ public:
 };
 
 
+// TGCenterSdk.Common.DummyUdeskHelperClient
+struct  DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Common.DummyWeChatHelperClient
+struct  DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // AntiAddictionSdk.Platforms.iOS.Externs
 struct  Externs_t282F82D8F0B7FC45A9A7D40622EC4361F1FA2F9D  : public RuntimeObject
 {
@@ -670,6 +748,16 @@ public:
 	String_t* ___RangersAppLogAppId_7;
 	// System.String TGCenterSdk.Api.InitConfig::RangersAppLogAppName
 	String_t* ___RangersAppLogAppName_8;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatAppId
+	String_t* ___WeChatAppId_9;
+	// System.String TGCenterSdk.Api.InitConfig::WeChatUniversalLink
+	String_t* ___WeChatUniversalLink_10;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskDomain
+	String_t* ___UdeskDomain_11;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppKey
+	String_t* ___UdeskAppKey_12;
+	// System.String TGCenterSdk.Api.InitConfig::UdeskAppId
+	String_t* ___UdeskAppId_13;
 
 public:
 	inline static int32_t get_offset_of_DebugMode_0() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___DebugMode_0)); }
@@ -750,6 +838,51 @@ public:
 	{
 		___RangersAppLogAppName_8 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___RangersAppLogAppName_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatAppId_9() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatAppId_9)); }
+	inline String_t* get_WeChatAppId_9() const { return ___WeChatAppId_9; }
+	inline String_t** get_address_of_WeChatAppId_9() { return &___WeChatAppId_9; }
+	inline void set_WeChatAppId_9(String_t* value)
+	{
+		___WeChatAppId_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatAppId_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_WeChatUniversalLink_10() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___WeChatUniversalLink_10)); }
+	inline String_t* get_WeChatUniversalLink_10() const { return ___WeChatUniversalLink_10; }
+	inline String_t** get_address_of_WeChatUniversalLink_10() { return &___WeChatUniversalLink_10; }
+	inline void set_WeChatUniversalLink_10(String_t* value)
+	{
+		___WeChatUniversalLink_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___WeChatUniversalLink_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskDomain_11() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskDomain_11)); }
+	inline String_t* get_UdeskDomain_11() const { return ___UdeskDomain_11; }
+	inline String_t** get_address_of_UdeskDomain_11() { return &___UdeskDomain_11; }
+	inline void set_UdeskDomain_11(String_t* value)
+	{
+		___UdeskDomain_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskDomain_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppKey_12() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppKey_12)); }
+	inline String_t* get_UdeskAppKey_12() const { return ___UdeskAppKey_12; }
+	inline String_t** get_address_of_UdeskAppKey_12() { return &___UdeskAppKey_12; }
+	inline void set_UdeskAppKey_12(String_t* value)
+	{
+		___UdeskAppKey_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppKey_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_UdeskAppId_13() { return static_cast<int32_t>(offsetof(InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47, ___UdeskAppId_13)); }
+	inline String_t* get_UdeskAppId_13() const { return ___UdeskAppId_13; }
+	inline String_t** get_address_of_UdeskAppId_13() { return &___UdeskAppId_13; }
+	inline void set_UdeskAppId_13(String_t* value)
+	{
+		___UdeskAppId_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___UdeskAppId_13), (void*)value);
 	}
 };
 
@@ -1037,6 +1170,70 @@ public:
 };
 
 
+// TGCenterSdk.Api.UdeskHelper
+struct  UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IUdeskHelperClient TGCenterSdk.Api.UdeskHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields
+{
+public:
+	// TGCenterSdk.Api.UdeskHelper TGCenterSdk.Api.UdeskHelper::instance
+	UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields, ___instance_0)); }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * get_instance_0() const { return ___instance_0; }
+	inline UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.Android.UdeskHelperClient
+struct  UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277  : public RuntimeObject
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.UdeskHelperClient::udeskHelperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___udeskHelperClass_0;
+
+public:
+	inline static int32_t get_offset_of_udeskHelperClass_0() { return static_cast<int32_t>(offsetof(UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277, ___udeskHelperClass_0)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_udeskHelperClass_0() const { return ___udeskHelperClass_0; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_udeskHelperClass_0() { return &___udeskHelperClass_0; }
+	inline void set_udeskHelperClass_0(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___udeskHelperClass_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___udeskHelperClass_0), (void*)value);
+	}
+};
+
+
+// TGCenterSdk.Platforms.iOS.UdeskHelperClient
+struct  UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // AntiAddictionSdk.Api.User
 struct  User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD  : public RuntimeObject
 {
@@ -1121,6 +1318,42 @@ struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_com
 {
 };
 
+// TGCenterSdk.Api.WeChatHelper
+struct  WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8  : public RuntimeObject
+{
+public:
+	// TGCenterSdk.Common.IWeChatHelperClient TGCenterSdk.Api.WeChatHelper::client
+	RuntimeObject* ___client_1;
+
+public:
+	inline static int32_t get_offset_of_client_1() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8, ___client_1)); }
+	inline RuntimeObject* get_client_1() const { return ___client_1; }
+	inline RuntimeObject** get_address_of_client_1() { return &___client_1; }
+	inline void set_client_1(RuntimeObject* value)
+	{
+		___client_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_1), (void*)value);
+	}
+};
+
+struct WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields
+{
+public:
+	// TGCenterSdk.Api.WeChatHelper TGCenterSdk.Api.WeChatHelper::instance
+	WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * ___instance_0;
+
+public:
+	inline static int32_t get_offset_of_instance_0() { return static_cast<int32_t>(offsetof(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields, ___instance_0)); }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * get_instance_0() const { return ___instance_0; }
+	inline WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 ** get_address_of_instance_0() { return &___instance_0; }
+	inline void set_instance_0(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * value)
+	{
+		___instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instance_0), (void*)value);
+	}
+};
+
+
 // MainBehaviour/PrivacyAgreeListener
 struct  PrivacyAgreeListener_t7E277E2FBF137E9ABC871EE180DD7FFC9FDE5DEA  : public RuntimeObject
 {
@@ -1151,6 +1384,15 @@ public:
 
 // MainBehaviour/TimeLimitListener
 struct  TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
+// MainBehaviour/WeChatLoginListener
+struct  WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2  : public RuntimeObject
 {
 public:
 
@@ -1898,6 +2140,35 @@ public:
 };
 
 
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient
+struct  WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36  : public RuntimeObject
+{
+public:
+	// System.IntPtr TGCenterSdk.Platforms.iOS.WeChatHelperClient::helperClient
+	intptr_t ___helperClient_0;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.iOS.WeChatHelperClient::listener
+	RuntimeObject* ___listener_1;
+
+public:
+	inline static int32_t get_offset_of_helperClient_0() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___helperClient_0)); }
+	inline intptr_t get_helperClient_0() const { return ___helperClient_0; }
+	inline intptr_t* get_address_of_helperClient_0() { return &___helperClient_0; }
+	inline void set_helperClient_0(intptr_t value)
+	{
+		___helperClient_0 = value;
+	}
+
+	inline static int32_t get_offset_of_listener_1() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36, ___listener_1)); }
+	inline RuntimeObject* get_listener_1() const { return ___listener_1; }
+	inline RuntimeObject** get_address_of_listener_1() { return &___listener_1; }
+	inline void set_listener_1(RuntimeObject* value)
+	{
+		___listener_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_1), (void*)value);
+	}
+};
+
+
 // TGCenterSdk.Api.Day1Retention/RetentionTypes
 struct  RetentionTypes_t6A62A70C1AD3AE575AC24BD05B0A0CE0254FACE2 
 {
@@ -2264,6 +2535,36 @@ public:
 };
 
 
+// TGCenterSdk.Platforms.Android.WeChatHelperClient
+struct  WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7  : public AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF
+{
+public:
+	// UnityEngine.AndroidJavaClass TGCenterSdk.Platforms.Android.WeChatHelperClient::helperClass
+	AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * ___helperClass_4;
+	// TGCenterSdk.Api.WeChatHelper/LoginListener TGCenterSdk.Platforms.Android.WeChatHelperClient::listener
+	RuntimeObject* ___listener_5;
+
+public:
+	inline static int32_t get_offset_of_helperClass_4() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___helperClass_4)); }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * get_helperClass_4() const { return ___helperClass_4; }
+	inline AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 ** get_address_of_helperClass_4() { return &___helperClass_4; }
+	inline void set_helperClass_4(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * value)
+	{
+		___helperClass_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___helperClass_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_listener_5() { return static_cast<int32_t>(offsetof(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7, ___listener_5)); }
+	inline RuntimeObject* get_listener_5() const { return ___listener_5; }
+	inline RuntimeObject** get_address_of_listener_5() { return &___listener_5; }
+	inline void set_listener_5(RuntimeObject* value)
+	{
+		___listener_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___listener_5), (void*)value);
+	}
+};
+
+
 // AntiAddictionSdk.Platforms.Android.AntiAddictionClient/AndroidRealNameCallback
 struct  AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745  : public AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF
 {
@@ -2349,6 +2650,33 @@ public:
 
 // TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyDisagreeCallback
 struct  TGCPrivacyDisagreeCallback_t87303D0856E11528F24B5D65FE37D8EB115CEB9E  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback
+struct  TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback
+struct  TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback
+struct  TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD  : public MulticastDelegate_t
 {
 public:
 
@@ -2615,6 +2943,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient__ctor_m1CD2483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient__ctor_m2F94ADF5E7AFD08E357B7522E0792A0CCC853F37 (PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0 * __this, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Common.DummyPrivacyPolicyHelperClient::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyPrivacyPolicyHelperClient__ctor_m07F30113EE62460423DE6E64AC561DFB7A5688C8 (DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient__ctor_m715D23A8A4918B3C24E86B4C5E0D52C4A50FBFA8 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient__ctor_m981F96FA747F417953496B05D857C2FF6A6245E0 (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Common.DummyWeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyWeChatHelperClient__ctor_mDDD54AA08AEFC59DC77009AD90D792E76FCE06E0 (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.Android.UdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient__ctor_m73984738C1E532D5BFA5C0A774DC1A7C72569251 (UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.UdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient__ctor_m0566644341F298791A4C27D8B6BE6D01CE9A1BD4 (UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Common.DummyUdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyUdeskHelperClient__ctor_m30BD1D7E2A2E0809AF4C37EBCD359C209876B58E (DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06 * __this, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Api.Day1Retention::set_RetentionType(TGCenterSdk.Api.Day1Retention/RetentionTypes)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Day1Retention_set_RetentionType_m0EF7541CA83C4D076AE9CB8EC2219236279C5845_inline (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Api.Day1Retention::set_StartCount(System.Int32)
@@ -2657,16 +2997,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PrivacyPolicyHelper_t5983E6361B35
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_JumpToUserAgreement_mBDE97B36AFF06F68EF84B838F3BFC030DEAB893B (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Api.PrivacyPolicyHelper::JumpToPrivacyPolicy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_JumpToPrivacyPolicy_mFB7F0D55BC1E9D7B4145C2B5CBFBB6487110C146 (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, const RuntimeMethod* method);
-// System.Void MainBehaviour/RealNameListener::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228 (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * __this, const RuntimeMethod* method);
-// System.Void AntiAddictionSdk.Api.AntiAddiction::RealName(AntiAddictionSdk.Api.RealNameCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_RealName_mAEEB81D1F823CA662476A28CD53E093D6C825889 (RuntimeObject* ___callback0, const RuntimeMethod* method);
-// System.Void AntiAddictionSdk.Api.AntiAddiction::RealName(System.String,System.String,AntiAddictionSdk.Api.RealNameCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_RealName_m8EC2673C81604A97333AC0B22B5E661C17174DE1 (String_t* ___name0, String_t* ___idNumber1, RuntimeObject* ___callback2, const RuntimeMethod* method);
+// TGCenterSdk.Api.WeChatHelper TGCenterSdk.Api.WeChatHelper::get_Instance()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * WeChatHelper_get_Instance_mF23BF9EB5504986859DC40ADF9B0AB897E3E4411_inline (const RuntimeMethod* method);
+// System.Void MainBehaviour/WeChatLoginListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatLoginListener__ctor_m7ADA0433B05964F606A2783B8837C0F819E21D33 (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.WeChatHelper::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper_SetLoginListener_m5FD4953942CE50B6199F81D75FCD7BF5B18593B6 (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method);
+// System.Void MainBehaviour::WeChatLogin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_WeChatLogin_mAFACC0579C45E3E1C19996AD1BF25C9E4B10F2F8 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method);
+// System.Void MainBehaviour::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_EnterUdesk_m9BF3277E6C2D19739DBCEF9B5689C29582671A78 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method);
+// System.Void MainBehaviour::RealName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_RealName_m762AD3792A593FE6AC182C32C3D2D1616B1AF47C (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method);
+// System.Void MainBehaviour::RealNameCustomUI()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_RealNameCustomUI_m837906C2E66582F1D9C2A8B3D0E3C98A6F7EC2E7 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.TGCenter::ClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenter_ClearCache_mE6A9C18F3896D374B715C381506E2A8712700493 (const RuntimeMethod* method);
 // System.Void AntiAddictionSdk.Api.AntiAddiction::Logout()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_Logout_m2E8A8E3F7F1FB817C3A3BC1AB432DC00CDD6D62F (const RuntimeMethod* method);
-// System.Void MainBehaviour::LogUserInfo(AntiAddictionSdk.Api.User)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_LogUserInfo_mC8FC3F64ABA3C4C6CF253EEE2CDEDB134E4FE6BC (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * ___user0, const RuntimeMethod* method);
+// System.Void MainBehaviour::GetUserInfo(AntiAddictionSdk.Api.User)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55 (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * ___user0, const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8 (RuntimeObject * ___message0, const RuntimeMethod* method);
 // System.Boolean TGCenterSdk.Api.TGCenter::IsUserAgreePolicy()
@@ -2687,6 +3037,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_SetAutoShowTimeLimitPage_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeLimitListener__ctor_mABFE790553C8687EF4C95F2CF3C63A5F0A0D00D7 (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 * __this, const RuntimeMethod* method);
 // System.Void AntiAddictionSdk.Api.AntiAddiction::SetTimeLimitCallback(AntiAddictionSdk.Api.TimeLimitCallback)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_SetTimeLimitCallback_mE6F8CB0B25D95BA5F1ED2CE54744E285887F2D01 (RuntimeObject* ___callback0, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.WeChatHelper::Login()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper_Login_mBF712E55CC94BE53FFA651944F358DAB56285C4A (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, const RuntimeMethod* method);
+// TGCenterSdk.Api.UdeskHelper TGCenterSdk.Api.UdeskHelper::get_Instance()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * UdeskHelper_get_Instance_m3142C8AD0BA95DC535F38D84EB5963725F29C84F_inline (const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.UdeskHelper::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelper_EnterUdesk_m8CE9B54BCCF97D4C891AC70971A828E722D52192 (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * __this, const RuntimeMethod* method);
+// System.Void MainBehaviour/RealNameListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228 (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * __this, const RuntimeMethod* method);
+// System.Void AntiAddictionSdk.Api.AntiAddiction::RealName(AntiAddictionSdk.Api.RealNameCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_RealName_mAEEB81D1F823CA662476A28CD53E093D6C825889 (RuntimeObject* ___callback0, const RuntimeMethod* method);
+// System.Void AntiAddictionSdk.Api.AntiAddiction::RealName(System.String,System.String,AntiAddictionSdk.Api.RealNameCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_RealName_m8EC2673C81604A97333AC0B22B5E661C17174DE1 (String_t* ___name0, String_t* ___idNumber1, RuntimeObject* ___callback2, const RuntimeMethod* method);
 // AntiAddictionSdk.Api.User AntiAddictionSdk.Api.AntiAddiction::GetUser()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * AntiAddiction_GetUser_m129E8784D396FB5A92E7636EDF15F9D15FFF7145 (const RuntimeMethod* method);
 // AntiAddictionSdk.Api.RealNameResult AntiAddictionSdk.Api.User::GetRealNameResult()
@@ -2697,8 +3059,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RealNameResult_IsSuccess_mEC51A9C1D67482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RealNameResult_IsFail_mC60D21A1DC91D5D36046E8758D1BC442730C5459 (RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * __this, const RuntimeMethod* method);
 // System.Boolean AntiAddictionSdk.Api.RealNameResult::IsProcessing()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RealNameResult_IsProcessing_m04DFB0DE3726AF7942CB5CDF034869D3F3A2568D (RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * __this, const RuntimeMethod* method);
-// System.Boolean AntiAddictionSdk.Api.RealNameResult::IsInitial()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RealNameResult_IsInitial_m2D92DF47DB2F52255AE9D32765E013F67F621528 (RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * __this, const RuntimeMethod* method);
 // System.Boolean AntiAddictionSdk.Api.User::IsTourist()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool User_IsTourist_m4ED9B4EF6E903618B04A851EAB4A821D8FBCD942 (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * __this, const RuntimeMethod* method);
 // System.Boolean AntiAddictionSdk.Api.User::IsChild()
@@ -2803,6 +3163,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_AppsFlyerDevKey
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAppId_mC1DF1C6D8ABDD475939ADB3A32607914B6E7B1C7 (intptr_t ___config0, String_t* ___rangersAppLogAppId1, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_RangersAppLogAppName(System.IntPtr,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAppName_m4C032095A1DE1921811AAFA37C21F9F8A57E3ED9 (intptr_t ___config0, String_t* ___rangersAppLogAppName1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_WeChatAppId(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_WeChatAppId_mF2EAE6CF2102D7A0D4FB4F62D8B42DE0EAC1B5F6 (intptr_t ___config0, String_t* ___weChatAppId1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_WeChatUniversalLink(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_WeChatUniversalLink_m1AEAC6F6AE415281F5F5253B5B1F0BEEADF5BC04 (intptr_t ___config0, String_t* ___weChatUniversalLink1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskDomain(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskDomain_m168040ED1412643EFE994914C46340CE6DC0A010 (intptr_t ___config0, String_t* ___udeskDomain1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskAppKey(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskAppKey_m1369F3FA1F634670DECC17A407750DAD443E660F (intptr_t ___config0, String_t* ___udeskAppKey1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskAppId(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskAppId_m9CC49F4D83E9AE5BF96C1A760C78863226741BD9 (intptr_t ___config0, String_t* ___udeskAppId1, const RuntimeMethod* method);
 // System.IntPtr TGCenterSdk.Platforms.iOS.Externs::TGCCreateDay1Retention()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0 (const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetDay1Retention_Type(System.IntPtr,System.Int32)
@@ -2817,6 +3187,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_Day1Retention_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC (intptr_t ___initConfig0, const RuntimeMethod* method);
 // System.Boolean TGCenterSdk.Platforms.iOS.Externs::TGCIsUserAgreePolicy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Externs_TGCIsUserAgreePolicy_m243ABD3ACEE5D59050CEFE902B1CEF56686EB609 (const RuntimeMethod* method);
+// System.Boolean TGCenterSdk.Platforms.iOS.Externs::TGCClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Externs_TGCClearCache_m3573E2A00E92B406525AF10F520964189CFC4705 (const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.TGCenterClient::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient__ctor_mD59CDDCD152E21CCAB2C20B24F9A9DDEDE024DEA (TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.AndroidJavaObject::Call<System.Int64>(System.String,System.Object[])
@@ -2838,6 +3210,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Externs_AntiAddictionTimeLimitGetTime
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Externs_AntiAddictionTimeLimitGetLimitTip_mFED1C2212827202CFC7501967CD169C5EE531346 (intptr_t ___timeLimit0, const RuntimeMethod* method);
 // System.Void AntiAddictionSdk.Platforms.iOS.LimitTipClient::.ctor(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LimitTipClient__ctor_m02341EF6BD7E5BBB7051CCA62F25581B9FB110DB (LimitTipClient_t6437A4B4C61A0FC6DE0DF1FD0A1633C54E30C134 * __this, intptr_t ___limitTip0, const RuntimeMethod* method);
+// TGCenterSdk.Common.IUdeskHelperClient TGCenterSdk.Platforms.ClientFactory::UdeskHelperClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_UdeskHelperClient_mBA0DD8EDA60EE5FFAEE52CAEE1959DA6BDEC1314 (const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.UdeskHelper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelper__ctor_m54F90A97161D44F60477D02F71C90EE143D52ADE (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCUdeskEnter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCUdeskEnter_mFC2BD0AC775634E998B01E55E978667D3C1C6D27 (const RuntimeMethod* method);
 // System.Void AntiAddictionSdk.Platforms.Android.RealNameResultClient::.ctor(UnityEngine.AndroidJavaObject)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealNameResultClient__ctor_mA7AF5E06CC7F2DF103B0E9A461A0333B4BE37FCC (RealNameResultClient_t28FE6782285D421A473D8786DA3B7AFE9BFC044D * __this, AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * ___result0, const RuntimeMethod* method);
 // System.Void AntiAddictionSdk.Api.RealNameResult::.ctor(AntiAddictionSdk.Common.IRealNameResultClient)
@@ -2859,6 +3237,28 @@ inline AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * AndroidJava
 {
 	return ((  AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * (*) (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E *, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_mEC743ECF275CB896DE039A9FC1E5672B30C8B3D0_gshared)(__this, ___fieldName0, method);
 }
+// TGCenterSdk.Common.IWeChatHelperClient TGCenterSdk.Platforms.ClientFactory::WeChatHelperClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_WeChatHelperClient_mDC004586BE8220CE5B8553800540AA401856D6FD (const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.WeChatHelper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper__ctor_m35278EAF85EB2AED6569CF8F0DB35771BB14BF7B (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginSuccessCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675 (intptr_t ___helperClient0, String_t* ___code1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginFailedCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9 (intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginCancelCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B (intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginSuccessCallback__ctor_mCD04E574F89334E71BDF9074E042F60EE6896D5D (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginFailedCallback__ctor_m1A1354E03102CFF0B8294932B900FFC895F10139 (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginCancelCallback__ctor_mD9D625E3386AF1F1D57978CF9542C75938ACE2AD (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCWeChatSetCallback(System.IntPtr,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCWeChatSetCallback_m2424416E0B2C29282DCB4E71275824A98C2B0A02 (intptr_t ___clientPtr0, TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * ___successCallback1, TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * ___failedCallback2, TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * ___cancelCallback3, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCWeChatLogin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCWeChatLogin_m01BE7DA71AB74EDFA7FB2A6F8BB90FB5EA9539FE (const RuntimeMethod* method);
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient TGCenterSdk.Platforms.iOS.WeChatHelperClient::IntPtrToWeChatHelperClient(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * WeChatHelperClient_IntPtrToWeChatHelperClient_m322C016785BD2372B07BF97B947497374FB01E26 (intptr_t ___helperClient0, const RuntimeMethod* method);
 // System.Void MainBehaviour::DealDialogAgreeResult(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_DealDialogAgreeResult_m16741BD575297CAEBAA7ADD27EDC6591D5FD09C9 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, bool ___agree0, const RuntimeMethod* method);
 // System.Int32 AntiAddictionSdk.Api.TimeLimit::GetReason()
@@ -2913,6 +3313,7 @@ IL2CPP_EXTERN_C int32_t DEFAULT_CALL AntiAddictionLimitTipCanRealName(intptr_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCRelease(intptr_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCInit(intptr_t);
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL TGCIsUserAgreePolicy();
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL TGCClearCache();
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL TGCCreateInitConfig();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_DebugMode(intptr_t, int32_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_AppId(intptr_t, char*);
@@ -2921,6 +3322,11 @@ IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_UmengAppKey(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_AppsFlyerDevKey(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_RangersAppLogAppId(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_RangersAppLogAppName(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_WeChatAppId(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_WeChatUniversalLink(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_UdeskDomain(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_UdeskAppKey(intptr_t, char*);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_UdeskAppId(intptr_t, char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetInitConfig_Day1Retention(intptr_t, intptr_t);
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL TGCCreateDay1Retention();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_Type(intptr_t, int32_t);
@@ -2929,6 +3335,9 @@ IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_EndCount(intptr_t, int32_t
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyShowDialog(intptr_t, Il2CppMethodPointer, Il2CppMethodPointer);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToUserAgreement();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToPrivacyPolicy();
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCWeChatSetCallback(intptr_t, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCWeChatLogin();
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCUdeskEnter();
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -3853,6 +4262,110 @@ IL_001d:
 		return L_4;
 	}
 }
+// TGCenterSdk.Common.IWeChatHelperClient TGCenterSdk.Platforms.ClientFactory::WeChatHelperClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_WeChatHelperClient_mDC004586BE8220CE5B8553800540AA401856D6FD (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Application.platform == RuntimePlatform.Android) {
+		int32_t L_0;
+		L_0 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return new TGCenterSdk.Platforms.Android.WeChatHelperClient();
+		WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * L_1 = (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 *)il2cpp_codegen_object_new(WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7_il2cpp_TypeInfo_var);
+		WeChatHelperClient__ctor_m715D23A8A4918B3C24E86B4C5E0D52C4A50FBFA8(L_1, /*hidden argument*/NULL);
+		return L_1;
+	}
+
+IL_000f:
+	{
+		// } else if (Application.platform == RuntimePlatform.IPhonePlayer) {
+		int32_t L_2;
+		L_2 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		if ((!(((uint32_t)L_2) == ((uint32_t)8))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// return new TGCenterSdk.Platforms.iOS.WeChatHelperClient();
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_3 = (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 *)il2cpp_codegen_object_new(WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36_il2cpp_TypeInfo_var);
+		WeChatHelperClient__ctor_m981F96FA747F417953496B05D857C2FF6A6245E0(L_3, /*hidden argument*/NULL);
+		return L_3;
+	}
+
+IL_001d:
+	{
+		// return new DummyWeChatHelperClient();
+		DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 * L_4 = (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 *)il2cpp_codegen_object_new(DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874_il2cpp_TypeInfo_var);
+		DummyWeChatHelperClient__ctor_mDDD54AA08AEFC59DC77009AD90D792E76FCE06E0(L_4, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// TGCenterSdk.Common.IUdeskHelperClient TGCenterSdk.Platforms.ClientFactory::UdeskHelperClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_UdeskHelperClient_mBA0DD8EDA60EE5FFAEE52CAEE1959DA6BDEC1314 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Application.platform == RuntimePlatform.Android) {
+		int32_t L_0;
+		L_0 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return new TGCenterSdk.Platforms.Android.UdeskHelperClient();
+		UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277 * L_1 = (UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277 *)il2cpp_codegen_object_new(UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277_il2cpp_TypeInfo_var);
+		UdeskHelperClient__ctor_m73984738C1E532D5BFA5C0A774DC1A7C72569251(L_1, /*hidden argument*/NULL);
+		return L_1;
+	}
+
+IL_000f:
+	{
+		// } else if (Application.platform == RuntimePlatform.IPhonePlayer) {
+		int32_t L_2;
+		L_2 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		if ((!(((uint32_t)L_2) == ((uint32_t)8))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// return new TGCenterSdk.Platforms.iOS.UdeskHelperClient();
+		UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E * L_3 = (UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E *)il2cpp_codegen_object_new(UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E_il2cpp_TypeInfo_var);
+		UdeskHelperClient__ctor_m0566644341F298791A4C27D8B6BE6D01CE9A1BD4(L_3, /*hidden argument*/NULL);
+		return L_3;
+	}
+
+IL_001d:
+	{
+		// return new DummyUdeskHelperClient();
+		DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06 * L_4 = (DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06 *)il2cpp_codegen_object_new(DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06_il2cpp_TypeInfo_var);
+		DummyUdeskHelperClient__ctor_m30BD1D7E2A2E0809AF4C37EBCD359C209876B58E(L_4, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -4083,8 +4596,72 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DummyTGCenterClient_IsUserAgreePolicy_m3
 		return (bool)0;
 	}
 }
+// System.Void TGCenterSdk.Common.DummyTGCenterClient::ClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyTGCenterClient_ClearCache_mDE9E0AA7DC6C6E0D1FF758B175D7810F8B041AE7 (DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1 * __this, const RuntimeMethod* method)
+{
+	{
+		// public void ClearCache() { }
+		return;
+	}
+}
 // System.Void TGCenterSdk.Common.DummyTGCenterClient::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyTGCenterClient__ctor_m6159087E75ACC2883F1F543438FD9CCA9092693F (DummyTGCenterClient_tA73AF5E21738B8A4677C62820E0A64DDF318CCE1 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TGCenterSdk.Common.DummyUdeskHelperClient::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyUdeskHelperClient_EnterUdesk_m2D597AB5493DCECAD7F977C4C321FCDF509582B3 (DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06 * __this, const RuntimeMethod* method)
+{
+	{
+		// public void EnterUdesk() { }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Common.DummyUdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyUdeskHelperClient__ctor_m30BD1D7E2A2E0809AF4C37EBCD359C209876B58E (DummyUdeskHelperClient_t7AB16C17773CA08DFF8F714CEFD92D0089EB3F06 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TGCenterSdk.Common.DummyWeChatHelperClient::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyWeChatHelperClient_SetLoginListener_m9512230888E6C349082E2782572AFAB97DB73DBE (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
+{
+	{
+		// public void SetLoginListener(WeChatHelper.LoginListener listener) { }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Common.DummyWeChatHelperClient::Login()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyWeChatHelperClient_Login_m65D9DDA0498985756D500D9F10A66FC6F0CE66F7 (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 * __this, const RuntimeMethod* method)
+{
+	{
+		// public void Login() { }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Common.DummyWeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyWeChatHelperClient__ctor_mDDD54AA08AEFC59DC77009AD90D792E76FCE06E0 (DummyWeChatHelperClient_t3C5A7D2ADD01912CBA4ED8DA38504BA41A779874 * __this, const RuntimeMethod* method)
 {
 	{
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
@@ -4496,6 +5073,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Externs_TGCIsUserAgreePolicy_m243ABD3ACE
 
 	return static_cast<bool>(returnValue);
 }
+// System.Boolean TGCenterSdk.Platforms.iOS.Externs::TGCClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Externs_TGCClearCache_m3573E2A00E92B406525AF10F520964189CFC4705 (const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(TGCClearCache)();
+
+	return static_cast<bool>(returnValue);
+}
 // System.IntPtr TGCenterSdk.Platforms.iOS.Externs::TGCCreateInitConfig()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Externs_TGCCreateInitConfig_m76F31ED1EE75BFFBF2FBC598B4CAFAC04847ABDF (const RuntimeMethod* method)
 {
@@ -4617,6 +5204,91 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_RangersAppLogAp
 	____rangersAppLogAppName1_marshaled = NULL;
 
 }
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_WeChatAppId(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_WeChatAppId_mF2EAE6CF2102D7A0D4FB4F62D8B42DE0EAC1B5F6 (intptr_t ___config0, String_t* ___weChatAppId1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, char*);
+
+	// Marshaling of parameter '___weChatAppId1' to native representation
+	char* ____weChatAppId1_marshaled = NULL;
+	____weChatAppId1_marshaled = il2cpp_codegen_marshal_string(___weChatAppId1);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_WeChatAppId)(___config0, ____weChatAppId1_marshaled);
+
+	// Marshaling cleanup of parameter '___weChatAppId1' native representation
+	il2cpp_codegen_marshal_free(____weChatAppId1_marshaled);
+	____weChatAppId1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_WeChatUniversalLink(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_WeChatUniversalLink_m1AEAC6F6AE415281F5F5253B5B1F0BEEADF5BC04 (intptr_t ___config0, String_t* ___weChatUniversalLink1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, char*);
+
+	// Marshaling of parameter '___weChatUniversalLink1' to native representation
+	char* ____weChatUniversalLink1_marshaled = NULL;
+	____weChatUniversalLink1_marshaled = il2cpp_codegen_marshal_string(___weChatUniversalLink1);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_WeChatUniversalLink)(___config0, ____weChatUniversalLink1_marshaled);
+
+	// Marshaling cleanup of parameter '___weChatUniversalLink1' native representation
+	il2cpp_codegen_marshal_free(____weChatUniversalLink1_marshaled);
+	____weChatUniversalLink1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskDomain(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskDomain_m168040ED1412643EFE994914C46340CE6DC0A010 (intptr_t ___config0, String_t* ___udeskDomain1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, char*);
+
+	// Marshaling of parameter '___udeskDomain1' to native representation
+	char* ____udeskDomain1_marshaled = NULL;
+	____udeskDomain1_marshaled = il2cpp_codegen_marshal_string(___udeskDomain1);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_UdeskDomain)(___config0, ____udeskDomain1_marshaled);
+
+	// Marshaling cleanup of parameter '___udeskDomain1' native representation
+	il2cpp_codegen_marshal_free(____udeskDomain1_marshaled);
+	____udeskDomain1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskAppKey(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskAppKey_m1369F3FA1F634670DECC17A407750DAD443E660F (intptr_t ___config0, String_t* ___udeskAppKey1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, char*);
+
+	// Marshaling of parameter '___udeskAppKey1' to native representation
+	char* ____udeskAppKey1_marshaled = NULL;
+	____udeskAppKey1_marshaled = il2cpp_codegen_marshal_string(___udeskAppKey1);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_UdeskAppKey)(___config0, ____udeskAppKey1_marshaled);
+
+	// Marshaling cleanup of parameter '___udeskAppKey1' native representation
+	il2cpp_codegen_marshal_free(____udeskAppKey1_marshaled);
+	____udeskAppKey1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_UdeskAppId(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_UdeskAppId_m9CC49F4D83E9AE5BF96C1A760C78863226741BD9 (intptr_t ___config0, String_t* ___udeskAppId1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, char*);
+
+	// Marshaling of parameter '___udeskAppId1' to native representation
+	char* ____udeskAppId1_marshaled = NULL;
+	____udeskAppId1_marshaled = il2cpp_codegen_marshal_string(___udeskAppId1);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCSetInitConfig_UdeskAppId)(___config0, ____udeskAppId1_marshaled);
+
+	// Marshaling cleanup of parameter '___udeskAppId1' native representation
+	il2cpp_codegen_marshal_free(____udeskAppId1_marshaled);
+	____udeskAppId1_marshaled = NULL;
+
+}
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCSetInitConfig_Day1Retention(System.IntPtr,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900 (intptr_t ___config0, intptr_t ___retention1, const RuntimeMethod* method)
 {
@@ -4696,6 +5368,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCPrivacyJumpToPrivacyPolicy_mA
 
 	// Native function invocation
 	reinterpret_cast<PInvokeFunc>(TGCPrivacyJumpToPrivacyPolicy)();
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCWeChatSetCallback(System.IntPtr,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback,TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCWeChatSetCallback_m2424416E0B2C29282DCB4E71275824A98C2B0A02 (intptr_t ___clientPtr0, TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * ___successCallback1, TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * ___failedCallback2, TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * ___cancelCallback3, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
+
+	// Marshaling of parameter '___successCallback1' to native representation
+	Il2CppMethodPointer ____successCallback1_marshaled = NULL;
+	____successCallback1_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___successCallback1));
+
+	// Marshaling of parameter '___failedCallback2' to native representation
+	Il2CppMethodPointer ____failedCallback2_marshaled = NULL;
+	____failedCallback2_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___failedCallback2));
+
+	// Marshaling of parameter '___cancelCallback3' to native representation
+	Il2CppMethodPointer ____cancelCallback3_marshaled = NULL;
+	____cancelCallback3_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___cancelCallback3));
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCWeChatSetCallback)(___clientPtr0, ____successCallback1_marshaled, ____failedCallback2_marshaled, ____cancelCallback3_marshaled);
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCWeChatLogin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCWeChatLogin_m01BE7DA71AB74EDFA7FB2A6F8BB90FB5EA9539FE (const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCWeChatLogin)();
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCUdeskEnter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCUdeskEnter_mFC2BD0AC775634E998B01E55E978667D3C1C6D27 (const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCUdeskEnter)();
 
 }
 // System.Void TGCenterSdk.Platforms.iOS.Externs::.ctor()
@@ -5009,18 +5720,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_OnGUI_mBFEF5FB77A2A473BC7F
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral591717969A5E5E3B077255142EBD573FD6015D85);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A43163FC05AE385BDE127586061CB41C6FAB23C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral80BFDED53A798895F66F7586BB93FB843218DB76);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86A22D3A576D7C99132992E5DD9D118173CB4078);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB17F070EC432B1EEC61D3E3FF8C260D4D8F3B867);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBE8DA04BB93EE2298F881F3DCBF427FF992AA9FE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCABEDC89A46B23A1F89529079CC521895A09DA70);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD197841CCDB5B2B59A46C09F9EE18BF0F15C3D00);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7271F72CB0B464DF5A3DE56C471BA9D6E0D6BA3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD83E4D7E4A366812BEFCF32EC0A645CCBD99851);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF2DCEBDC0E489573EF91725019BDC803EC347578);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB6988E1177DFD343CF12618FF137D8102C66781);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFFE09F1192292D33A1796915A733C03D243DE668);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -5037,6 +5749,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_OnGUI_mBFEF5FB77A2A473BC7F
 	int32_t G_B5_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B7_0 = 0;
+	int32_t G_B10_0 = 0;
+	int32_t G_B9_0 = 0;
+	int32_t G_B12_0 = 0;
+	int32_t G_B11_0 = 0;
 	{
 		// int x = 0;
 		// int y = 250;
@@ -5158,127 +5874,179 @@ IL_00ba:
 		int32_t L_38 = V_0;
 		int32_t L_39 = V_1;
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_38, (int32_t)L_39));
-		// if (GUI.Button(new Rect(x, y, w, h), "Clear Cache", style))
-		int32_t L_40 = G_B4_0;
-		int32_t L_41 = V_0;
-		int32_t L_42 = V_2;
-		int32_t L_43 = V_3;
-		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_44;
-		memset((&L_44), 0, sizeof(L_44));
-		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_44), ((float)((float)L_40)), ((float)((float)L_41)), ((float)((float)L_42)), ((float)((float)L_43)), /*hidden argument*/NULL);
-		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_45 = V_4;
+		// WeChatHelper.Instance.SetLoginListener(new WeChatLoginListener());
+		IL2CPP_RUNTIME_CLASS_INIT(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * L_40;
+		L_40 = WeChatHelper_get_Instance_mF23BF9EB5504986859DC40ADF9B0AB897E3E4411_inline(/*hidden argument*/NULL);
+		WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * L_41 = (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 *)il2cpp_codegen_object_new(WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2_il2cpp_TypeInfo_var);
+		WeChatLoginListener__ctor_m7ADA0433B05964F606A2783B8837C0F819E21D33(L_41, /*hidden argument*/NULL);
+		NullCheck(L_40);
+		WeChatHelper_SetLoginListener_m5FD4953942CE50B6199F81D75FCD7BF5B18593B6(L_40, L_41, /*hidden argument*/NULL);
+		// if (GUI.Button(new Rect(x, y, w, h), "WeChat Login", style))
+		int32_t L_42 = G_B4_0;
+		int32_t L_43 = V_0;
+		int32_t L_44 = V_2;
+		int32_t L_45 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_46;
+		memset((&L_46), 0, sizeof(L_46));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_46), ((float)((float)L_42)), ((float)((float)L_43)), ((float)((float)L_44)), ((float)((float)L_45)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_47 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
-		bool L_46;
-		L_46 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_44, _stringLiteral86A22D3A576D7C99132992E5DD9D118173CB4078, L_45, /*hidden argument*/NULL);
-		// y += d;
-		int32_t L_47 = V_0;
-		int32_t L_48 = V_1;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_47, (int32_t)L_48));
-		// GUI.Label(new Rect(x, y, w, h), "Game AntiAddiction", style);
-		int32_t L_49 = L_40;
-		int32_t L_50 = V_0;
-		int32_t L_51 = V_2;
-		int32_t L_52 = V_3;
-		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_53;
-		memset((&L_53), 0, sizeof(L_53));
-		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_53), ((float)((float)L_49)), ((float)((float)L_50)), ((float)((float)L_51)), ((float)((float)L_52)), /*hidden argument*/NULL);
-		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_54 = V_4;
-		GUI_Label_mE97FBC73519323E93EFF86E1F1C96E7F4B612850(L_53, _stringLiteral7A43163FC05AE385BDE127586061CB41C6FAB23C, L_54, /*hidden argument*/NULL);
-		// y += d;
-		int32_t L_55 = V_0;
-		int32_t L_56 = V_1;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_55, (int32_t)L_56));
-		// int antiW = 500;
-		V_5 = ((int32_t)500);
-		// if (GUI.Button(new Rect(x, y, antiW, h), "RealName", style))
-		int32_t L_57 = L_49;
-		int32_t L_58 = V_0;
-		int32_t L_59 = V_5;
-		int32_t L_60 = V_3;
-		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_61;
-		memset((&L_61), 0, sizeof(L_61));
-		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_61), ((float)((float)L_57)), ((float)((float)L_58)), ((float)((float)L_59)), ((float)((float)L_60)), /*hidden argument*/NULL);
-		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_62 = V_4;
-		bool L_63;
-		L_63 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_61, _stringLiteralBE8DA04BB93EE2298F881F3DCBF427FF992AA9FE, L_62, /*hidden argument*/NULL);
-		G_B5_0 = L_57;
-		if (!L_63)
+		bool L_48;
+		L_48 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_46, _stringLiteralFFE09F1192292D33A1796915A733C03D243DE668, L_47, /*hidden argument*/NULL);
+		G_B5_0 = L_42;
+		if (!L_48)
 		{
-			G_B6_0 = L_57;
-			goto IL_0126;
+			G_B6_0 = L_42;
+			goto IL_00ee;
 		}
 	}
 	{
-		// AntiAddiction.RealName(new RealNameListener());
-		RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * L_64 = (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC *)il2cpp_codegen_object_new(RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
-		RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228(L_64, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
-		AntiAddiction_RealName_mAEEB81D1F823CA662476A28CD53E093D6C825889(L_64, /*hidden argument*/NULL);
+		// WeChatLogin();
+		MainBehaviour_WeChatLogin_mAFACC0579C45E3E1C19996AD1BF25C9E4B10F2F8(__this, /*hidden argument*/NULL);
 		G_B6_0 = G_B5_0;
 	}
 
-IL_0126:
+IL_00ee:
 	{
-		// if (GUI.Button(new Rect(x + antiW, y, antiW, h), "RealName CustomUI", style))
-		int32_t L_65 = G_B6_0;
-		int32_t L_66 = V_5;
-		int32_t L_67 = V_0;
-		int32_t L_68 = V_5;
-		int32_t L_69 = V_3;
-		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_70;
-		memset((&L_70), 0, sizeof(L_70));
-		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_70), ((float)((float)((int32_t)il2cpp_codegen_add((int32_t)L_65, (int32_t)L_66)))), ((float)((float)L_67)), ((float)((float)L_68)), ((float)((float)L_69)), /*hidden argument*/NULL);
-		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_71 = V_4;
+		// y += d;
+		int32_t L_49 = V_0;
+		int32_t L_50 = V_1;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_49, (int32_t)L_50));
+		// if (GUI.Button(new Rect(x, y, w, h), "Enter Udesk", style))
+		int32_t L_51 = G_B6_0;
+		int32_t L_52 = V_0;
+		int32_t L_53 = V_2;
+		int32_t L_54 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_55;
+		memset((&L_55), 0, sizeof(L_55));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_55), ((float)((float)L_51)), ((float)((float)L_52)), ((float)((float)L_53)), ((float)((float)L_54)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_56 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
-		bool L_72;
-		L_72 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_70, _stringLiteralD7271F72CB0B464DF5A3DE56C471BA9D6E0D6BA3, L_71, /*hidden argument*/NULL);
-		G_B7_0 = L_65;
-		if (!L_72)
+		bool L_57;
+		L_57 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_55, _stringLiteralB17F070EC432B1EEC61D3E3FF8C260D4D8F3B867, L_56, /*hidden argument*/NULL);
+		G_B7_0 = L_51;
+		if (!L_57)
 		{
-			G_B8_0 = L_65;
-			goto IL_0159;
+			G_B8_0 = L_51;
+			goto IL_0113;
 		}
 	}
 	{
-		// AntiAddiction.RealName("??", "34022219911208501X", new RealNameListener());
-		RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * L_73 = (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC *)il2cpp_codegen_object_new(RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
-		RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228(L_73, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
-		AntiAddiction_RealName_m8EC2673C81604A97333AC0B22B5E661C17174DE1(_stringLiteralCABEDC89A46B23A1F89529079CC521895A09DA70, _stringLiteralD197841CCDB5B2B59A46C09F9EE18BF0F15C3D00, L_73, /*hidden argument*/NULL);
+		// EnterUdesk();
+		MainBehaviour_EnterUdesk_m9BF3277E6C2D19739DBCEF9B5689C29582671A78(__this, /*hidden argument*/NULL);
 		G_B8_0 = G_B7_0;
 	}
 
-IL_0159:
+IL_0113:
 	{
 		// y += d;
-		int32_t L_74 = V_0;
-		int32_t L_75 = V_1;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_74, (int32_t)L_75));
-		// if (GUI.Button(new Rect(x, y, antiW, h), "Logout", style))
-		int32_t L_76 = V_0;
-		int32_t L_77 = V_5;
-		int32_t L_78 = V_3;
-		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_79;
-		memset((&L_79), 0, sizeof(L_79));
-		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_79), ((float)((float)G_B8_0)), ((float)((float)L_76)), ((float)((float)L_77)), ((float)((float)L_78)), /*hidden argument*/NULL);
-		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_80 = V_4;
+		int32_t L_58 = V_0;
+		int32_t L_59 = V_1;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_58, (int32_t)L_59));
+		// GUI.Label(new Rect(x, y, w, h), "Game AntiAddiction", style);
+		int32_t L_60 = G_B8_0;
+		int32_t L_61 = V_0;
+		int32_t L_62 = V_2;
+		int32_t L_63 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_64;
+		memset((&L_64), 0, sizeof(L_64));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_64), ((float)((float)L_60)), ((float)((float)L_61)), ((float)((float)L_62)), ((float)((float)L_63)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_65 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
-		bool L_81;
-		L_81 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_79, _stringLiteral80BFDED53A798895F66F7586BB93FB843218DB76, L_80, /*hidden argument*/NULL);
-		if (!L_81)
+		GUI_Label_mE97FBC73519323E93EFF86E1F1C96E7F4B612850(L_64, _stringLiteral7A43163FC05AE385BDE127586061CB41C6FAB23C, L_65, /*hidden argument*/NULL);
+		// y += d;
+		int32_t L_66 = V_0;
+		int32_t L_67 = V_1;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_66, (int32_t)L_67));
+		// int antiW = 500;
+		V_5 = ((int32_t)500);
+		// if (GUI.Button(new Rect(x, y, antiW, h), "RealName", style))
+		int32_t L_68 = L_60;
+		int32_t L_69 = V_0;
+		int32_t L_70 = V_5;
+		int32_t L_71 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_72;
+		memset((&L_72), 0, sizeof(L_72));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_72), ((float)((float)L_68)), ((float)((float)L_69)), ((float)((float)L_70)), ((float)((float)L_71)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_73 = V_4;
+		bool L_74;
+		L_74 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_72, _stringLiteralBE8DA04BB93EE2298F881F3DCBF427FF992AA9FE, L_73, /*hidden argument*/NULL);
+		G_B9_0 = L_68;
+		if (!L_74)
 		{
-			goto IL_0183;
+			G_B10_0 = L_68;
+			goto IL_015d;
 		}
 	}
 	{
+		// RealName();
+		MainBehaviour_RealName_m762AD3792A593FE6AC182C32C3D2D1616B1AF47C(__this, /*hidden argument*/NULL);
+		G_B10_0 = G_B9_0;
+	}
+
+IL_015d:
+	{
+		// if (GUI.Button(new Rect(x + antiW, y, antiW, h), "RealName CustomUI", style))
+		int32_t L_75 = G_B10_0;
+		int32_t L_76 = V_5;
+		int32_t L_77 = V_0;
+		int32_t L_78 = V_5;
+		int32_t L_79 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_80;
+		memset((&L_80), 0, sizeof(L_80));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_80), ((float)((float)((int32_t)il2cpp_codegen_add((int32_t)L_75, (int32_t)L_76)))), ((float)((float)L_77)), ((float)((float)L_78)), ((float)((float)L_79)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_81 = V_4;
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
+		bool L_82;
+		L_82 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_80, _stringLiteralD7271F72CB0B464DF5A3DE56C471BA9D6E0D6BA3, L_81, /*hidden argument*/NULL);
+		G_B11_0 = L_75;
+		if (!L_82)
+		{
+			G_B12_0 = L_75;
+			goto IL_0182;
+		}
+	}
+	{
+		// RealNameCustomUI();
+		MainBehaviour_RealNameCustomUI_m837906C2E66582F1D9C2A8B3D0E3C98A6F7EC2E7(__this, /*hidden argument*/NULL);
+		G_B12_0 = G_B11_0;
+	}
+
+IL_0182:
+	{
+		// y += d;
+		int32_t L_83 = V_0;
+		int32_t L_84 = V_1;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_83, (int32_t)L_84));
+		// if (GUI.Button(new Rect(x, y, antiW, h), "Logout", style))
+		int32_t L_85 = V_0;
+		int32_t L_86 = V_5;
+		int32_t L_87 = V_3;
+		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_88;
+		memset((&L_88), 0, sizeof(L_88));
+		Rect__ctor_m12075526A02B55B680716A34AD5287B223122B70((&L_88), ((float)((float)G_B12_0)), ((float)((float)L_85)), ((float)((float)L_86)), ((float)((float)L_87)), /*hidden argument*/NULL);
+		GUIStyle_t29C59470ACD0A35C81EB0615653FD38C455A4726 * L_89 = V_4;
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_tBCBBE29117D8093644C6E72B1CE3FB65C2CDCCC1_il2cpp_TypeInfo_var);
+		bool L_90;
+		L_90 = GUI_Button_mA1605D5F2A40D770F3E0CCA6D88E7947564B3F7A(L_88, _stringLiteral80BFDED53A798895F66F7586BB93FB843218DB76, L_89, /*hidden argument*/NULL);
+		if (!L_90)
+		{
+			goto IL_01b1;
+		}
+	}
+	{
+		// TGCenter.ClearCache();
+		IL2CPP_RUNTIME_CLASS_INIT(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
+		TGCenter_ClearCache_mE6A9C18F3896D374B715C381506E2A8712700493(/*hidden argument*/NULL);
 		// AntiAddiction.Logout();
 		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
 		AntiAddiction_Logout_m2E8A8E3F7F1FB817C3A3BC1AB432DC00CDD6D62F(/*hidden argument*/NULL);
-		// LogUserInfo(null);
-		MainBehaviour_LogUserInfo_mC8FC3F64ABA3C4C6CF253EEE2CDEDB134E4FE6BC((User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD *)NULL, /*hidden argument*/NULL);
+		// GetUserInfo(null);
+		MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55((User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD *)NULL, /*hidden argument*/NULL);
 	}
 
-IL_0183:
+IL_01b1:
 	{
 		// }
 		return;
@@ -5336,10 +6104,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral06F6DBCB7FFEE255438B4AC7A5C1DEE040406FBA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A5E706D6D83A6D9E3357CFF9C00B8924AAECD36);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26F22FD63112831520DDB8406C27CCE0FA761274);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3964927F1C570D70B8850DD9841300DE550C8640);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral514D8AA63A446A54F62078A74562DD8BF48ED9B8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78A60C68335BFADC659417D949DEF46DDCF71CC2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8BE379FCCAE7759F182D2E0FDD1565B9F41370C9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral914EB038D7017D5392E02DCB16225EE56BC35FC7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral93C5618990903CF3D33660256B203153E1F12DED);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2463F45597998A094727FD126E852DC07FBB7DF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD4383524921CB8484EC0571FE49BBF41F7C7934);
 		s_Il2CppMethodInitialized = true;
 	}
 	InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * V_0 = NULL;
@@ -5358,7 +6131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		L_2 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
 		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)11)))))
 		{
-			goto IL_0024;
+			goto IL_0027;
 		}
 	}
 	{
@@ -5368,10 +6141,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		NullCheck(L_3);
 		L_3->set_Channel_2(L_4);
 		// } else {
-		goto IL_0077;
+		goto IL_00b1;
 	}
 
-IL_0024:
+IL_0027:
 	{
 		// config.AppId = "b51dd720-c083-4349-a99e-3de18dfccbd4";
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_5 = V_0;
@@ -5397,38 +6170,140 @@ IL_0024:
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_10 = V_0;
 		NullCheck(L_10);
 		L_10->set_RangersAppLogAppName_8(_stringLiteral8BE379FCCAE7759F182D2E0FDD1565B9F41370C9);
-		// Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_11 = (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 *)il2cpp_codegen_object_new(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3_il2cpp_TypeInfo_var);
-		Day1Retention__ctor_m5AC87C6754EAD4FF846E084887A8AC84649DA7D8(L_11, 1, 4, ((int32_t)38), /*hidden argument*/NULL);
-		V_1 = L_11;
-		// config.Day1Retention = retention;
+		// config.WeChatAppId = "wx841c361b2ae27a7b";
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_11 = V_0;
+		NullCheck(L_11);
+		L_11->set_WeChatAppId_9(_stringLiteral26F22FD63112831520DDB8406C27CCE0FA761274);
+		// config.WeChatUniversalLink = "https:
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_12 = V_0;
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_13 = V_1;
 		NullCheck(L_12);
-		L_12->set_Day1Retention_1(L_13);
+		L_12->set_WeChatUniversalLink_10(_stringLiteralFD4383524921CB8484EC0571FE49BBF41F7C7934);
+		// config.UdeskDomain = "wy.s2.udesk.cn";
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_13 = V_0;
+		NullCheck(L_13);
+		L_13->set_UdeskDomain_11(_stringLiteral93C5618990903CF3D33660256B203153E1F12DED);
+		// config.UdeskAppKey = "c45ab77872e67e9a0b7f3113fadb62b2";
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_14 = V_0;
+		NullCheck(L_14);
+		L_14->set_UdeskAppKey_12(_stringLiteral3964927F1C570D70B8850DD9841300DE550C8640);
+		// config.UdeskAppId = "e4f88f280c8df925";
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_15 = V_0;
+		NullCheck(L_15);
+		L_15->set_UdeskAppId_13(_stringLiteral914EB038D7017D5392E02DCB16225EE56BC35FC7);
+		// Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_16 = (Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 *)il2cpp_codegen_object_new(Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3_il2cpp_TypeInfo_var);
+		Day1Retention__ctor_m5AC87C6754EAD4FF846E084887A8AC84649DA7D8(L_16, 1, 4, ((int32_t)38), /*hidden argument*/NULL);
+		V_1 = L_16;
+		// config.Day1Retention = retention;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_17 = V_0;
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_18 = V_1;
+		NullCheck(L_17);
+		L_17->set_Day1Retention_1(L_18);
 	}
 
-IL_0077:
+IL_00b1:
 	{
 		// TGCenter.Init(config);
-		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_14 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_19 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
-		TGCenter_Init_mF0F3AD663639A35E3986B8BBD2DA76999D1A31A3(L_14, /*hidden argument*/NULL);
+		TGCenter_Init_mF0F3AD663639A35E3986B8BBD2DA76999D1A31A3(L_19, /*hidden argument*/NULL);
 		// AntiAddiction.SetAutoShowTimeLimitPage(false);
 		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
 		AntiAddiction_SetAutoShowTimeLimitPage_mFBDEFFBC0A0D5C5BE13C975615D5C1F3A92BBF04((bool)0, /*hidden argument*/NULL);
 		// AntiAddiction.SetTimeLimitCallback(new TimeLimitListener());
-		TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 * L_15 = (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 *)il2cpp_codegen_object_new(TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08_il2cpp_TypeInfo_var);
-		TimeLimitListener__ctor_mABFE790553C8687EF4C95F2CF3C63A5F0A0D00D7(L_15, /*hidden argument*/NULL);
-		AntiAddiction_SetTimeLimitCallback_mE6F8CB0B25D95BA5F1ED2CE54744E285887F2D01(L_15, /*hidden argument*/NULL);
-		// LogUserInfo(null);
-		MainBehaviour_LogUserInfo_mC8FC3F64ABA3C4C6CF253EEE2CDEDB134E4FE6BC((User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD *)NULL, /*hidden argument*/NULL);
+		TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 * L_20 = (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 *)il2cpp_codegen_object_new(TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08_il2cpp_TypeInfo_var);
+		TimeLimitListener__ctor_mABFE790553C8687EF4C95F2CF3C63A5F0A0D00D7(L_20, /*hidden argument*/NULL);
+		AntiAddiction_SetTimeLimitCallback_mE6F8CB0B25D95BA5F1ED2CE54744E285887F2D01(L_20, /*hidden argument*/NULL);
+		// GetUserInfo(null);
+		MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55((User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD *)NULL, /*hidden argument*/NULL);
 		// }
 		return;
 	}
 }
-// System.Void MainBehaviour::LogUserInfo(AntiAddictionSdk.Api.User)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_LogUserInfo_mC8FC3F64ABA3C4C6CF253EEE2CDEDB134E4FE6BC (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * ___user0, const RuntimeMethod* method)
+// System.Void MainBehaviour::WeChatLogin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_WeChatLogin_mAFACC0579C45E3E1C19996AD1BF25C9E4B10F2F8 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// WeChatHelper.Instance.Login();
+		IL2CPP_RUNTIME_CLASS_INIT(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * L_0;
+		L_0 = WeChatHelper_get_Instance_mF23BF9EB5504986859DC40ADF9B0AB897E3E4411_inline(/*hidden argument*/NULL);
+		NullCheck(L_0);
+		WeChatHelper_Login_mBF712E55CC94BE53FFA651944F358DAB56285C4A(L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_EnterUdesk_m9BF3277E6C2D19739DBCEF9B5689C29582671A78 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// UdeskHelper.Instance.EnterUdesk();
+		IL2CPP_RUNTIME_CLASS_INIT(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * L_0;
+		L_0 = UdeskHelper_get_Instance_m3142C8AD0BA95DC535F38D84EB5963725F29C84F_inline(/*hidden argument*/NULL);
+		NullCheck(L_0);
+		UdeskHelper_EnterUdesk_m8CE9B54BCCF97D4C891AC70971A828E722D52192(L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour::RealName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_RealName_m762AD3792A593FE6AC182C32C3D2D1616B1AF47C (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// AntiAddiction.RealName(new RealNameListener());
+		RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * L_0 = (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC *)il2cpp_codegen_object_new(RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
+		RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		AntiAddiction_RealName_mAEEB81D1F823CA662476A28CD53E093D6C825889(L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour::RealNameCustomUI()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_RealNameCustomUI_m837906C2E66582F1D9C2A8B3D0E3C98A6F7EC2E7 (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDAB79893B837210AD0063EA38A28622295003BD2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// AntiAddiction.RealName("name", "idNumber", new RealNameListener());
+		RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC * L_0 = (RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC *)il2cpp_codegen_object_new(RealNameListener_tED709B762A6644CB50B84FDE17AAF0FDC8AB47FC_il2cpp_TypeInfo_var);
+		RealNameListener__ctor_mE87033C9E71DB4FB631C7A6F5B02BEE92CDCC228(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		AntiAddiction_RealName_m8EC2673C81604A97333AC0B22B5E661C17174DE1(_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F, _stringLiteralDAB79893B837210AD0063EA38A28622295003BD2, L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour::GetUserInfo(AntiAddictionSdk.Api.User)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55 (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * ___user0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5436,38 +6311,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_LogUserInfo_mC8FC3F64ABA3C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral030BA20BD3303BA3A366F08049FB32193FD0EA8F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0BEE2DBE24919FD195E4DCB7B1B3BCAA615CBFE1);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral10F2BD5742BCE93C3AC253225B935BAB2400DA44);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral11BEF66A6E304E5AB263A39F7B2C0B72640B9F99);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral269D03B0D65AAA6DE7A1ED2198B67CD556EE6B7A);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3DE4E33001D66F488D312800D96D1F0F48A95791);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral420100FF7BE6008D5D5DE9287150E23E2950C807);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral44CFD9D049C36A5A3FC2003C8D84BE1219A6259F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57C4B5E39EEE4C2D3B9B2A98EBE68ED6BD5BA1CE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral74157E713F0EC92C4DDB68A67AC1F6EE2F625622);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A5286F19216034A832BB9FF50370EE89D6CFD2C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F0DA9736ED3CFBCF1ED7146B3DC6BBC0C246B0C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA2386659D2348915EDCA322DAAA24484B2395745);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBA80BCF886CB2525055EF06C50CEE5CF5A0775A7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBE7162E4BAE8032C5093B8B018AE7798DECB26D0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC57DA5652F526BF9C151C73EAE7E58AD7C4B560F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	String_t* V_1 = NULL;
-	int32_t V_2 = 0;
-	String_t* V_3 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B4_0 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B3_0 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B6_0 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B5_0 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B8_0 = NULL;
-	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * G_B7_0 = NULL;
+	RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * V_1 = NULL;
+	String_t* V_2 = NULL;
+	int32_t V_3 = 0;
+	String_t* V_4 = NULL;
 	{
 		// if (user == null) {
 		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_0 = ___user0;
@@ -5493,84 +6356,63 @@ IL_000a:
 		NullCheck(L_2);
 		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_3;
 		L_3 = User_GetRealNameResult_mBC986A65EF712B31E8F93A7B8E42E3BDA591DD7A(L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
 		// if (realNameResult.IsSuccess()) {
-		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_4 = L_3;
+		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_4 = V_1;
 		NullCheck(L_4);
 		bool L_5;
 		L_5 = RealNameResult_IsSuccess_mEC51A9C1D674828B2BDD7FF618F1ED518414CE02(L_4, /*hidden argument*/NULL);
-		G_B3_0 = L_4;
 		if (!L_5)
 		{
-			G_B4_0 = L_4;
-			goto IL_002e;
+			goto IL_0027;
 		}
 	}
 	{
 		// result = "??????";
 		V_0 = _stringLiteralC57DA5652F526BF9C151C73EAE7E58AD7C4B560F;
-		// Debug.Log("realNameResult: isSuccess");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral44CFD9D049C36A5A3FC2003C8D84BE1219A6259F, /*hidden argument*/NULL);
-		G_B4_0 = G_B3_0;
+		// } else if (realNameResult.IsFail()) {
+		goto IL_0057;
 	}
 
-IL_002e:
+IL_0027:
 	{
-		// if (realNameResult.IsFail()) {
-		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_6 = G_B4_0;
+		// } else if (realNameResult.IsFail()) {
+		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_6 = V_1;
 		NullCheck(L_6);
 		bool L_7;
 		L_7 = RealNameResult_IsFail_mC60D21A1DC91D5D36046E8758D1BC442730C5459(L_6, /*hidden argument*/NULL);
-		G_B5_0 = L_6;
 		if (!L_7)
 		{
-			G_B6_0 = L_6;
-			goto IL_0046;
+			goto IL_0037;
 		}
 	}
 	{
-		// Debug.Log("realNameResult: isFail");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral420100FF7BE6008D5D5DE9287150E23E2950C807, /*hidden argument*/NULL);
 		// result = "??????";
 		V_0 = _stringLiteralBE7162E4BAE8032C5093B8B018AE7798DECB26D0;
-		G_B6_0 = G_B5_0;
+		// } else if (realNameResult.IsProcessing()) {
+		goto IL_0057;
 	}
 
-IL_0046:
+IL_0037:
 	{
-		// if (realNameResult.IsProcessing()) {
-		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_8 = G_B6_0;
+		// } else if (realNameResult.IsProcessing()) {
+		RealNameResult_t72CCC4738CF4CCF98DB6E68337B920CA83FBD619 * L_8 = V_1;
 		NullCheck(L_8);
 		bool L_9;
 		L_9 = RealNameResult_IsProcessing_m04DFB0DE3726AF7942CB5CDF034869D3F3A2568D(L_8, /*hidden argument*/NULL);
-		G_B7_0 = L_8;
 		if (!L_9)
 		{
-			G_B8_0 = L_8;
-			goto IL_005e;
+			goto IL_0047;
 		}
 	}
 	{
-		// Debug.Log("realNameResult: isProcessing");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral269D03B0D65AAA6DE7A1ED2198B67CD556EE6B7A, /*hidden argument*/NULL);
 		// result = "?????...";
 		V_0 = _stringLiteral8F0DA9736ED3CFBCF1ED7146B3DC6BBC0C246B0C;
-		G_B8_0 = G_B7_0;
+		// } else {
+		goto IL_0057;
 	}
 
-IL_005e:
-	{
-		// if (realNameResult.IsInitial()) {
-		NullCheck(G_B8_0);
-		bool L_10;
-		L_10 = RealNameResult_IsInitial_m2D92DF47DB2F52255AE9D32765E013F67F621528(G_B8_0, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_0075;
-		}
-	}
+IL_0047:
 	{
 		// Debug.Log("realNameResult: isInitial");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
@@ -5579,126 +6421,118 @@ IL_005e:
 		V_0 = _stringLiteral0BEE2DBE24919FD195E4DCB7B1B3BCAA615CBFE1;
 	}
 
-IL_0075:
+IL_0057:
 	{
 		// if (user.IsTourist()) {
-		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_11 = ___user0;
-		NullCheck(L_11);
-		bool L_12;
-		L_12 = User_IsTourist_m4ED9B4EF6E903618B04A851EAB4A821D8FBCD942(L_11, /*hidden argument*/NULL);
-		if (!L_12)
+		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_10 = ___user0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = User_IsTourist_m4ED9B4EF6E903618B04A851EAB4A821D8FBCD942(L_10, /*hidden argument*/NULL);
+		if (!L_11)
 		{
-			goto IL_008d;
+			goto IL_0067;
 		}
 	}
 	{
 		// info = "??";
-		V_1 = _stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A;
-		// Debug.Log("realNameResult: isTourist");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral10F2BD5742BCE93C3AC253225B935BAB2400DA44, /*hidden argument*/NULL);
+		V_2 = _stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A;
+		// } else if (user.IsChild()) {
+		goto IL_008d;
 	}
 
-IL_008d:
+IL_0067:
 	{
-		// if (user.IsChild()) {
-		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_13 = ___user0;
-		NullCheck(L_13);
-		bool L_14;
-		L_14 = User_IsChild_m8CCA3DE0318FF43A8CB37FE26751D3D519572F5D(L_13, /*hidden argument*/NULL);
-		if (!L_14)
+		// } else if (user.IsChild()) {
+		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_12 = ___user0;
+		NullCheck(L_12);
+		bool L_13;
+		L_13 = User_IsChild_m8CCA3DE0318FF43A8CB37FE26751D3D519572F5D(L_12, /*hidden argument*/NULL);
+		if (!L_13)
 		{
-			goto IL_00a5;
+			goto IL_0077;
 		}
 	}
 	{
 		// info = "????";
-		V_1 = _stringLiteralA2386659D2348915EDCA322DAAA24484B2395745;
-		// Debug.Log("realNameResult: isChild");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral57C4B5E39EEE4C2D3B9B2A98EBE68ED6BD5BA1CE, /*hidden argument*/NULL);
+		V_2 = _stringLiteralA2386659D2348915EDCA322DAAA24484B2395745;
+		// } else if (user.IsAdult()) {
+		goto IL_008d;
 	}
 
-IL_00a5:
+IL_0077:
 	{
-		// if (user.IsAdult()) {
-		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_15 = ___user0;
-		NullCheck(L_15);
-		bool L_16;
-		L_16 = User_IsAdult_mA4E8D84F16A31B904E3355B2F54476445EBA6EC8(L_15, /*hidden argument*/NULL);
-		if (!L_16)
+		// } else if (user.IsAdult()) {
+		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_14 = ___user0;
+		NullCheck(L_14);
+		bool L_15;
+		L_15 = User_IsAdult_mA4E8D84F16A31B904E3355B2F54476445EBA6EC8(L_14, /*hidden argument*/NULL);
+		if (!L_15)
 		{
-			goto IL_00bf;
+			goto IL_0087;
 		}
 	}
 	{
 		// info = "???";
-		V_1 = _stringLiteral11BEF66A6E304E5AB263A39F7B2C0B72640B9F99;
-		// Debug.Log("realNameResult: isAdult");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral030BA20BD3303BA3A366F08049FB32193FD0EA8F, /*hidden argument*/NULL);
+		V_2 = _stringLiteral11BEF66A6E304E5AB263A39F7B2C0B72640B9F99;
 		// } else {
-		goto IL_00cf;
+		goto IL_008d;
 	}
 
-IL_00bf:
+IL_0087:
 	{
 		// info = "??";
-		V_1 = _stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A;
-		// Debug.Log("realNameResult: isTourist 2");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral8A5286F19216034A832BB9FF50370EE89D6CFD2C, /*hidden argument*/NULL);
+		V_2 = _stringLiteralAD57C4B176C56133A3E7E16C5497B01F97DA3D3A;
 	}
 
-IL_00cf:
+IL_008d:
 	{
 		// int age = user.GetAge();
-		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_17 = ___user0;
-		NullCheck(L_17);
-		int32_t L_18;
-		L_18 = User_GetAge_m29634304231DBFDC2847EC256E54BF25B2CEDD36(L_17, /*hidden argument*/NULL);
-		V_2 = L_18;
+		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_16 = ___user0;
+		NullCheck(L_16);
+		int32_t L_17;
+		L_17 = User_GetAge_m29634304231DBFDC2847EC256E54BF25B2CEDD36(L_16, /*hidden argument*/NULL);
+		V_3 = L_17;
 		// string userInfo = "??????: " + result + "\n"
 		//         + ", ???" + info + "\n"
 		//         + ", ???" + age;
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_19 = (StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)SZArrayNew(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var, (uint32_t)6);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_18 = (StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*)SZArrayNew(StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A_il2cpp_TypeInfo_var, (uint32_t)6);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_19 = L_18;
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, _stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9);
 		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_20 = L_19;
+		String_t* L_21 = V_0;
 		NullCheck(L_20);
-		ArrayElementTypeCheck (L_20, _stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9);
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral6AA6005E81D2ACCDEE6171886C5DA95A25B3D9B9);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_21 = L_20;
-		String_t* L_22 = V_0;
-		NullCheck(L_21);
-		ArrayElementTypeCheck (L_21, L_22);
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_22);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_23 = L_21;
+		ArrayElementTypeCheck (L_20, L_21);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_21);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_22 = L_20;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, _stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_23 = L_22;
+		String_t* L_24 = V_2;
 		NullCheck(L_23);
-		ArrayElementTypeCheck (L_23, _stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral9690D53E0C8690FB5E8119156EC10DA39EA19F6F);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_24 = L_23;
-		String_t* L_25 = V_1;
-		NullCheck(L_24);
-		ArrayElementTypeCheck (L_24, L_25);
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_25);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_26 = L_24;
+		ArrayElementTypeCheck (L_23, L_24);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_24);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_25 = L_23;
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, _stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493);
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_26 = L_25;
+		String_t* L_27;
+		L_27 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_3), /*hidden argument*/NULL);
 		NullCheck(L_26);
-		ArrayElementTypeCheck (L_26, _stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral5D6E981DCA1ACD0AF56B5EFF1452B8DFA6777493);
-		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_27 = L_26;
+		ArrayElementTypeCheck (L_26, L_27);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_27);
 		String_t* L_28;
-		L_28 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_27);
-		ArrayElementTypeCheck (L_27, L_28);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_28);
-		String_t* L_29;
-		L_29 = String_Concat_mFEA7EFA1A6E75B96B1B7BC4526AAC864BFF83CC9(L_27, /*hidden argument*/NULL);
-		V_3 = L_29;
-		// Debug.Log("LogUserInfo: " + userInfo);
-		String_t* L_30 = V_3;
-		String_t* L_31;
-		L_31 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral3DE4E33001D66F488D312800D96D1F0F48A95791, L_30, /*hidden argument*/NULL);
+		L_28 = String_Concat_mFEA7EFA1A6E75B96B1B7BC4526AAC864BFF83CC9(L_26, /*hidden argument*/NULL);
+		V_4 = L_28;
+		// Debug.Log("GetUserInfo: " + userInfo);
+		String_t* L_29 = V_4;
+		String_t* L_30;
+		L_30 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteralBA80BCF886CB2525055EF06C50CEE5CF5A0775A7, L_29, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_31, /*hidden argument*/NULL);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_30, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -6779,6 +7613,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TGCenter_IsUserAgreePolicy_m5BE7174BDE94
 		return L_1;
 	}
 }
+// System.Void TGCenterSdk.Api.TGCenter::ClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenter_ClearCache_mE6A9C18F3896D374B715C381506E2A8712700493 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// client.ClearCache();
+		IL2CPP_RUNTIME_CLASS_INIT(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0 = ((TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_StaticFields*)il2cpp_codegen_static_fields_for(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var))->get_client_0();
+		NullCheck(L_0);
+		InterfaceActionInvoker0::Invoke(2 /* System.Void TGCenterSdk.Common.ITGCenterClient::ClearCache() */, ITGCenterClient_t9D68A2BCB63E41CEBF76EF6BE18A406C70808A82_il2cpp_TypeInfo_var, L_0);
+		// }
+		return;
+	}
+}
 // System.Void TGCenterSdk.Api.TGCenter::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenter__cctor_mECD46F3E4F4CA3A99B4D907AE306CDFEE1241255 (const RuntimeMethod* method)
 {
@@ -7027,6 +7881,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TGCenterClient_IsUserAgreePolicy_m3604EE
 		return L_4;
 	}
 }
+// System.Void TGCenterSdk.Platforms.Android.TGCenterClient::ClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_ClearCache_m04A77CB1270D1A7498316F059798D92B6AB2B8F8 (TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3A637E736FCED73E57035306FE138D083DB52041);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// tgCenterClass.CallStatic("clearCache", Utils.GetPlayerActivity());
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = __this->get_tgCenterClass_1();
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_1 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_2 = L_1;
+		AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * L_3;
+		L_3 = Utils_GetPlayerActivity_m7B8DC76B225EEF0336FA47F348C7560E1C60559E(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB(L_0, _stringLiteral3A637E736FCED73E57035306FE138D083DB52041, L_2, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
 // System.Void TGCenterSdk.Platforms.Android.TGCenterClient::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient__cctor_m7FF04FD819004541C119546F747A586F65D96238 (const RuntimeMethod* method)
 {
@@ -7132,58 +8012,88 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_Init_mF54DAE431EE6FEDAFA3
 		NullCheck(L_20);
 		String_t* L_21 = L_20->get_RangersAppLogAppName_8();
 		Externs_TGCSetInitConfig_RangersAppLogAppName_m4C032095A1DE1921811AAFA37C21F9F8A57E3ED9((intptr_t)L_19, L_21, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_WeChatAppId(configPtr, config.WeChatAppId);
+		intptr_t L_22 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_23 = ___config0;
+		NullCheck(L_23);
+		String_t* L_24 = L_23->get_WeChatAppId_9();
+		Externs_TGCSetInitConfig_WeChatAppId_mF2EAE6CF2102D7A0D4FB4F62D8B42DE0EAC1B5F6((intptr_t)L_22, L_24, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_WeChatUniversalLink(configPtr, config.WeChatUniversalLink);
+		intptr_t L_25 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_26 = ___config0;
+		NullCheck(L_26);
+		String_t* L_27 = L_26->get_WeChatUniversalLink_10();
+		Externs_TGCSetInitConfig_WeChatUniversalLink_m1AEAC6F6AE415281F5F5253B5B1F0BEEADF5BC04((intptr_t)L_25, L_27, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_UdeskDomain(configPtr, config.UdeskDomain);
+		intptr_t L_28 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_29 = ___config0;
+		NullCheck(L_29);
+		String_t* L_30 = L_29->get_UdeskDomain_11();
+		Externs_TGCSetInitConfig_UdeskDomain_m168040ED1412643EFE994914C46340CE6DC0A010((intptr_t)L_28, L_30, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_UdeskAppKey(configPtr, config.UdeskAppKey);
+		intptr_t L_31 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_32 = ___config0;
+		NullCheck(L_32);
+		String_t* L_33 = L_32->get_UdeskAppKey_12();
+		Externs_TGCSetInitConfig_UdeskAppKey_m1369F3FA1F634670DECC17A407750DAD443E660F((intptr_t)L_31, L_33, /*hidden argument*/NULL);
+		// Externs.TGCSetInitConfig_UdeskAppId(configPtr, config.UdeskAppId);
+		intptr_t L_34 = V_0;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_35 = ___config0;
+		NullCheck(L_35);
+		String_t* L_36 = L_35->get_UdeskAppId_13();
+		Externs_TGCSetInitConfig_UdeskAppId_m9CC49F4D83E9AE5BF96C1A760C78863226741BD9((intptr_t)L_34, L_36, /*hidden argument*/NULL);
 		// if (config.Day1Retention != null) {
-		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_22 = ___config0;
-		NullCheck(L_22);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_23 = L_22->get_Day1Retention_1();
-		if (!L_23)
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_37 = ___config0;
+		NullCheck(L_37);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_38 = L_37->get_Day1Retention_1();
+		if (!L_38)
 		{
-			goto IL_00a2;
+			goto IL_00de;
 		}
 	}
 	{
 		// IntPtr retentionPtr = Externs.TGCCreateDay1Retention();
-		intptr_t L_24;
-		L_24 = Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0(/*hidden argument*/NULL);
-		V_1 = (intptr_t)L_24;
+		intptr_t L_39;
+		L_39 = Externs_TGCCreateDay1Retention_mA6B9EDCB5E75FFE679366C5FDDDAA6585F04CCE0(/*hidden argument*/NULL);
+		V_1 = (intptr_t)L_39;
 		// Externs.TGCSetDay1Retention_Type(retentionPtr, (int)config.Day1Retention.RetentionType);
-		intptr_t L_25 = V_1;
-		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_26 = ___config0;
-		NullCheck(L_26);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_27 = L_26->get_Day1Retention_1();
-		NullCheck(L_27);
-		int32_t L_28;
-		L_28 = Day1Retention_get_RetentionType_mD0C2642097219905B831A051D675EE715FF6A4B5_inline(L_27, /*hidden argument*/NULL);
-		Externs_TGCSetDay1Retention_Type_m3B7916E4DCBAF3ABB52020CB12D7CB7CCAA063B0((intptr_t)L_25, L_28, /*hidden argument*/NULL);
+		intptr_t L_40 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_41 = ___config0;
+		NullCheck(L_41);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_42 = L_41->get_Day1Retention_1();
+		NullCheck(L_42);
+		int32_t L_43;
+		L_43 = Day1Retention_get_RetentionType_mD0C2642097219905B831A051D675EE715FF6A4B5_inline(L_42, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_Type_m3B7916E4DCBAF3ABB52020CB12D7CB7CCAA063B0((intptr_t)L_40, L_43, /*hidden argument*/NULL);
 		// Externs.TGCSetDay1Retention_StartCount(retentionPtr, config.Day1Retention.StartCount);
-		intptr_t L_29 = V_1;
-		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_30 = ___config0;
-		NullCheck(L_30);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_31 = L_30->get_Day1Retention_1();
-		NullCheck(L_31);
-		int32_t L_32;
-		L_32 = Day1Retention_get_StartCount_mC49554BBEBB0F46D8B1DBBD920E195382086B189_inline(L_31, /*hidden argument*/NULL);
-		Externs_TGCSetDay1Retention_StartCount_m06973A8C99ED9BBCC36861E10A69420030DF15A1((intptr_t)L_29, L_32, /*hidden argument*/NULL);
+		intptr_t L_44 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_45 = ___config0;
+		NullCheck(L_45);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_46 = L_45->get_Day1Retention_1();
+		NullCheck(L_46);
+		int32_t L_47;
+		L_47 = Day1Retention_get_StartCount_mC49554BBEBB0F46D8B1DBBD920E195382086B189_inline(L_46, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_StartCount_m06973A8C99ED9BBCC36861E10A69420030DF15A1((intptr_t)L_44, L_47, /*hidden argument*/NULL);
 		// Externs.TGCSetDay1Retention_EndCount(retentionPtr, config.Day1Retention.EndCount);
-		intptr_t L_33 = V_1;
-		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_34 = ___config0;
-		NullCheck(L_34);
-		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_35 = L_34->get_Day1Retention_1();
-		NullCheck(L_35);
-		int32_t L_36;
-		L_36 = Day1Retention_get_EndCount_m5DB2D2F36A24B0E04F4BF7BAE1E195689C896556_inline(L_35, /*hidden argument*/NULL);
-		Externs_TGCSetDay1Retention_EndCount_mBB41BCABD0864AF1841D6314A8A7CCF4F1D93ED5((intptr_t)L_33, L_36, /*hidden argument*/NULL);
+		intptr_t L_48 = V_1;
+		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_49 = ___config0;
+		NullCheck(L_49);
+		Day1Retention_t5C5C48267E7FA734CD696706DCF7C0DC29025BB3 * L_50 = L_49->get_Day1Retention_1();
+		NullCheck(L_50);
+		int32_t L_51;
+		L_51 = Day1Retention_get_EndCount_m5DB2D2F36A24B0E04F4BF7BAE1E195689C896556_inline(L_50, /*hidden argument*/NULL);
+		Externs_TGCSetDay1Retention_EndCount_mBB41BCABD0864AF1841D6314A8A7CCF4F1D93ED5((intptr_t)L_48, L_51, /*hidden argument*/NULL);
 		// Externs.TGCSetInitConfig_Day1Retention(configPtr, retentionPtr);
-		intptr_t L_37 = V_0;
-		intptr_t L_38 = V_1;
-		Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900((intptr_t)L_37, (intptr_t)L_38, /*hidden argument*/NULL);
+		intptr_t L_52 = V_0;
+		intptr_t L_53 = V_1;
+		Externs_TGCSetInitConfig_Day1Retention_m9F23B425F4DF6A58C648CF755B3FB92DF3415900((intptr_t)L_52, (intptr_t)L_53, /*hidden argument*/NULL);
 	}
 
-IL_00a2:
+IL_00de:
 	{
 		// Externs.TGCInit(configPtr);
-		intptr_t L_39 = V_0;
-		Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC((intptr_t)L_39, /*hidden argument*/NULL);
+		intptr_t L_54 = V_0;
+		Externs_TGCInit_mAABFC2CB05181D48FD025937FD082B786DF642FC((intptr_t)L_54, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -7196,6 +8106,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TGCenterClient_IsUserAgreePolicy_m165ED6
 		bool L_0;
 		L_0 = Externs_TGCIsUserAgreePolicy_m243ABD3ACEE5D59050CEFE902B1CEF56686EB609(/*hidden argument*/NULL);
 		return L_0;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.TGCenterClient::ClearCache()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCenterClient_ClearCache_mF24E59BC97E25BFD95BC50BCCE618BE27EDF096E (TGCenterClient_t3FFBC93E175D733E5FF8A30D13354AED72C0FCC9 * __this, const RuntimeMethod* method)
+{
+	{
+		// Externs.TGCClearCache();
+		bool L_0;
+		L_0 = Externs_TGCClearCache_m3573E2A00E92B406525AF10F520964189CFC4705(/*hidden argument*/NULL);
+		// }
+		return;
 	}
 }
 // System.Void TGCenterSdk.Platforms.iOS.TGCenterClient::.cctor()
@@ -7498,6 +8419,162 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553
 		LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD * L_3 = (LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD *)il2cpp_codegen_object_new(LimitTip_tF8B5096C82EDA57B6870A2B503C91C61553700BD_il2cpp_TypeInfo_var);
 		LimitTip__ctor_m9FEC6EB86743288A0163CB0A98BAE9929C7D83F4(L_3, L_2, /*hidden argument*/NULL);
 		return L_3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// TGCenterSdk.Api.UdeskHelper TGCenterSdk.Api.UdeskHelper::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * UdeskHelper_get_Instance_m3142C8AD0BA95DC535F38D84EB5963725F29C84F (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return instance;
+		IL2CPP_RUNTIME_CLASS_INIT(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * L_0 = ((UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields*)il2cpp_codegen_static_fields_for(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var))->get_instance_0();
+		return L_0;
+	}
+}
+// System.Void TGCenterSdk.Api.UdeskHelper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelper__ctor_m54F90A97161D44F60477D02F71C90EE143D52ADE (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * __this, const RuntimeMethod* method)
+{
+	{
+		// private UdeskHelper() {
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		// client = ClientFactory.UdeskHelperClient();
+		RuntimeObject* L_0;
+		L_0 = ClientFactory_UdeskHelperClient_mBA0DD8EDA60EE5FFAEE52CAEE1959DA6BDEC1314(/*hidden argument*/NULL);
+		__this->set_client_1(L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Api.UdeskHelper::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelper_EnterUdesk_m8CE9B54BCCF97D4C891AC70971A828E722D52192 (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// client.EnterUdesk();
+		RuntimeObject* L_0 = __this->get_client_1();
+		NullCheck(L_0);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void TGCenterSdk.Common.IUdeskHelperClient::EnterUdesk() */, IUdeskHelperClient_t18F4298AAECA96A4276EC238426C4BD34CB8D2FA_il2cpp_TypeInfo_var, L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Api.UdeskHelper::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelper__cctor_mECE659B8ACF705DC698A1A9868AAA6A78DDBB7CA (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static UdeskHelper instance = new UdeskHelper();
+		UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * L_0 = (UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 *)il2cpp_codegen_object_new(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		UdeskHelper__ctor_m54F90A97161D44F60477D02F71C90EE143D52ADE(L_0, /*hidden argument*/NULL);
+		((UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields*)il2cpp_codegen_static_fields_for(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var))->set_instance_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TGCenterSdk.Platforms.Android.UdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient__ctor_m73984738C1E532D5BFA5C0A774DC1A7C72569251 (UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral75BA3DA7C1C4DC4A9990A152252D09ABA525831F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public UdeskHelperClient() {
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		// udeskHelperClass = new AndroidJavaClass(Utils.Class_UdeskHelper);
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = (AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 *)il2cpp_codegen_object_new(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		AndroidJavaClass__ctor_mEFF9F51871F231955D97DABDE9AB4A6B4EDA5541(L_0, _stringLiteral75BA3DA7C1C4DC4A9990A152252D09ABA525831F, /*hidden argument*/NULL);
+		__this->set_udeskHelperClass_0(L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.UdeskHelperClient::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient_EnterUdesk_m6329417F1BDE3CEA84B980826A0A0425A9D85F40 (UdeskHelperClient_tDC158551FD49002F386E4EF3DB5655FE9C464277 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral30F4DA2C9CA52D04D1B2EDD80796CCB6BC4A8A3E);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// udeskHelperClass.CallStatic("enterUdesk", Utils.GetPlayerActivity());
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = __this->get_udeskHelperClass_0();
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_1 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_2 = L_1;
+		AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * L_3;
+		L_3 = Utils_GetPlayerActivity_m7B8DC76B225EEF0336FA47F348C7560E1C60559E(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB(L_0, _stringLiteral30F4DA2C9CA52D04D1B2EDD80796CCB6BC4A8A3E, L_2, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TGCenterSdk.Platforms.iOS.UdeskHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient__ctor_m0566644341F298791A4C27D8B6BE6D01CE9A1BD4 (UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E * __this, const RuntimeMethod* method)
+{
+	{
+		// public UdeskHelperClient() {
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.UdeskHelperClient::EnterUdesk()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdeskHelperClient_EnterUdesk_m0EE4F54499B00D2D6DC10C72456B431D625FFC01 (UdeskHelperClient_t50FE38E141872238C924184CF5FED79C6161D53E * __this, const RuntimeMethod* method)
+{
+	{
+		// Externs.TGCUdeskEnter();
+		Externs_TGCUdeskEnter_mFC2BD0AC775634E998B01E55E978667D3C1C6D27(/*hidden argument*/NULL);
+		// }
+		return;
 	}
 }
 #ifdef __clang__
@@ -7946,6 +9023,539 @@ IL_0016:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// TGCenterSdk.Api.WeChatHelper TGCenterSdk.Api.WeChatHelper::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * WeChatHelper_get_Instance_mF23BF9EB5504986859DC40ADF9B0AB897E3E4411 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return instance;
+		IL2CPP_RUNTIME_CLASS_INIT(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * L_0 = ((WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields*)il2cpp_codegen_static_fields_for(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var))->get_instance_0();
+		return L_0;
+	}
+}
+// System.Void TGCenterSdk.Api.WeChatHelper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper__ctor_m35278EAF85EB2AED6569CF8F0DB35771BB14BF7B (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, const RuntimeMethod* method)
+{
+	{
+		// private WeChatHelper() {
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		// client = ClientFactory.WeChatHelperClient();
+		RuntimeObject* L_0;
+		L_0 = ClientFactory_WeChatHelperClient_mDC004586BE8220CE5B8553800540AA401856D6FD(/*hidden argument*/NULL);
+		__this->set_client_1(L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Api.WeChatHelper::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper_SetLoginListener_m5FD4953942CE50B6199F81D75FCD7BF5B18593B6 (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// client.SetLoginListener(listener);
+		RuntimeObject* L_0 = __this->get_client_1();
+		RuntimeObject* L_1 = ___listener0;
+		NullCheck(L_0);
+		InterfaceActionInvoker1< RuntimeObject* >::Invoke(0 /* System.Void TGCenterSdk.Common.IWeChatHelperClient::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener) */, IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD_il2cpp_TypeInfo_var, L_0, L_1);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Api.WeChatHelper::Login()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper_Login_mBF712E55CC94BE53FFA651944F358DAB56285C4A (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// client.Login();
+		RuntimeObject* L_0 = __this->get_client_1();
+		NullCheck(L_0);
+		InterfaceActionInvoker0::Invoke(1 /* System.Void TGCenterSdk.Common.IWeChatHelperClient::Login() */, IWeChatHelperClient_tD2817610107C5D3116F9FE00CADB7429A8192DBD_il2cpp_TypeInfo_var, L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Api.WeChatHelper::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelper__cctor_mC2652995424FA539A160D94BB879BA5060B6888F (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static WeChatHelper instance = new WeChatHelper();
+		WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * L_0 = (WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 *)il2cpp_codegen_object_new(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		WeChatHelper__ctor_m35278EAF85EB2AED6569CF8F0DB35771BB14BF7B(L_0, /*hidden argument*/NULL);
+		((WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields*)il2cpp_codegen_static_fields_for(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var))->set_instance_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient__ctor_m715D23A8A4918B3C24E86B4C5E0D52C4A50FBFA8 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4DB8F0670E08D550071EC9B5A306FEEC1BA4A17C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8725E979B4EDD9E0E1B24157C93070FC93DDB599);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCF589F7E1FD41DA1FF76E40FABA716840062A1E6);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public WeChatHelperClient() : base((Utils.Class_WeChatLoginCallback)) {
+		IL2CPP_RUNTIME_CLASS_INIT(AndroidJavaProxy_tA8C86826A74CB7CC5511CB353DBA595C9270D9AF_il2cpp_TypeInfo_var);
+		AndroidJavaProxy__ctor_m1E8F4C0D87B74B81C64A54A584B2FF4ECE571238(__this, _stringLiteral8725E979B4EDD9E0E1B24157C93070FC93DDB599, /*hidden argument*/NULL);
+		// helperClass = new AndroidJavaClass(Utils.Class_WeChatHelper);
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = (AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 *)il2cpp_codegen_object_new(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		AndroidJavaClass__ctor_mEFF9F51871F231955D97DABDE9AB4A6B4EDA5541(L_0, _stringLiteral4DB8F0670E08D550071EC9B5A306FEEC1BA4A17C, /*hidden argument*/NULL);
+		__this->set_helperClass_4(L_0);
+		// helperClass.CallStatic("setLoginCallback", this);
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_1 = __this->get_helperClass_4();
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_2 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_3 = L_2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, __this);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)__this);
+		NullCheck(L_1);
+		AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB(L_1, _stringLiteralCF589F7E1FD41DA1FF76E40FABA716840062A1E6, L_3, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_SetLoginListener_m043D90ADC74077D69545F0BA85C6B7485174765F (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
+{
+	{
+		// this.listener = listener;
+		RuntimeObject* L_0 = ___listener0;
+		__this->set_listener_5(L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::Login()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_Login_m6A072AB12EDBB58A623059E6EBA9FA8E526D7F03 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_CallStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mAD48C38D66AB67D0F0274D195F4A99CB7AB589F2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2522B200396EDFABB4603B843C243BA25007C97E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B7C7541DA82E493491B5A98241F7D44FBE3D125);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6FE1B74AD5BC7DF8579488B3845F1B8286D595FF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB86645FD4CAF139C7CFC0A789470B8A75034AF4);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * V_0 = NULL;
+	{
+		// AndroidJavaClass loginType = new AndroidJavaClass(Utils.Class_WeChatLoginType);
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = (AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 *)il2cpp_codegen_object_new(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
+		AndroidJavaClass__ctor_mEFF9F51871F231955D97DABDE9AB4A6B4EDA5541(L_0, _stringLiteral4B7C7541DA82E493491B5A98241F7D44FBE3D125, /*hidden argument*/NULL);
+		// AndroidJavaObject weChat = loginType.CallStatic<AndroidJavaObject>("valueOf", "Wechat");
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_1 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_2 = L_1;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, _stringLiteral6FE1B74AD5BC7DF8579488B3845F1B8286D595FF);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral6FE1B74AD5BC7DF8579488B3845F1B8286D595FF);
+		NullCheck(L_0);
+		AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * L_3;
+		L_3 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mAD48C38D66AB67D0F0274D195F4A99CB7AB589F2(L_0, _stringLiteralEB86645FD4CAF139C7CFC0A789470B8A75034AF4, L_2, /*hidden argument*/AndroidJavaObject_CallStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mAD48C38D66AB67D0F0274D195F4A99CB7AB589F2_RuntimeMethod_var);
+		V_0 = L_3;
+		// helperClass.CallStatic("login", weChat);
+		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_4 = __this->get_helperClass_4();
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_5 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_6 = L_5;
+		AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * L_7 = V_0;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_7);
+		NullCheck(L_4);
+		AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB(L_4, _stringLiteral2522B200396EDFABB4603B843C243BA25007C97E, L_6, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::loginSuccess(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_loginSuccess_m84EE6FB79925F4E03B477D251BED5E21E7C0B7F9 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, String_t* ___code0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(listener != null) {
+		RuntimeObject* L_0 = __this->get_listener_5();
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// listener.LoginSuccess(code);
+		RuntimeObject* L_1 = __this->get_listener_5();
+		String_t* L_2 = ___code0;
+		NullCheck(L_1);
+		InterfaceActionInvoker1< String_t* >::Invoke(0 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginSuccess(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::loginCancel(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_loginCancel_m273F1C83B494B3E8AB46DD0873ACBEA74EF24A92 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(listener != null) {
+		RuntimeObject* L_0 = __this->get_listener_5();
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// listener.LoginCancel(result);
+		RuntimeObject* L_1 = __this->get_listener_5();
+		String_t* L_2 = ___result0;
+		NullCheck(L_1);
+		InterfaceActionInvoker1< String_t* >::Invoke(2 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginCancel(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.WeChatHelperClient::loginFailed(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_loginFailed_mB07625737348013934C450E16D5BAB1C8C7E9747 (WeChatHelperClient_tEF632C7C44DAB1055C5E21A770E367F31BD046D7 * __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(listener != null) {
+		RuntimeObject* L_0 = __this->get_listener_5();
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// listener.LoginFailed(result);
+		RuntimeObject* L_1 = __this->get_listener_5();
+		String_t* L_2 = ___result0;
+		NullCheck(L_1);
+		InterfaceActionInvoker1< String_t* >::Invoke(1 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginFailed(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675(intptr_t ___helperClient0, char* ___code1)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter '___code1' to managed representation
+	String_t* ____code1_unmarshaled = NULL;
+	____code1_unmarshaled = il2cpp_codegen_marshal_string_result(___code1);
+
+	// Managed method invocation
+	WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675(___helperClient0, ____code1_unmarshaled, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9(intptr_t ___helperClient0, char* ___result1)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter '___result1' to managed representation
+	String_t* ____result1_unmarshaled = NULL;
+	____result1_unmarshaled = il2cpp_codegen_marshal_string_result(___result1);
+
+	// Managed method invocation
+	WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9(___helperClient0, ____result1_unmarshaled, NULL);
+
+}
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B(intptr_t ___helperClient0, char* ___result1)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter '___result1' to managed representation
+	String_t* ____result1_unmarshaled = NULL;
+	____result1_unmarshaled = il2cpp_codegen_marshal_string_result(___result1);
+
+	// Managed method invocation
+	WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B(___helperClient0, ____result1_unmarshaled, NULL);
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient__ctor_m981F96FA747F417953496B05D857C2FF6A6245E0 (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public WeChatHelperClient() {
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		// helperClient = (IntPtr)GCHandle.Alloc(this);
+		GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603  L_0;
+		L_0 = GCHandle_Alloc_m937829FAD1C69F168CF045B9406228AC9F8B9389(__this, /*hidden argument*/NULL);
+		intptr_t L_1;
+		L_1 = GCHandle_op_Explicit_m0A74179B3DD6D87F0863EF55176F924D641E42BF(L_0, /*hidden argument*/NULL);
+		__this->set_helperClient_0((intptr_t)L_1);
+		// Externs.TGCWeChatSetCallback(helperClient,
+		//                             WeChatLoginSuccessCallback,
+		//                             WeChatLoginFailedCallback,
+		//                             WeChatLoginCancelCallback);
+		intptr_t L_2 = __this->get_helperClient_0();
+		TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * L_3 = (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD *)il2cpp_codegen_object_new(TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD_il2cpp_TypeInfo_var);
+		TGCWeChatLoginSuccessCallback__ctor_mCD04E574F89334E71BDF9074E042F60EE6896D5D(L_3, NULL, (intptr_t)((intptr_t)WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675_RuntimeMethod_var), /*hidden argument*/NULL);
+		TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * L_4 = (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A *)il2cpp_codegen_object_new(TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A_il2cpp_TypeInfo_var);
+		TGCWeChatLoginFailedCallback__ctor_m1A1354E03102CFF0B8294932B900FFC895F10139(L_4, NULL, (intptr_t)((intptr_t)WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9_RuntimeMethod_var), /*hidden argument*/NULL);
+		TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * L_5 = (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF *)il2cpp_codegen_object_new(TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF_il2cpp_TypeInfo_var);
+		TGCWeChatLoginCancelCallback__ctor_mD9D625E3386AF1F1D57978CF9542C75938ACE2AD(L_5, NULL, (intptr_t)((intptr_t)WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B_RuntimeMethod_var), /*hidden argument*/NULL);
+		Externs_TGCWeChatSetCallback_m2424416E0B2C29282DCB4E71275824A98C2B0A02((intptr_t)L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::SetLoginListener(TGCenterSdk.Api.WeChatHelper/LoginListener)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_SetLoginListener_m215ED79EC9C9478F7A4CFE81BD6EF6635D69634B (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
+{
+	{
+		// this.listener = listener;
+		RuntimeObject* L_0 = ___listener0;
+		__this->set_listener_1(L_0);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::Login()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_Login_mC50D9D09A6F1640864785EE43DEC9843C8FBE492 (WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * __this, const RuntimeMethod* method)
+{
+	{
+		// Externs.TGCWeChatLogin();
+		Externs_TGCWeChatLogin_m01BE7DA71AB74EDFA7FB2A6F8BB90FB5EA9539FE(/*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginSuccessCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginSuccessCallback_m4B2B13D286862622A59CC29316D9AD9F876EC675 (intptr_t ___helperClient0, String_t* ___code1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * V_0 = NULL;
+	{
+		// WeChatHelperClient client = IntPtrToWeChatHelperClient(helperClient);
+		intptr_t L_0 = ___helperClient0;
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_1;
+		L_1 = WeChatHelperClient_IntPtrToWeChatHelperClient_m322C016785BD2372B07BF97B947497374FB01E26((intptr_t)L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		// if (client.listener != null) {
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_2 = V_0;
+		NullCheck(L_2);
+		RuntimeObject* L_3 = L_2->get_listener_1();
+		if (!L_3)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		// client.listener.LoginSuccess(code);
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_4 = V_0;
+		NullCheck(L_4);
+		RuntimeObject* L_5 = L_4->get_listener_1();
+		String_t* L_6 = ___code1;
+		NullCheck(L_5);
+		InterfaceActionInvoker1< String_t* >::Invoke(0 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginSuccess(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_5, L_6);
+	}
+
+IL_001b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginFailedCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginFailedCallback_mB1B4A8A4CF4099C1AE95FACC9D038BFB503C2BF9 (intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * V_0 = NULL;
+	{
+		// WeChatHelperClient client = IntPtrToWeChatHelperClient(helperClient);
+		intptr_t L_0 = ___helperClient0;
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_1;
+		L_1 = WeChatHelperClient_IntPtrToWeChatHelperClient_m322C016785BD2372B07BF97B947497374FB01E26((intptr_t)L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		// if (client.listener != null) {
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_2 = V_0;
+		NullCheck(L_2);
+		RuntimeObject* L_3 = L_2->get_listener_1();
+		if (!L_3)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		// client.listener.LoginFailed(result);
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_4 = V_0;
+		NullCheck(L_4);
+		RuntimeObject* L_5 = L_4->get_listener_1();
+		String_t* L_6 = ___result1;
+		NullCheck(L_5);
+		InterfaceActionInvoker1< String_t* >::Invoke(1 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginFailed(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_5, L_6);
+	}
+
+IL_001b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient::WeChatLoginCancelCallback(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatHelperClient_WeChatLoginCancelCallback_m80D68E85D451AAD2643EF54F6D21B7D91DFAEF5B (intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * V_0 = NULL;
+	{
+		// WeChatHelperClient client = IntPtrToWeChatHelperClient(helperClient);
+		intptr_t L_0 = ___helperClient0;
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_1;
+		L_1 = WeChatHelperClient_IntPtrToWeChatHelperClient_m322C016785BD2372B07BF97B947497374FB01E26((intptr_t)L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		// if (client.listener != null) {
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_2 = V_0;
+		NullCheck(L_2);
+		RuntimeObject* L_3 = L_2->get_listener_1();
+		if (!L_3)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		// client.listener.LoginCancel(result);
+		WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * L_4 = V_0;
+		NullCheck(L_4);
+		RuntimeObject* L_5 = L_4->get_listener_1();
+		String_t* L_6 = ___result1;
+		NullCheck(L_5);
+		InterfaceActionInvoker1< String_t* >::Invoke(2 /* System.Void TGCenterSdk.Api.WeChatHelper/LoginListener::LoginCancel(System.String) */, LoginListener_tC72BF46E21A7FF4122BE203231DC6CA9A7310C94_il2cpp_TypeInfo_var, L_5, L_6);
+	}
+
+IL_001b:
+	{
+		// }
+		return;
+	}
+}
+// TGCenterSdk.Platforms.iOS.WeChatHelperClient TGCenterSdk.Platforms.iOS.WeChatHelperClient::IntPtrToWeChatHelperClient(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 * WeChatHelperClient_IntPtrToWeChatHelperClient_m322C016785BD2372B07BF97B947497374FB01E26 (intptr_t ___helperClient0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// GCHandle handle = (GCHandle)helperClient;
+		intptr_t L_0 = ___helperClient0;
+		GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603  L_1;
+		L_1 = GCHandle_op_Explicit_mD2A800A063FDBDAB31CD7EC97DD63A896A3568A6((intptr_t)L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		// return handle.Target as WeChatHelperClient;
+		RuntimeObject * L_2;
+		L_2 = GCHandle_get_Target_m6C296AD6520ECDAFC9498E9387677F522871F883((GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603 *)(&V_0), /*hidden argument*/NULL);
+		return ((WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36 *)IsInstClass((RuntimeObject*)L_2, WeChatHelperClient_tC8FE96BEFBED11311C5944EB5C5D939D68F29B36_il2cpp_TypeInfo_var));
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void AntiAddictionSdk.Platforms.Android.AntiAddictionClient/AndroidRealNameCallback::.ctor(AntiAddictionSdk.Api.RealNameCallback)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidRealNameCallback__ctor_m2FB0F2D80C466DB1F65E11ACA8562CAC46404BF4 (AndroidRealNameCallback_tF83DC8562F54CC5DD7BDEEA2AC573DA5292F2745 * __this, RuntimeObject* ___callback0, const RuntimeMethod* method)
 {
@@ -8368,16 +9978,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealNameListener_OnFinish_m8659EAF8FEB90
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCEE9D315C8A295238AAB2260CA2895944013F51E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA099F13C0A2FE9C8F9D1BD3F623387D85A9E494);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("RealNameCallback logUserInfo: ");
+		// Debug.Log("RealNameCallback GetUserInfo: ");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteralCEE9D315C8A295238AAB2260CA2895944013F51E, /*hidden argument*/NULL);
-		// LogUserInfo(user);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteralEA099F13C0A2FE9C8F9D1BD3F623387D85A9E494, /*hidden argument*/NULL);
+		// GetUserInfo(user);
 		User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * L_0 = ___user0;
-		MainBehaviour_LogUserInfo_mC8FC3F64ABA3C4C6CF253EEE2CDEDB134E4FE6BC(L_0, /*hidden argument*/NULL);
+		MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55(L_0, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -8544,6 +10154,85 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeLimitListener_OnTimeLimit_m6ED4E82FF
 }
 // System.Void MainBehaviour/TimeLimitListener::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeLimitListener__ctor_mABFE790553C8687EF4C95F2CF3C63A5F0A0D00D7 (TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void MainBehaviour/WeChatLoginListener::LoginSuccess(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatLoginListener_LoginSuccess_mFDFB302FAC3FC58236736D7860B2EDCD11927B63 (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * __this, String_t* ___code0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral262E0CE41CC5D10F364D7AA4B616817F449EA8A1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("WeChat LoginSuccess, code: " + code);
+		String_t* L_0 = ___code0;
+		String_t* L_1;
+		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral262E0CE41CC5D10F364D7AA4B616817F449EA8A1, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour/WeChatLoginListener::LoginFailed(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatLoginListener_LoginFailed_m00BC1DC05E56A4CDC9DEAC36E8FF79083755CDD9 (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE451D44E035919265CFAE9DA11AEBDA42AFA5A26);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("WeChat LoginFailed, result: " + result);
+		String_t* L_0 = ___result0;
+		String_t* L_1;
+		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteralE451D44E035919265CFAE9DA11AEBDA42AFA5A26, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour/WeChatLoginListener::LoginCancel(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatLoginListener_LoginCancel_m74599FF0EE8B209378F09D019E52D3AB9EC863FE (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C73CD266BD0DD2E02068233B9A42E7619231EBD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("WeChat LoginCancel, result: " + result);
+		String_t* L_0 = ___result0;
+		String_t* L_1;
+		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral2C73CD266BD0DD2E02068233B9A42E7619231EBD, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MainBehaviour/WeChatLoginListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeChatLoginListener__ctor_m7ADA0433B05964F606A2783B8837C0F819E21D33 (WeChatLoginListener_t64DAB793C959843E201A166C8F516334FA1A37B2 * __this, const RuntimeMethod* method)
 {
 	{
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
@@ -8789,6 +10478,375 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCPrivacyDisagreeCallback_EndInvoke_mC2
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc)(intptr_t, char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
+
+	// Marshaling of parameter '___result1' to native representation
+	char* ____result1_marshaled = NULL;
+	____result1_marshaled = il2cpp_codegen_marshal_string(___result1);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___helperClient0, ____result1_marshaled);
+
+	// Marshaling cleanup of parameter '___result1' native representation
+	il2cpp_codegen_marshal_free(____result1_marshaled);
+	____result1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginCancelCallback__ctor_mD9D625E3386AF1F1D57978CF9542C75938ACE2AD (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback::Invoke(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginCancelCallback_Invoke_m8B3E17C57F0E172FE5260326E61410E5BEB47FE6 (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
+	Delegate_t** delegatesToInvoke;
+	il2cpp_array_size_t length;
+	if (delegateArrayToInvoke != NULL)
+	{
+		length = delegateArrayToInvoke->max_length;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
+	}
+	else
+	{
+		length = 1;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
+	}
+
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Delegate_t* currentDelegate = delegatesToInvoke[i];
+		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
+		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
+		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
+		if (!il2cpp_codegen_method_is_virtual(targetMethod))
+		{
+			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+		}
+		bool ___methodIsStatic = MethodIsStatic(targetMethod);
+		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
+		if (___methodIsStatic)
+		{
+			if (___parameterCount == 2)
+			{
+				// open
+				typedef void (*FunctionPointerType) (intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___helperClient0, ___result1, targetMethod);
+			}
+			else
+			{
+				// closed
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___result1, targetMethod);
+			}
+		}
+		else
+		{
+			// closed
+			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			{
+				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						GenericInterfaceActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___result1);
+					else
+						GenericVirtActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___result1);
+				}
+				else
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						InterfaceActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___helperClient0, ___result1);
+					else
+						VirtActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___helperClient0, ___result1);
+				}
+			}
+			else
+			{
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___result1, targetMethod);
+			}
+		}
+	}
+}
+// System.IAsyncResult TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TGCWeChatLoginCancelCallback_BeginInvoke_m3381D2308FC760559F6E3F9888943012D6DAC072 (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, intptr_t ___helperClient0, String_t* ___result1, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback2, RuntimeObject * ___object3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___helperClient0);
+	__d_args[1] = ___result1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);;
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginCancelCallback::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginCancelCallback_EndInvoke_mEF205F768D4259B6982AA84FAF1EEF9C2539DC7F (TGCWeChatLoginCancelCallback_t96E096BF535B2EE0112B938F3B9151F93EE113AF * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc)(intptr_t, char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
+
+	// Marshaling of parameter '___result1' to native representation
+	char* ____result1_marshaled = NULL;
+	____result1_marshaled = il2cpp_codegen_marshal_string(___result1);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___helperClient0, ____result1_marshaled);
+
+	// Marshaling cleanup of parameter '___result1' native representation
+	il2cpp_codegen_marshal_free(____result1_marshaled);
+	____result1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginFailedCallback__ctor_m1A1354E03102CFF0B8294932B900FFC895F10139 (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback::Invoke(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginFailedCallback_Invoke_m52B8A5D83B2AD8F89B8B7A010963F02C5451E6D1 (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, intptr_t ___helperClient0, String_t* ___result1, const RuntimeMethod* method)
+{
+	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
+	Delegate_t** delegatesToInvoke;
+	il2cpp_array_size_t length;
+	if (delegateArrayToInvoke != NULL)
+	{
+		length = delegateArrayToInvoke->max_length;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
+	}
+	else
+	{
+		length = 1;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
+	}
+
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Delegate_t* currentDelegate = delegatesToInvoke[i];
+		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
+		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
+		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
+		if (!il2cpp_codegen_method_is_virtual(targetMethod))
+		{
+			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+		}
+		bool ___methodIsStatic = MethodIsStatic(targetMethod);
+		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
+		if (___methodIsStatic)
+		{
+			if (___parameterCount == 2)
+			{
+				// open
+				typedef void (*FunctionPointerType) (intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___helperClient0, ___result1, targetMethod);
+			}
+			else
+			{
+				// closed
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___result1, targetMethod);
+			}
+		}
+		else
+		{
+			// closed
+			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			{
+				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						GenericInterfaceActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___result1);
+					else
+						GenericVirtActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___result1);
+				}
+				else
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						InterfaceActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___helperClient0, ___result1);
+					else
+						VirtActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___helperClient0, ___result1);
+				}
+			}
+			else
+			{
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___result1, targetMethod);
+			}
+		}
+	}
+}
+// System.IAsyncResult TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TGCWeChatLoginFailedCallback_BeginInvoke_mE5D47979C8AAF2CD2D96C2D3FA95F0828018CE94 (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, intptr_t ___helperClient0, String_t* ___result1, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback2, RuntimeObject * ___object3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___helperClient0);
+	__d_args[1] = ___result1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);;
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginFailedCallback::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginFailedCallback_EndInvoke_mA37BEA7EB1AF3AC8A0A868566A967D224DD6D758 (TGCWeChatLoginFailedCallback_t1AC843287DD02DE1863BED5795E483BECE657D8A * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, intptr_t ___helperClient0, String_t* ___code1, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc)(intptr_t, char*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
+
+	// Marshaling of parameter '___code1' to native representation
+	char* ____code1_marshaled = NULL;
+	____code1_marshaled = il2cpp_codegen_marshal_string(___code1);
+
+	// Native function invocation
+	il2cppPInvokeFunc(___helperClient0, ____code1_marshaled);
+
+	// Marshaling cleanup of parameter '___code1' native representation
+	il2cpp_codegen_marshal_free(____code1_marshaled);
+	____code1_marshaled = NULL;
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginSuccessCallback__ctor_mCD04E574F89334E71BDF9074E042F60EE6896D5D (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback::Invoke(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginSuccessCallback_Invoke_mA21FD771871B7028C0FF6051B4D66913E3132A52 (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, intptr_t ___helperClient0, String_t* ___code1, const RuntimeMethod* method)
+{
+	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
+	Delegate_t** delegatesToInvoke;
+	il2cpp_array_size_t length;
+	if (delegateArrayToInvoke != NULL)
+	{
+		length = delegateArrayToInvoke->max_length;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
+	}
+	else
+	{
+		length = 1;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
+	}
+
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Delegate_t* currentDelegate = delegatesToInvoke[i];
+		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
+		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
+		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
+		if (!il2cpp_codegen_method_is_virtual(targetMethod))
+		{
+			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+		}
+		bool ___methodIsStatic = MethodIsStatic(targetMethod);
+		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
+		if (___methodIsStatic)
+		{
+			if (___parameterCount == 2)
+			{
+				// open
+				typedef void (*FunctionPointerType) (intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___helperClient0, ___code1, targetMethod);
+			}
+			else
+			{
+				// closed
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___code1, targetMethod);
+			}
+		}
+		else
+		{
+			// closed
+			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			{
+				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						GenericInterfaceActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___code1);
+					else
+						GenericVirtActionInvoker2< intptr_t, String_t* >::Invoke(targetMethod, targetThis, ___helperClient0, ___code1);
+				}
+				else
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						InterfaceActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___helperClient0, ___code1);
+					else
+						VirtActionInvoker2< intptr_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___helperClient0, ___code1);
+				}
+			}
+			else
+			{
+				typedef void (*FunctionPointerType) (void*, intptr_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___helperClient0, ___code1, targetMethod);
+			}
+		}
+	}
+}
+// System.IAsyncResult TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TGCWeChatLoginSuccessCallback_BeginInvoke_mDC2C83CE29B0CA9B0C7B7EEE920F7226E6D10182 (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, intptr_t ___helperClient0, String_t* ___code1, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback2, RuntimeObject * ___object3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___helperClient0);
+	__d_args[1] = ___code1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);;
+}
+// System.Void TGCenterSdk.Platforms.iOS.WeChatHelperClient/TGCWeChatLoginSuccessCallback::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCWeChatLoginSuccessCallback_EndInvoke_mB45C270FB45824D5DDA46B073096FBA88D4A126A (TGCWeChatLoginSuccessCallback_tC6C3C72E85A10656912D91D78EE1C66F659DE8FD * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TGCenterClient_t852F76F73B20352EC6238AC9B9F507DF071CF9B0 * TGCenterClient_get_Instance_m58BCC70F95FF029755E79A92DAB78A0EBFBF9239_inline (const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8858,6 +10916,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PrivacyPolicyHelper_t5983E6361B35
 		// return instance;
 		IL2CPP_RUNTIME_CLASS_INIT(PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_il2cpp_TypeInfo_var);
 		PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * L_0 = ((PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_StaticFields*)il2cpp_codegen_static_fields_for(PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_il2cpp_TypeInfo_var))->get_instance_0();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * WeChatHelper_get_Instance_mF23BF9EB5504986859DC40ADF9B0AB897E3E4411_inline (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return instance;
+		IL2CPP_RUNTIME_CLASS_INIT(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var);
+		WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8 * L_0 = ((WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_StaticFields*)il2cpp_codegen_static_fields_for(WeChatHelper_t7672BBB015D865C82755FEEC24FCFBB8D12E18C8_il2cpp_TypeInfo_var))->get_instance_0();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * UdeskHelper_get_Instance_m3142C8AD0BA95DC535F38D84EB5963725F29C84F_inline (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return instance;
+		IL2CPP_RUNTIME_CLASS_INIT(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var);
+		UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1 * L_0 = ((UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_StaticFields*)il2cpp_codegen_static_fields_for(UdeskHelper_t73B31B1C542406EC5384719C6EB577F4773E87C1_il2cpp_TypeInfo_var))->get_instance_0();
 		return L_0;
 	}
 }

@@ -24,6 +24,11 @@ namespace TGCenterSdk.Platforms.iOS
         [DllImport("__Internal")]
         #endif
         internal static extern bool TGCIsUserAgreePolicy();
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern bool TGCClearCache();
         #endregion
 
 
@@ -67,6 +72,31 @@ namespace TGCenterSdk.Platforms.iOS
         [DllImport("__Internal")]
         #endif
         internal static extern void TGCSetInitConfig_RangersAppLogAppName(IntPtr config, string rangersAppLogAppName);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_WeChatAppId(IntPtr config, string weChatAppId);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_WeChatUniversalLink(IntPtr config, string weChatUniversalLink);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_UdeskDomain(IntPtr config, string udeskDomain);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_UdeskAppKey(IntPtr config, string udeskAppKey);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCSetInitConfig_UdeskAppId(IntPtr config, string udeskAppId);
 
         #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
         [DllImport("__Internal")]
@@ -115,6 +145,30 @@ namespace TGCenterSdk.Platforms.iOS
         [DllImport("__Internal")]
         #endif
         internal static extern void TGCPrivacyJumpToPrivacyPolicy();
+        #endregion
+
+
+        #region WeChatHelper
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCWeChatSetCallback(IntPtr clientPtr,
+                          WeChatHelperClient.TGCWeChatLoginSuccessCallback successCallback,
+                          WeChatHelperClient.TGCWeChatLoginFailedCallback failedCallback,
+                          WeChatHelperClient.TGCWeChatLoginCancelCallback cancelCallback);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCWeChatLogin();
+        #endregion
+
+
+        #region UdeskHelper
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void TGCUdeskEnter();
         #endregion
     }
 }
