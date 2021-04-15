@@ -7,14 +7,14 @@ allprojects {
             jcenter()
 
             // ModooPlay
-            maven { url "https://dl.bintray.com/tgcenter/Unified" }
+            maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         }
 
         dependencies {
             classpath 'com.android.tools.build:gradle:4.0.2'
 
             // ModooPlay
-            classpath "com.tgcenter.unified:plugin:1.3"
+            classpath "com.tgcenter.unified:plugin:+"
         }
     }
 
@@ -24,6 +24,7 @@ allprojects {
         flatDir {
             dirs "${project(':unityLibrary').projectDir}/libs"
         }
+        maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         maven { url "../Upload-Library" }
         maven { url "../Upload-AntiAddiction" }
     }

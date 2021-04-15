@@ -47,18 +47,18 @@ public class MainBehaviour : MonoBehaviour
 
         int antiW = 500;
         if (GUI.Button(new Rect(x, y, antiW, h), "RealName", style))
-        {
-            AntiAddiction.RealName(new RealNameListener());
+        {   
+            RealName();
         }
         if (GUI.Button(new Rect(x + antiW, y, antiW, h), "RealName CustomUI", style))
         {
-            AntiAddiction.RealName("王航", "34022219911208501X", new RealNameListener());
+            RealNameCustomUI();
         }
         y += d;
         if (GUI.Button(new Rect(x, y, antiW, h), "Logout", style))
         {
             AntiAddiction.Logout();
-            LogUserInfo(null);
+            GetUserInfo(null);
         }
     }
 
@@ -112,13 +112,23 @@ public class MainBehaviour : MonoBehaviour
         AntiAddiction.SetAutoShowTimeLimitPage(false);
         AntiAddiction.SetTimeLimitCallback(new TimeLimitListener());
 
-        LogUserInfo(null);
+        GetUserInfo(null);
+    }
+
+    // 实名认证，使用 SDK 默认 UI
+    private void RealName() {
+        AntiAddiction.RealName(new RealNameListener());
+    }
+
+    // 实名认证，使用自定义 UI
+    private void RealNameCustomUI() {
+        AntiAddiction.RealName("name", "idNumber", new RealNameListener());
     }
 
     private class RealNameListener : RealNameCallback {
         public void OnFinish(User user) {
-            Debug.Log("RealNameCallback logUserInfo: ");
-            LogUserInfo(user);
+            Debug.Log("RealNameCallback GetUserInfo: ");
+            GetUserInfo(user);
         }
     }
 
@@ -136,53 +146,45 @@ public class MainBehaviour : MonoBehaviour
         }
     }
 
-    private static void LogUserInfo(User user) {
+    // 获取用户信息
+    private static void GetUserInfo(User user) {
         if (user == null) {
-            user = AntiAddiction.GetUser();   
+            user = AntiAddiction.GetUser();
         }
 
+        // 获取实名状态
         string result = "";
         RealNameResult realNameResult = user.GetRealNameResult();
         if (realNameResult.IsSuccess()) {
             result = "实名认证成功";
-            Debug.Log("realNameResult: isSuccess");
-        }
-        if (realNameResult.IsFail()) {
-            Debug.Log("realNameResult: isFail");
+        } else if (realNameResult.IsFail()) {
             result = "实名认证失败";
-        } 
-        if (realNameResult.IsProcessing()) {
-            Debug.Log("realNameResult: isProcessing");
+        } else if (realNameResult.IsProcessing()) {
             result = "实名认证中...";
-        }
-        if (realNameResult.IsInitial()) {
+        } else {
             Debug.Log("realNameResult: isInitial");
             result = "初始状态";
         }
 
+        // 获取用户身份
         String info;
         if (user.IsTourist()) {
             info = "游客";
-            Debug.Log("realNameResult: isTourist");
-        }
-        if (user.IsChild()) {
+        } else if (user.IsChild()) {
             info = "未成年人";
-            Debug.Log("realNameResult: isChild");
-        }
-        if (user.IsAdult()) {
+        } else if (user.IsAdult()) {
             info = "成年人";
-            Debug.Log("realNameResult: isAdult");
         } else {
             info = "游客";
-            Debug.Log("realNameResult: isTourist 2");
         }
 
+        // 获取用户年龄
         int age = user.GetAge();
 
         string userInfo = "实名认证结果: " + result + "\n"
                 + ", 身份：" + info + "\n"
                 + ", 年龄：" + age;
-        Debug.Log("LogUserInfo: " + userInfo);
+        Debug.Log("GetUserInfo: " + userInfo);
     }
 
     // 展示默认的《用户协议和隐私政策》对话框

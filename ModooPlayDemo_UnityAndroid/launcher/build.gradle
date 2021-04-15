@@ -38,7 +38,7 @@ tgCenter {
                 mobrain_kuaishou: false  // 穿山甲聚合-快手
         ]
 
-        gameAntiAddiction true
+//        gameAntiAddiction true
     }
 }
 
