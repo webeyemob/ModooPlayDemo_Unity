@@ -146,29 +146,5 @@ namespace TGCenterSdk.Platforms.iOS
         #endif
         internal static extern void TGCPrivacyJumpToPrivacyPolicy();
         #endregion
-
-
-        #region WeChatHelper
-        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
-        [DllImport("__Internal")]
-        #endif
-        internal static extern void TGCWeChatSetCallback(IntPtr clientPtr,
-                          WeChatHelperClient.TGCWeChatLoginSuccessCallback successCallback,
-                          WeChatHelperClient.TGCWeChatLoginFailedCallback failedCallback,
-                          WeChatHelperClient.TGCWeChatLoginCancelCallback cancelCallback);
-
-        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
-        [DllImport("__Internal")]
-        #endif
-        internal static extern void TGCWeChatLogin();
-        #endregion
-
-
-        #region UdeskHelper
-        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
-        [DllImport("__Internal")]
-        #endif
-        internal static extern void TGCUdeskEnter();
-        #endregion
     }
 }

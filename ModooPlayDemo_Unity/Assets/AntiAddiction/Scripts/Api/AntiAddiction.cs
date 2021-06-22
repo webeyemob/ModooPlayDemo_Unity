@@ -39,5 +39,24 @@ namespace AntiAddictionSdk.Api
         public static void Logout() {
             Client.Logout();
         }
+
+        
+        // 获取适龄提示内容
+        public static AgeTip GetAgeTip() {
+            return Client.GetAgeTip();
+        }
+        // 展示适龄提示页面
+        public static void ShowAgeTipPage(AgeTipCallback callback) {
+            Client.ShowAgeTipPage(callback);
+        }
+
+        // 获取健康游戏提示内容
+        public static HealthGameTip GetHealthGameTip() {
+            return Client.GetHealthGameTip();
+        }
+        // 展示健康游戏提示
+        public static void ShowHealthGameTipPage(HealthGameTipCallback callback) {
+            Client.ShowHealthGameTipPage(callback);
+        }
     }
 }

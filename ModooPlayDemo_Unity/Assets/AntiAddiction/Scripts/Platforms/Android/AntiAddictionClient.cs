@@ -72,5 +72,81 @@ namespace AntiAddictionSdk.Platforms.Android
         public void Logout() {
             AntiAddiction.Call("logout");
         }
+
+
+        public AgeTip GetAgeTip() {
+            byte[] iconByteArray = AntiAddiction.Call<byte[]>("getAgeTipsImageByteArray");
+            AndroidJavaObject gameComplianceInfo = AntiAddiction.Call<AndroidJavaObject>("getGameComplianceInfo");
+            return new AgeTip(new AgeTipClient(iconByteArray, gameComplianceInfo));
+        }
+
+        public void ShowAgeTipPage(AgeTipCallback callback) {
+            AndroidAgeTipCallback androidCallback = new AndroidAgeTipCallback(callback);
+            AntiAddiction.Call("showAgeTipsPage", androidCallback);
+        }
+
+        private class AndroidAgeTipCallback : AndroidJavaProxy {
+            private AgeTipCallback Callback;
+            public AndroidAgeTipCallback(AgeTipCallback callback) : base(Utils.Class_AgeTipCallback) {
+                Callback = callback;
+            }
+
+            #region Class_AgeTipCallback
+            public void onAgeTipsOpen() {
+                if(Callback != null) {
+                    Callback.OnAgeTipsOpen();
+                }
+            }
+
+            public void onAgeTipsOpenFail(string message) {
+                if(Callback != null) {
+                    Callback.OnAgeTipsOpenFail(message);
+                }
+            }
+
+            public void onAgeTipsClose() {
+                if(Callback != null) {
+                    Callback.OnAgeTipsClose();
+                }
+            }
+            #endregion
+        }
+
+        public HealthGameTip GetHealthGameTip() {
+            AndroidJavaObject gameComplianceInfo = AntiAddiction.Call<AndroidJavaObject>("getGameComplianceInfo");
+            return new HealthGameTip(new HealthGameTipClient(gameComplianceInfo));
+        }
+
+        public void ShowHealthGameTipPage(HealthGameTipCallback callback) {
+            AndroidHealthGameTipCallback androidCallback = new AndroidHealthGameTipCallback(callback);
+            AntiAddiction.Call("showHealthGamePage", androidCallback);
+        }
+
+        private class AndroidHealthGameTipCallback : AndroidJavaProxy {
+            private HealthGameTipCallback Callback;
+            public AndroidHealthGameTipCallback(HealthGameTipCallback callback) : base(Utils.Class_HealthGameTipCallback) {
+                Callback = callback;
+            }
+
+            #region Class_HealthGameTipCallback
+            public void onHealthGameTipsOpen() {
+                if(Callback != null) {
+                    Callback.OnHealthGameTipOpen();
+                }
+            }
+
+            public void onHealthGameTipsOpenFail(string message) {
+                if(Callback != null) {
+                    Callback.OnHealthGameTipOpenFail(message);
+                }
+            }
+
+            public void onHealthGameTipsClose() {
+                if(Callback != null) {
+                    Callback.OnHealthGameTipClose();
+                }
+            }
+            #endregion
+        }        
     }
 }

@@ -170,5 +170,56 @@ namespace AntiAddictionSdk.Platforms.iOS
         #endif
         internal static extern bool AntiAddictionLimitTipCanRealName(IntPtr limitTip);
         #endregion
+
+
+        #region AgeTip
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern IntPtr AntiAddictionGetAgeTip();
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern string AntiAddictionAgeTipGetIconByteArrayString(IntPtr ageTip);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern string AntiAddictionAgeTipGetText(IntPtr ageTip);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void AntiAddictionShowAgeTip(
+            AntiAddictionClient.AntiAddictionAgeTipShowCallback showCallback,
+            AntiAddictionClient.AntiAddictionAgeTipCloseCallback closeCallback);
+        #endregion
+
+
+        #region HealthGameTip
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern IntPtr AntiAddictionGetHealthGameTip();
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern string AntiAddictionHealthGameTipGetTipText(IntPtr healthGameTip);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern string AntiAddictionHealthGameTipGetAppInfoText(IntPtr healthGameTip);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
+        internal static extern void AntiAddictionShowHealthGameTip(
+            AntiAddictionClient.AntiAddictionHealthGameTipShowCallback showCallback,
+            AntiAddictionClient.AntiAddictionHealthGameTipShowFailedCallback showFailedCallback,
+            AntiAddictionClient.AntiAddictionHealthGameTipCloseCallback closeCallback);
+        #endregion
     }
 }

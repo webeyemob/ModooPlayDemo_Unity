@@ -39,8 +39,8 @@ target 'UnityFramework' do
   pod 'TGCAppsFlyer'
   
   # 深度转化
-  pod 'TGCRangersAppLog'
-  pod 'RangersAppLog', '5.4.2',:subspecs => ['Core','Log','Unique']
+#  pod 'TGCRangersAppLog'
+#  pod 'RangersAppLog', '5.4.2',:subspecs => ['Core','Log','Unique']
 
   # 广告聚合
   pod 'TGCTaurusXAds'
@@ -66,6 +66,6 @@ target 'UnityFramework' do
   pod 'TGCWeChat'
   
   # 客服系统
-  pod 'TGCUdesk'
+#  pod 'TGCUdesk'
   
 end

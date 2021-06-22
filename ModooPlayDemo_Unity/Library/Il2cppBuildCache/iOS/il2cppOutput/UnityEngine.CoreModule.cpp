@@ -990,6 +990,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral26A69F385CB916B500238120B972B54B804F7DDE
 IL2CPP_EXTERN_C String_t* _stringLiteral2871F975E8887269F65A6772517F34F6B41FB241;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C858C708A53B482CEA9BA62F9D7A0CC6A5E3F09;
 IL2CPP_EXTERN_C String_t* _stringLiteral3101ED7ACD48624A3ECC70BC8CA746903A32B589;
+IL2CPP_EXTERN_C String_t* _stringLiteral31D159E683556C06B3B3963D92483B6867EB3233;
 IL2CPP_EXTERN_C String_t* _stringLiteral320772EF40302B49A179DB96BAD02224E97B4018;
 IL2CPP_EXTERN_C String_t* _stringLiteral393D29E55DA6AB694C34E4CD55DD01405ABE2979;
 IL2CPP_EXTERN_C String_t* _stringLiteral39FAE74D15788315AB78133F0E7597E1DC324337;
@@ -1054,6 +1055,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391
 IL2CPP_EXTERN_C String_t* _stringLiteralC8D4797FBB1D4C6C199B2789FC99C6050526217A;
 IL2CPP_EXTERN_C String_t* _stringLiteralCCE1912E091B2153DFAE28F4F55D34CD3C4EF3D4;
 IL2CPP_EXTERN_C String_t* _stringLiteralCD21FD6FAF1A4217D4447ED6F3E51B933E94F348;
+IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF6D423D6F6C1327D40E616C52007CE750F00A62;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF75C3CEA7608ED7C1CC4F7339C4A3B6743D0F12;
 IL2CPP_EXTERN_C String_t* _stringLiteralCFEF3227A766442073C70EFE7DC19B6BA9C63006;
@@ -1170,6 +1172,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* PlayerConnection_Register_m97A0118B2F172AA0
 IL2CPP_EXTERN_C const RuntimeMethod* PlayerConnection_Send_m51137877D6E519903AEA4A506ABD48A30AF684F0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PlayerConnection_TrySend_m9AD3046E615B6DECE991776EEFAB10EA95E478A6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Predicate_1__ctor_m2D5A0E7E8C6FCC9939E5D1B990470F33A69B3296_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RenderPipeline_InternalRenderWithRequests_m9883F1C0D6400EB2A0364C92F7F8BB39E9398DCF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RenderPipeline_InternalRender_mD6C2FEDA607A430F963066B487C02F4D2379FBDA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RenderTexture_ValidateRenderTextureDesc_m5D363CF342A8C617A326B982D209893F76E30404_RuntimeMethod_var;
@@ -3418,6 +3421,15 @@ public:
 		___disconnectionEvent_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___disconnectionEvent_2), (void*)value);
 	}
+};
+
+
+// UnityEngine.Profiling.Profiler
+struct  Profiler_t758FCBFA17F70B57B17875527C9AEDDE5B18F3D6  : public RuntimeObject
+{
+public:
+
+public:
 };
 
 
@@ -17855,6 +17867,10 @@ inline void List_1__ctor_m66D42DB9F8C7A395331B327420ACD8343C281757 (List_1_t842D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConnectionChangeEvent__ctor_m95EBD8B5EA1C4A14A5F2B71CEE1A2C18C73DB0A1 (ConnectionChangeEvent_tCA1C8C14171C72EC394EF45450D69C1585067BDF * __this, const RuntimeMethod* method);
 // System.String UnityEngine.LowLevel.PlayerLoopSystem::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerLoopSystem_ToString_mAC7EE13A5561966294881362AD59CB55DBBED9EE (PlayerLoopSystem_t3C4FAE5D2149A8DBB8BED0C2AE9B957B7830E54C * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Profiling.Profiler::ValidateArguments(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_inline (String_t* ___name0, const RuntimeMethod* method);
+// System.Void UnityEngine.Profiling.Profiler::BeginSampleImpl(System.String,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0 (String_t* ___name0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___targetObject1, const RuntimeMethod* method);
 // System.Void UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quaternion_FromToRotation_Injected_mF0D47B601B2A983EF001C4BDDA1819DB1CAAC68E (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___fromDirection0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___toDirection1, Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 * ___ret2, const RuntimeMethod* method);
 // System.Void UnityEngine.Quaternion::Slerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
@@ -24147,6 +24163,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_mE6AF3EFCF84F2296622CD4
 		Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * L_2 = ___context1;
 		NullCheck(L_0);
 		InterfaceActionInvoker3< int32_t, RuntimeObject *, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * >::Invoke(2 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object,UnityEngine.Object) */, ILogger_t25627AC5B51863702868D31972297B7D633B4583_il2cpp_TypeInfo_var, L_0, 2, L_1, L_2);
+		return;
+	}
+}
+// System.Void UnityEngine.Debug::Assert(System.Boolean,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Assert_m28EC098B41C037ED14C42FE47D0E5355CD2437F5 (bool ___condition0, String_t* ___message1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_t25627AC5B51863702868D31972297B7D633B4583_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		bool L_0 = ___condition0;
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		RuntimeObject* L_2;
+		L_2 = Debug_get_unityLogger_m70D38067C3055104F6C8D050AB7CE0FDFD05EE22(/*hidden argument*/NULL);
+		String_t* L_3 = ___message1;
+		NullCheck(L_2);
+		InterfaceActionInvoker2< int32_t, RuntimeObject * >::Invoke(1 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object) */, ILogger_t25627AC5B51863702868D31972297B7D633B4583_il2cpp_TypeInfo_var, L_2, 1, L_3);
+	}
+
+IL_0016:
+	{
 		return;
 	}
 }
@@ -36379,6 +36429,69 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreserveAttribute__ctor_mBD1EEF1095DBD58
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.Profiling.Profiler::BeginSample(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Profiler_BeginSample_m72E4BD9503BC991BAFAED992FF1CA4504C741865 (String_t* ___name0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_inline(L_0, /*hidden argument*/NULL);
+		String_t* L_1 = ___name0;
+		Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0(L_1, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Profiling.Profiler::ValidateArguments(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512 (String_t* ___name0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		String_t* L_0 = ___name0;
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_m9AFBB5335B441B94E884B8A9D4A27AD60E3D7F7C(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_3 = (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m71044C2110E357B71A1C30D2561C3F861AF1DC0D(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral31D159E683556C06B3B3963D92483B6867EB3233)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F)), /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Profiling.Profiler::BeginSampleImpl(System.String,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0 (String_t* ___name0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___targetObject1, const RuntimeMethod* method)
+{
+	typedef void (*Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0_ftn) (String_t*, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *);
+	static Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Profiler_BeginSampleImpl_mF1EE2C3EB23D01B3F9A25C43C8BC82BFC4F3B5A0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Profiling.Profiler::BeginSampleImpl(System.String,UnityEngine.Object)");
+	_il2cpp_icall_func(___name0, ___targetObject1);
+}
+// System.Void UnityEngine.Profiling.Profiler::EndSample()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Profiler_EndSample_m78C76E709113E225D47687E26EA320E4FC548B71 (const RuntimeMethod* method)
+{
+	typedef void (*Profiler_EndSample_m78C76E709113E225D47687E26EA320E4FC548B71_ftn) ();
+	static Profiler_EndSample_m78C76E709113E225D47687E26EA320E4FC548B71_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Profiler_EndSample_m78C76E709113E225D47687E26EA320E4FC548B71_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Profiling.Profiler::EndSample()");
+	_il2cpp_icall_func();
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void UnityEngine.PropertyAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyAttribute__ctor_mA13181D93341AEAE429F0615989CB4647F2EB8A7 (PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052 * __this, const RuntimeMethod* method)
 {
@@ -48573,6 +48686,31 @@ IL_0030:
 	{
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = V_0;
 		return L_13;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_inline (String_t* ___name0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		String_t* L_0 = ___name0;
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_m9AFBB5335B441B94E884B8A9D4A27AD60E3D7F7C(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_3 = (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m71044C2110E357B71A1C30D2561C3F861AF1DC0D(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral31D159E683556C06B3B3963D92483B6867EB3233)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F)), /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Profiler_ValidateArguments_mBD8BD2520B428CBAA924D27613F9F0BB5D9C4512_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method)

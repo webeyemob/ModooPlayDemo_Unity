@@ -75,6 +75,7 @@ AntiAddictionTypeTimeLimitRef AntiAddictionCheckTimeLimitStatus() {
 void AntiAddictionLogout() {
     [AntiAddictionSdk logOut];
 }
+
 #pragma mark - AntiAddictionSdk
 
 
@@ -219,3 +220,66 @@ BOOL AntiAddictionLimitTipCanRealName(AntiAddictionTypeLimitTipRef limitTip) {
     return canRealName;
 }
 #pragma mark - LimitTip
+
+
+#pragma mark - AgeTip
+AntiAddictionTypeAgeTipRef AntiAddictionGetAgeTip() {
+    AntiAddictionAgeTipObject *ageTipObject = [AntiAddictionSdk getAgeTipContent];
+    if (ageTipObject == nil) {
+        ageTipObject = [[AntiAddictionAgeTipObject alloc] init];
+    }
+    
+    AntiAddictionObjectCache *cache = [AntiAddictionObjectCache sharedInstance];
+    [cache.references setObject:ageTipObject forKey:[ageTipObject antiAddiction_referenceKey]];
+    return (__bridge AntiAddictionTypeAgeTipRef)ageTipObject;
+}
+
+const char *AntiAddictionAgeTipGetIconByteArrayString(AntiAddictionTypeAgeTipRef ageTip) {
+    AntiAddictionAgeTipObject *internalAgeTip = (__bridge AntiAddictionAgeTipObject *)ageTip;
+    NSData *icon = internalAgeTip.iconData;
+    NSString *base64String = icon != nil ? [icon base64EncodedStringWithOptions:0] : @"";
+    return AntiAddictionStringToChar(base64String);
+}
+
+const char *AntiAddictionAgeTipGetText(AntiAddictionTypeAgeTipRef ageTip) {
+    AntiAddictionAgeTipObject *internalAgeTip = (__bridge AntiAddictionAgeTipObject *)ageTip;
+    return AntiAddictionStringToChar(internalAgeTip.ageTipContent);
+}
+
+void AntiAddictionShowAgeTip(AntiAddictionAgeTipShowCallback showCallback,
+                             AntiAddictionAgeTipCloseCallback closeCallback) {
+    [AntiAddictionUnity.sharedInstance showAgeTip:showCallback closeCallback:closeCallback];
+}
+#pragma mark - AgeTip
+
+
+#pragma mark - HealthGameTip
+AntiAddictionTypeHealthGameTipRef AntiAddictionGetHealthGameTip() {
+    AntiAddictionAgeTipObject *ageTipObject = [AntiAddictionSdk getAgeTipContent];
+    if (ageTipObject == nil) {
+        ageTipObject = [[AntiAddictionAgeTipObject alloc] init];
+    }
+    
+    AntiAddictionObjectCache *cache = [AntiAddictionObjectCache sharedInstance];
+    [cache.references setObject:ageTipObject forKey:[ageTipObject antiAddiction_referenceKey]];
+    return (__bridge AntiAddictionTypeHealthGameTipRef)ageTipObject;
+}
+
+const char *AntiAddictionHealthGameTipGetTipText(AntiAddictionTypeHealthGameTipRef healthGameTip) {
+    AntiAddictionAgeTipObject *internalAgeTip = (__bridge AntiAddictionAgeTipObject *)healthGameTip;
+    return AntiAddictionStringToChar(internalAgeTip.healthGameAdviceContent);
+}
+
+const char *AntiAddictionHealthGameTipGetAppInfoText(AntiAddictionTypeHealthGameTipRef healthGameTip) {
+    AntiAddictionAgeTipObject *internalAgeTip = (__bridge AntiAddictionAgeTipObject *)healthGameTip;
+    return AntiAddictionStringToChar(internalAgeTip.healthGameAdviceAppInfo);
+}
+
+void AntiAddictionShowHealthGameTip(AntiAddictionHealthGameTipShowCallback showCallback,
+                                    AntiAddictionHealthGameTipShowFailedCallback showFailedCallback,
+                                    AntiAddictionHealthGameTipCloseCallback closeCallback) {
+    [AntiAddictionUnity.sharedInstance showHealthGameTip:showCallback
+                                      showFailedCallback:showFailedCallback
+                                           closeCallback:closeCallback];
+}
+#pragma mark - HealthGameTip

@@ -28,5 +28,20 @@ namespace AntiAddictionSdk.Common
         
         public void Logout() {
         }
+
+        
+        public AgeTip GetAgeTip() {
+            return null;
+        }
+
+        public void ShowAgeTipPage(AgeTipCallback callback) {   
+        }
+
+        public HealthGameTip GetHealthGameTip() {
+            return null;
+        }
+
+        public void ShowHealthGameTipPage(HealthGameTipCallback callback) {
+        }
     }
 }

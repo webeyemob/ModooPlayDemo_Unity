@@ -2100,6 +2100,24 @@ public:
 };
 
 
+// System.Int64
+struct  Int64_t378EE0D608BD3107E77238E85F30D2BBD46981F3 
+{
+public:
+	// System.Int64 System.Int64::m_value
+	int64_t ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Int64_t378EE0D608BD3107E77238E85F30D2BBD46981F3, ___m_value_0)); }
+	inline int64_t get_m_value_0() const { return ___m_value_0; }
+	inline int64_t* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(int64_t value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+
 // System.IntPtr
 struct  IntPtr_t 
 {
@@ -8492,6 +8510,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_Free_mA805168FF1B6728E7DF3
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (UnsafeUtility_Free_mA805168FF1B6728E7DF3AD1DE47400B37F3441F9_ftn)il2cpp_codegen_resolve_icall ("Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free(System.Void*,Unity.Collections.Allocator)");
 	_il2cpp_icall_func(___memory0, ___allocator1);
+}
+// System.Void Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy(System.Void*,System.Void*,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_MemCpy_m8E335BAB1C2A8483AF8531CE8464C6A69BB98C1B (void* ___destination0, void* ___source1, int64_t ___size2, const RuntimeMethod* method)
+{
+	typedef void (*UnsafeUtility_MemCpy_m8E335BAB1C2A8483AF8531CE8464C6A69BB98C1B_ftn) (void*, void*, int64_t);
+	static UnsafeUtility_MemCpy_m8E335BAB1C2A8483AF8531CE8464C6A69BB98C1B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (UnsafeUtility_MemCpy_m8E335BAB1C2A8483AF8531CE8464C6A69BB98C1B_ftn)il2cpp_codegen_resolve_icall ("Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy(System.Void*,System.Void*,System.Int64)");
+	_il2cpp_icall_func(___destination0, ___source1, ___size2);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

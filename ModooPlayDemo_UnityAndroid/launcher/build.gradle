@@ -10,7 +10,8 @@ tgCenter {
     config {
         // 从 ModooPlay 平台获取 appId
 //        appId "5eec3bf0-e62a-43c2-9640-06ceb303f6ef"
-        appId "b0eeba31-88e6-478c-b0c9-77ee11b4cec8"
+//        appId "b0eeba31-88e6-478c-b0c9-77ee11b4cec8"
+        appId "97ed11f7-01f8-493c-ba1a-03b91056ac1a"
     }
 
     dependencies {

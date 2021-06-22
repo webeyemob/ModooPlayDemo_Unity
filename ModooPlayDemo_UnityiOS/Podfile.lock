@@ -1,81 +1,68 @@
 PODS:
-  - Ads-Global (3.4.2.3):
-    - Ads-Global/BUAdSDK (= 3.4.2.3)
-  - Ads-Global/BUAdSDK (3.4.2.3):
-    - Ads-Global/BUFoundation
-    - Ads-Global/International
-  - Ads-Global/BUFoundation (3.4.2.3)
-  - Ads-Global/Domestic (3.4.2.3)
-  - Ads-Global/International (3.4.2.3)
-  - AntiAddiction (1.0.2):
+  - Ads-CN (3.6.1.1):
+    - Ads-CN/BUAdSDK (= 3.6.1.1)
+  - Ads-CN/BUAdSDK (3.6.1.1):
+    - Ads-CN/BUFoundation
+    - Ads-CN/Domestic
+  - Ads-CN/BUFoundation (3.6.1.1)
+  - Ads-CN/Domestic (3.6.1.1)
+  - Ads-CN/International (3.6.1.1)
+  - AntiAddiction (1.1.1):
     - EventsIOSdk
-  - AppsFlyerFramework (6.1.4):
-    - AppsFlyerFramework/Main (= 6.1.4)
-  - AppsFlyerFramework/Main (6.1.4)
-  - DataFlyer (1.0.8)
-  - EmbededSdk (1.0.4):
-    - EventsIOSdk (~> 1.0.3)
+  - AppsFlyerFramework (6.2.5):
+    - AppsFlyerFramework/Main (= 6.2.5)
+  - AppsFlyerFramework/Main (6.2.5)
+  - DataFlyer (1.1.0)
+  - EmbededSdk (1.1.0):
+    - EventsIOSdk
     - TaurusXAds
-  - EventsIOSdk (1.0.6)
-  - GDTMobSDK (4.12.3):
-    - GDTMobSDK/GDTMobSDK (= 4.12.3)
-  - GDTMobSDK/GDTMobSDK (4.12.3)
-  - KSAdSDK (3.3.5)
+  - EventsIOSdk (1.0.7)
+  - GDTMobSDK (4.12.61):
+    - GDTMobSDK/GDTMobSDK (= 4.12.61)
+  - GDTMobSDK/GDTMobSDK (4.12.61)
+  - KSAdSDK (3.3.9.3)
   - NathAds (1.1.9):
     - DataFlyer
-  - PrivacyPolicy (1.3)
-  - RangersAppLog/Core (5.4.2)
-  - RangersAppLog/Log (5.4.2):
-    - RangersAppLog/Core
-  - RangersAppLog/Unique (5.4.2):
-    - RangersAppLog/Core
-  - TaurusXAd_Mobrain_GDT (4.12.3.0)
-  - TaurusXAd_Mobrain_KuaiShou (3.3.5.2)
-  - TaurusXAd_Mobrain_TikTok (3.4.2.3.0)
-  - TaurusXAdMediation_GDT (4.12.3.0):
-    - GDTMobSDK (= 4.12.3)
+  - PrivacyPolicy (1.5)
+  - TaurusXAd_Mobrain_GDT (4.12.61.0)
+  - TaurusXAd_Mobrain_KuaiShou (3.3.9.3.0)
+  - TaurusXAd_Mobrain_TikTok (3.6.1.1.0)
+  - TaurusXAdMediation_GDT (4.12.61.0):
+    - GDTMobSDK (= 4.12.61)
     - TaurusXAds
-  - TaurusXAdMediation_KuaiShou (3.3.5.1):
-    - KSAdSDK (= 3.3.5)
+  - TaurusXAdMediation_KuaiShou (3.3.9.3.1):
+    - KSAdSDK (= 3.3.9.3)
     - TaurusXAds
-  - TaurusXAdMediation_Mobrain (2.5.0.1.0):
+  - TaurusXAdMediation_Mobrain (2.7.1.0.2):
     - TaurusXAds
-  - TaurusXAdMediation_TikTok (3.4.2.3.2):
-    - Ads-Global (= 3.4.2.3)
-    - Ads-Global/BUAdSDK (= 3.4.2.3)
-    - Ads-Global/Domestic (= 3.4.2.3)
+  - TaurusXAdMediation_TikTok (3.6.1.1.0):
+    - Ads-CN (= 3.6.1.1)
+    - Ads-CN/BUAdSDK (= 3.6.1.1)
+    - Ads-CN/International (= 3.6.1.1)
     - TaurusXAds
-  - TaurusXAds (2.0.4):
-    - DataFlyer (= 1.0.8)
+  - TaurusXAds (2.1.1):
+    - DataFlyer
+    - EventsIOSdk
     - NathAds (~> 1.1.9)
   - TGCAntiAddiction (1.0.1.0):
     - AntiAddiction
-  - TGCAppsFlyer (6.1.4.0):
-    - AppsFlyerFramework (= 6.1.4)
+  - TGCAppsFlyer (6.2.5.0):
+    - AppsFlyerFramework (= 6.2.5)
   - TGCEmbed (1.0.2.0):
     - EmbededSdk
-  - TGCenter (1.5)
-  - TGCPrivacy (1.3.0):
-    - PrivacyPolicy (= 1.3)
-  - TGCRangersAppLog (5.4.2.0)
+  - TGCenter (1.8)
+  - TGCPrivacy (1.4.0):
+    - PrivacyPolicy
   - TGCTaurusXAds (2.0.3.0):
     - TaurusXAds
-  - TGCUdesk (4.3.1.0):
-    - UdeskSDK (= 4.3.1)
   - TGCUmeng (7.2.5.0):
     - UMAPM (= 1.1.0)
     - "UMCAnalyticsGame (= 7.2.5+G)"
     - UMCCommon (= 7.2.5)
     - UMCCommonLog (= 2.0.0)
     - UMDevice (= 1.1.0)
-  - TGCWeChat (1.8.7.1.0):
+  - TGCWeChat (1.8.7.1.1):
     - WechatOpenSDK (= 1.8.7.1)
-  - UdeskSDK (4.3.1):
-    - UdeskSDK/SDK (= 4.3.1)
-    - UdeskSDK/UIKit (= 4.3.1)
-  - UdeskSDK/SDK (4.3.1)
-  - UdeskSDK/UIKit (4.3.1):
-    - UdeskSDK/SDK
   - UMAPM (1.1.0)
   - "UMCAnalyticsGame (7.2.5+G)":
     - UMCCommon
@@ -87,9 +74,6 @@ PODS:
   - WechatOpenSDK (1.8.7.1)
 
 DEPENDENCIES:
-  - RangersAppLog/Core (= 5.4.2)
-  - RangersAppLog/Log (= 5.4.2)
-  - RangersAppLog/Unique (= 5.4.2)
   - TaurusXAd_Mobrain_GDT
   - TaurusXAd_Mobrain_KuaiShou
   - TaurusXAd_Mobrain_TikTok
@@ -102,17 +86,13 @@ DEPENDENCIES:
   - TGCEmbed
   - TGCenter
   - TGCPrivacy
-  - TGCRangersAppLog
   - TGCTaurusXAds
-  - TGCUdesk
   - TGCUmeng
   - TGCWeChat
 
 SPEC REPOS:
-  https://github.com/bytedance/cocoapods_sdk_source_repo.git:
-    - RangersAppLog
   https://github.com/CocoaPods/Specs.git:
-    - Ads-Global
+    - Ads-CN
     - AntiAddiction
     - AppsFlyerFramework
     - DataFlyer
@@ -135,12 +115,9 @@ SPEC REPOS:
     - TGCEmbed
     - TGCenter
     - TGCPrivacy
-    - TGCRangersAppLog
     - TGCTaurusXAds
-    - TGCUdesk
     - TGCUmeng
     - TGCWeChat
-    - UdeskSDK
     - UMAPM
     - UMCAnalyticsGame
     - UMCCommon
@@ -149,36 +126,32 @@ SPEC REPOS:
     - WechatOpenSDK
 
 SPEC CHECKSUMS:
-  Ads-Global: a0f83940b0114e21c6e7601d7d73f657596087dd
-  AntiAddiction: 51ee6571e651f3cc0bcbc98c39a34cc85877bd93
-  AppsFlyerFramework: ed1a754b74739bafbcb0d8235d6bc4f0ffe2e0ec
-  DataFlyer: 3c4be94b4ef0c2221052ab437299879bc187e1a0
-  EmbededSdk: b6284537715eab9fd24083453e03f76eb5c62469
-  EventsIOSdk: 6839af89c70f51629d1f9cd514bf0878d9c520c1
-  GDTMobSDK: 1e245a7a1f3960516fa8f5fb1038a349931dbd90
-  KSAdSDK: 6ea07f8c86e3861f25235a18cec6b0c843a79dee
+  Ads-CN: 4b08d1457d869b1e4ae6173f2fd06b7f38152ff7
+  AntiAddiction: f201cdb8432015168cc7b43c1dedca03fb14e285
+  AppsFlyerFramework: a222d1c388bd7b6199237c6a0b0b63ccb7d59bd2
+  DataFlyer: 72a6238ef354ec5d89650d37c8f787d47d3319f6
+  EmbededSdk: 9c9f7ff4f9e3e535ef8ced0ee6a0d4392d2e8c5b
+  EventsIOSdk: dd0fe3f3874c2058d9d1ee364c961c25b88cc5af
+  GDTMobSDK: 63a094e9c02bb01213902d7cdf2389c149660a03
+  KSAdSDK: 787046ea2faad6a5e006f1d43e03d1b0200eee39
   NathAds: e28cc6d328bac16e192b25775146026be1df8a4a
-  PrivacyPolicy: 53776cb605ae366b0cb5a9f9afc3bf8fd0eb84f2
-  RangersAppLog: 8c41a5c3473017203c90a04b6b9b09033f562b8f
-  TaurusXAd_Mobrain_GDT: feb6685fc23f53e10c90b23f408c240883119ab5
-  TaurusXAd_Mobrain_KuaiShou: 699b5fe4a63aa14d3a72aafabdaa1ca793cdb73c
-  TaurusXAd_Mobrain_TikTok: a5a4917cde20c68f32cccc44e592d16f8b7ba046
-  TaurusXAdMediation_GDT: aee461f5378665fd1b7ebbcdbcae5e75603c47fc
-  TaurusXAdMediation_KuaiShou: b3cc0ca6b9f79353f4cac729aeab6b6998cc2799
-  TaurusXAdMediation_Mobrain: d95d0d4d26efcbac7e8e7ec0ff5e5dcb0bc053ff
-  TaurusXAdMediation_TikTok: aef5facf69790cfb8cfb6c6dfc9424f17e23814c
-  TaurusXAds: 6a470012a5b3dc5b97e7a9bbd48ee4d43063fa32
+  PrivacyPolicy: f396612f7a89bf314dd0bb99832fd3796f5ba8e7
+  TaurusXAd_Mobrain_GDT: 80f9507855d6ff0caf168bbed398953ccfd20cab
+  TaurusXAd_Mobrain_KuaiShou: ccf7c1fcbc1cecd35987a082b64a3ff3503e87b9
+  TaurusXAd_Mobrain_TikTok: 1290eba30eee53df7a0440d0657c7eae6df7a9d8
+  TaurusXAdMediation_GDT: 6a2c09ae1d1cb9f9b65b9c72ed96822664ae47d9
+  TaurusXAdMediation_KuaiShou: 7965f81127a9fc42efe316903e046d9ee1beb7f4
+  TaurusXAdMediation_Mobrain: b1bbdab0bcf019a21eada8714452722f4c36ea8f
+  TaurusXAdMediation_TikTok: c09254e80027b52ed8d2d9c4043cfcff191c8b93
+  TaurusXAds: cf235a6a4b333779ad336e0625c8c000e0f56567
   TGCAntiAddiction: 05d17a6b17b65eaaff6f2e1fd8a585c7de877452
-  TGCAppsFlyer: 4092f5f28e3296728d0dd35ae1bd61ee20e4409b
+  TGCAppsFlyer: 3a5de4bfc7958529d8c7e8ee9e9c86e6277e9d7a
   TGCEmbed: e8e1318ccbe8cfa7e7785516576cef2bd9d99273
-  TGCenter: 886e828e0e4146c15e464c342ce089c16b37c547
-  TGCPrivacy: 138579395c4e617c5603c6a14c7bc4cd21c673c4
-  TGCRangersAppLog: 5bee186dc29659279f97bc2ec4112e4e51a31000
+  TGCenter: 75deecdf4d00eada752f549778bfeed85f9764a5
+  TGCPrivacy: 99822031a348b43c2976cf908aafe7b8b482f40d
   TGCTaurusXAds: b5d2748245dee7c3421b5eaa36cddf2a07dd6d76
-  TGCUdesk: 508304bd2a0c8862b0c4ac4c66795e6f2ca7dfbb
   TGCUmeng: 35c1b439f1fc0779f4625f2e819969d34ccfd1e9
-  TGCWeChat: 5e0b4d1ca6bd95a6fffaf81d52a067cbccc51ef2
-  UdeskSDK: 7b7c936523138e0cb2be69ba0b8de6aad575f366
+  TGCWeChat: 0bd236567791db756812ca228bf11e3c683cfe86
   UMAPM: 2b966cff744dccdd9e2ed99efafce280be30833c
   UMCAnalyticsGame: 49acd11780082d916407c605f68710d54fb78afc
   UMCCommon: f7480d316381612f90cdde3a3c0f39a7e2c0a788
@@ -186,6 +159,6 @@ SPEC CHECKSUMS:
   UMDevice: 28d21a568c8e8322e5a03bbd53b138d0c098d3b3
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
 
-PODFILE CHECKSUM: eac9e45468a7dc3e972af4924a0b42867741929e
+PODFILE CHECKSUM: 9ca27a0ade3b5033c6daaeb859758784ea976105
 
 COCOAPODS: 1.10.1

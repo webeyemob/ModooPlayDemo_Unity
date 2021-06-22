@@ -60,8 +60,22 @@ public class MainBehaviour : MonoBehaviour
         {
             RealNameCustomUI();
         }
+
         y += d;
-        if (GUI.Button(new Rect(x, y, antiW, h), "Logout", style))
+        if (GUI.Button(new Rect(x, y, w, h), "Show AgeTip", style))
+        {
+            ShowAgeTip();
+            ShowCustomAgeTip();
+        }
+        y += d;
+        if (GUI.Button(new Rect(x, y, w, h), "Show HealthGameTip", style))
+        {
+            ShowHealthGameTip();
+            ShowCustomHealthGameTip();
+        }
+        
+        y += d;
+        if (GUI.Button(new Rect(x, y, w, h), "Logout", style))
         {
             TGCenter.ClearCache();
             AntiAddiction.Logout();
@@ -103,7 +117,7 @@ public class MainBehaviour : MonoBehaviour
             config.Channel = Channle;
         } else {
             // 下面的参数仅 iOS 需要配置
-            config.AppId = "b51dd720-c083-4349-a99e-3de18dfccbd4";
+            config.AppId = "97ed11f7-01f8-493c-ba1a-03b91056ac1a";
             config.AppleAppID = "1526771294";
             config.UmengAppKey = "5f046cf7895cca9f07000035";
             config.AppsFlyerDevKey = "DdWbxT9VRELdEsZiAcnGea";
@@ -114,9 +128,6 @@ public class MainBehaviour : MonoBehaviour
             config.UdeskDomain = "wy.s2.udesk.cn";
             config.UdeskAppKey = "c45ab77872e67e9a0b7f3113fadb62b2";
             config.UdeskAppId = "e4f88f280c8df925";
-            
-            Day1Retention retention = new Day1Retention(Day1Retention.RetentionTypes.Hour, 4, 38);
-            config.Day1Retention = retention;
         }
 
         TGCenter.Init(config);
@@ -255,5 +266,111 @@ public class MainBehaviour : MonoBehaviour
         if (agree) {
             InitModooPlay();
         }
+    }
+
+    // 显示适龄提示 Icon
+    private void ShowAgeTipIcon() {
+        // 获取适龄提示内容
+        AgeTip ageTip = AntiAddiction.GetAgeTip();
+        
+        // 适龄提示 Icon，可以使用 Texture2D 或 byte[]
+        Texture2D icon = ageTip.GetIconTexture2D();
+        byte[] iconByteArray = ageTip.GetIconByteArray();
+        
+        if (icon != null)
+        {
+            Debug.Log(@"ShowCustomAgeTip, has icon");
+        }
+        if (iconByteArray != null)
+        {
+            Debug.Log(@"ShowCustomAgeTip, has iconByteArray");
+        }
+    }
+
+    // 适龄提示弹窗（SDK 默认 UI）
+    private void ShowAgeTip() {
+        AntiAddiction.ShowAgeTipPage(new AgeTipListener(this));
+    }
+
+    private class AgeTipListener : AgeTipCallback {
+        private MainBehaviour behaviour;
+        public AgeTipListener(MainBehaviour behaviour) {
+            this.behaviour = behaviour;
+        }
+        public void OnAgeTipsOpen() {
+            Debug.Log("OnAgeTipsOpen");
+        }
+
+        public void OnAgeTipsOpenFail(string message) {
+            Debug.Log("OnAgeTipsOpenFail: " + message);
+        }
+
+        public void OnAgeTipsClose() {
+            Debug.Log("OnAgeTipsClose");
+        }
+    }
+
+    // 适龄提示弹窗（自定义 UI）
+    private void ShowCustomAgeTip() {
+        // 获取适龄提示内容
+        AgeTip ageTip = AntiAddiction.GetAgeTip();
+        
+        // 适龄提示 Icon，可以使用 Texture2D 或 byte[]
+        Texture2D icon = ageTip.GetIconTexture2D();
+        byte[] iconByteArray = ageTip.GetIconByteArray();
+        
+        if (icon != null)
+        {
+            Debug.Log(@"ShowCustomAgeTip, has icon");
+        }
+        if (iconByteArray != null)
+        {
+            Debug.Log(@"ShowCustomAgeTip, has iconByteArray");
+        }
+
+        // 提示文案
+        string text = ageTip.GetText();
+
+        // 按照产品风格自定义 UI 展示
+        // 如果 icon 或者文案为空，则不能展示
+        Debug.Log("ShowCustomAgeTip, text: " + text);
+    }
+
+    // 健康游戏忠告（SDK 默认 UI）
+    private void ShowHealthGameTip() {
+        AntiAddiction.ShowHealthGameTipPage(new HealthGameTipListener(this));
+    }
+
+    private class HealthGameTipListener : HealthGameTipCallback {
+        private MainBehaviour behaviour;
+        public HealthGameTipListener(MainBehaviour behaviour) {
+            this.behaviour = behaviour;
+        }
+
+        public void OnHealthGameTipOpen() {
+            Debug.Log("OnHealthGameTipOpen");
+        }
+
+        public void OnHealthGameTipOpenFail(string message) {
+            Debug.Log("OnHealthGameTipOpenFail: " + message);
+        }
+
+        public void OnHealthGameTipClose() {
+            Debug.Log("OnHealthGameTipClose");
+        }
+    }
+
+    // 健康游戏忠告（自定义 UI）
+    private void ShowCustomHealthGameTip() {
+        HealthGameTip healthGameTip = AntiAddiction.GetHealthGameTip();
+
+        // 居中展示的提示内容
+        string tip = healthGameTip.GetTipText();
+        // 靠底展示的产品信息
+        string appInfo = healthGameTip.GetAppInfoText();
+
+        // 按照产品风格自定义 UI 展示
+        // 如果提示内容或者产品信息为空，则不能展示
+        Debug.Log("ShowCustomHealthGameTip, tip: " + tip + ", appInfo: " + appInfo);
     }
 }
