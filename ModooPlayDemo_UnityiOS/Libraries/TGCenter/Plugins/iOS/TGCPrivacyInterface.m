@@ -6,8 +6,14 @@
 
 #import <Foundation/Foundation.h>
 #import <TGCPrivacy/TGCPrivacy.h>
+#import <privacypolicy/privacypolicy.h>
 
 // 注意：不要打包到 Framework 中
+static NSString *TGCPrivacyStringFromUTF8String(const char *bytes) { return bytes ? @(bytes) : nil; }
+
+void TGCPrivacyInit(const char *appId) {
+    [PrivacyPolicyManager init:TGCPrivacyStringFromUTF8String(appId)];
+}
 
 void TGCPrivacyShowDialog(TGCTypePrivacyPolicyHelperClientRef clientRef,
                           TGCPrivacyAgreeCallback agreeCallback,

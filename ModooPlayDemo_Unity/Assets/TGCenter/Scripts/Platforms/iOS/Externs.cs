@@ -132,6 +132,11 @@ namespace TGCenterSdk.Platforms.iOS
         #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
         [DllImport("__Internal")]
         #endif
+        internal static extern void TGCPrivacyInit(string appId);
+
+        #if (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+        [DllImport("__Internal")]
+        #endif
         internal static extern void TGCPrivacyShowDialog(IntPtr clientPtr, 
             PrivacyPolicyHelperClient.TGCPrivacyAgreeCallback agreeCallback,
             PrivacyPolicyHelperClient.TGCPrivacyDisagreeCallback disagreeCallback);

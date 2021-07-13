@@ -90,6 +90,9 @@ public class MainBehaviour : MonoBehaviour
         Debug.Log("Start");
 
         // 检查用户是否同意了《用户协议和隐私政策》，如果同意则直接初始化，否则需要弹窗征得用户同意
+if (Application.platform == RuntimePlatform.IPhonePlayer) {
+            PrivacyPolicyHelper.Instance.Init("d7b11a60-4048-4b12-86ae-01ceed4f3164");
+        }
         if (TGCenter.IsUserAgreePolicy()) {
             // 用户已同意，初始化
             InitModooPlay();
@@ -117,7 +120,7 @@ public class MainBehaviour : MonoBehaviour
             config.Channel = Channle;
         } else {
             // 下面的参数仅 iOS 需要配置
-            config.AppId = "97ed11f7-01f8-493c-ba1a-03b91056ac1a";
+            config.AppId = "d7b11a60-4048-4b12-86ae-01ceed4f3164";
             config.AppleAppID = "1526771294";
             config.UmengAppKey = "5f046cf7895cca9f07000035";
             config.AppsFlyerDevKey = "DdWbxT9VRELdEsZiAcnGea";

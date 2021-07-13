@@ -13,7 +13,7 @@ PODS:
     - AppsFlyerFramework/Main (= 6.2.5)
   - AppsFlyerFramework/Main (6.2.5)
   - DataFlyer (1.1.0)
-  - EmbededSdk (1.1.0):
+  - EmbededSdk (1.2.0):
     - EventsIOSdk
     - TaurusXAds
   - EventsIOSdk (1.0.7)
@@ -23,7 +23,7 @@ PODS:
   - KSAdSDK (3.3.9.3)
   - NathAds (1.1.9):
     - DataFlyer
-  - PrivacyPolicy (1.5)
+  - PrivacyPolicy (1.6)
   - TaurusXAd_Mobrain_GDT (4.12.61.0)
   - TaurusXAd_Mobrain_KuaiShou (3.3.9.3.0)
   - TaurusXAd_Mobrain_TikTok (3.6.1.1.0)
@@ -50,8 +50,8 @@ PODS:
     - AppsFlyerFramework (= 6.2.5)
   - TGCEmbed (1.0.2.0):
     - EmbededSdk
-  - TGCenter (1.8)
-  - TGCPrivacy (1.4.0):
+  - TGCenter (1.9)
+  - TGCPrivacy (1.6.0):
     - PrivacyPolicy
   - TGCTaurusXAds (2.0.3.0):
     - TaurusXAds
@@ -130,12 +130,12 @@ SPEC CHECKSUMS:
   AntiAddiction: f201cdb8432015168cc7b43c1dedca03fb14e285
   AppsFlyerFramework: a222d1c388bd7b6199237c6a0b0b63ccb7d59bd2
   DataFlyer: 72a6238ef354ec5d89650d37c8f787d47d3319f6
-  EmbededSdk: 9c9f7ff4f9e3e535ef8ced0ee6a0d4392d2e8c5b
+  EmbededSdk: c826d7c206923c510c339176ad67a8bab106a445
   EventsIOSdk: dd0fe3f3874c2058d9d1ee364c961c25b88cc5af
   GDTMobSDK: 63a094e9c02bb01213902d7cdf2389c149660a03
   KSAdSDK: 787046ea2faad6a5e006f1d43e03d1b0200eee39
   NathAds: e28cc6d328bac16e192b25775146026be1df8a4a
-  PrivacyPolicy: f396612f7a89bf314dd0bb99832fd3796f5ba8e7
+  PrivacyPolicy: 68b2e9fd52686d4847942416c97ada79a8251a05
   TaurusXAd_Mobrain_GDT: 80f9507855d6ff0caf168bbed398953ccfd20cab
   TaurusXAd_Mobrain_KuaiShou: ccf7c1fcbc1cecd35987a082b64a3ff3503e87b9
   TaurusXAd_Mobrain_TikTok: 1290eba30eee53df7a0440d0657c7eae6df7a9d8
@@ -147,8 +147,8 @@ SPEC CHECKSUMS:
   TGCAntiAddiction: 05d17a6b17b65eaaff6f2e1fd8a585c7de877452
   TGCAppsFlyer: 3a5de4bfc7958529d8c7e8ee9e9c86e6277e9d7a
   TGCEmbed: e8e1318ccbe8cfa7e7785516576cef2bd9d99273
-  TGCenter: 75deecdf4d00eada752f549778bfeed85f9764a5
-  TGCPrivacy: 99822031a348b43c2976cf908aafe7b8b482f40d
+  TGCenter: b04cf19f7800ecd180cc3c97b93a66cd5776a89e
+  TGCPrivacy: 0ce76a4a4501904ba8a3e8da4fa9d42a877fca09
   TGCTaurusXAds: b5d2748245dee7c3421b5eaa36cddf2a07dd6d76
   TGCUmeng: 35c1b439f1fc0779f4625f2e819969d34ccfd1e9
   TGCWeChat: 0bd236567791db756812ca228bf11e3c683cfe86

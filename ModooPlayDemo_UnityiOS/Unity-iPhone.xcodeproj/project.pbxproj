@@ -1253,7 +1253,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-frameworks.sh",
 				"${PODS_ROOT}/AntiAddiction/AntiAddiction_1.1.1/AntiAddiction.framework",
-				"${PODS_ROOT}/PrivacyPolicy/PrivacyPolicy_1.5/PrivacyPolicy.framework",
+				"${PODS_ROOT}/PrivacyPolicy/PrivacyPolicy_1.6/PrivacyPolicy.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";

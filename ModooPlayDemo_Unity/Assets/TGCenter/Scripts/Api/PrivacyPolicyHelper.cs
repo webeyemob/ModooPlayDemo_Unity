@@ -23,6 +23,10 @@ namespace TGCenterSdk.Api
             client = ClientFactory.PrivacyPolicyHelperClient();
         }
 
+        public void Init(string appId) {
+            client.Init(appId);
+        }
+
         public void SetAgreeListener(AgreeListener listener) {
             client.SetAgreeListener(listener);
         }

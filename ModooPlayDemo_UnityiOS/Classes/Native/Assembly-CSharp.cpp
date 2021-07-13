@@ -483,7 +483,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0BEE2DBE24919FD195E4DCB7B1B3BCAA615CBFE1
 IL2CPP_EXTERN_C String_t* _stringLiteral0E6852CA88224C0B29708BE69F8D388FDC6C8F1F;
 IL2CPP_EXTERN_C String_t* _stringLiteral11BEF66A6E304E5AB263A39F7B2C0B72640B9F99;
 IL2CPP_EXTERN_C String_t* _stringLiteral12B430DB41F91D1EA6B6CEEAC4093543B23F6B0C;
-IL2CPP_EXTERN_C String_t* _stringLiteral141A00EF27D2234E32343CDA7C7B58EC960DDF76;
 IL2CPP_EXTERN_C String_t* _stringLiteral19589C94FA78F7254C39EA4B8684AE7D21FA3B11;
 IL2CPP_EXTERN_C String_t* _stringLiteral1A5E706D6D83A6D9E3357CFF9C00B8924AAECD36;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C7A9E8795DAC93A625C23D6E9F2BC7332ABF459;
@@ -574,6 +573,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC8C1F8993C105E3086D93D9BFCC205A34765F689
 IL2CPP_EXTERN_C String_t* _stringLiteralCB6B631A27E8DE83322A720A005A4E44388FA818;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBC9687C3B3CF86630538F360E45F87AE0B9FA62;
 IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
+IL2CPP_EXTERN_C String_t* _stringLiteralCE8918F733CFF664566B7CA70F983B6B29632752;
 IL2CPP_EXTERN_C String_t* _stringLiteralCEFA99263B1716B9CC2AE2C2B4BDB9CC75332D14;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF589F7E1FD41DA1FF76E40FABA716840062A1E6;
 IL2CPP_EXTERN_C String_t* _stringLiteralCFD98E61D945837836DFBB54F47FFA7AA58CDD3D;
@@ -3640,6 +3640,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_Logout_m2E8A8E3F7F1FB817C3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_GetUserInfo_m8C009BF543C698D037EE9FB841ED7DDC44520E55 (User_t2054FCBCCC727858725CB0AC6A9CE0306D5986AD * ___user0, const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8 (RuntimeObject * ___message0, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Api.PrivacyPolicyHelper::Init(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_Init_mCF7644208CD2C1AE525086D528B2A39FCC319B96 (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, String_t* ___appId0, const RuntimeMethod* method);
 // System.Boolean TGCenterSdk.Api.TGCenter::IsUserAgreePolicy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TGCenter_IsUserAgreePolicy_m5BE7174BDE944A4C6ECAACD5CF6AEB67DE880F2C (const RuntimeMethod* method);
 // System.Void MainBehaviour::InitModooPlay()
@@ -3698,16 +3700,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyAgreeListener__ctor_m8D597215B33E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_SetAgreeListener_m557D780B21D647C8D0C39806B6DB1E5CE2AE922A (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Api.PrivacyPolicyHelper::ShowPrivacyDialog()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_ShowPrivacyDialog_mCEA153978D106F6BF76F14CCE4552BA5EE2C0DC5 (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, const RuntimeMethod* method);
-// System.Void MainBehaviour/AgeTipListener::.ctor(MainBehaviour)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AgeTipListener__ctor_m0616E24D1EB543E992883920966C9264DD8E0A5D (AgeTipListener_t5465C90B0B6D950477EBF899FDD53E83872A5A2A * __this, MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * ___behaviour0, const RuntimeMethod* method);
-// System.Void AntiAddictionSdk.Api.AntiAddiction::ShowAgeTipPage(AntiAddictionSdk.Api.AgeTipCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_ShowAgeTipPage_m404009D69ABF03432D287F185D2F8D0442DBC357 (RuntimeObject* ___callback0, const RuntimeMethod* method);
 // AntiAddictionSdk.Api.AgeTip AntiAddictionSdk.Api.AntiAddiction::GetAgeTip()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * AntiAddiction_GetAgeTip_m34997893D176D5DEEAC9DCA46D56029E022425A5 (const RuntimeMethod* method);
 // UnityEngine.Texture2D AntiAddictionSdk.Api.AgeTip::GetIconTexture2D()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * AgeTip_GetIconTexture2D_m3FAF36F6AAF0C4A18C20F71B188C38CED09B5D29 (AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
+// System.Void MainBehaviour/AgeTipListener::.ctor(MainBehaviour)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AgeTipListener__ctor_m0616E24D1EB543E992883920966C9264DD8E0A5D (AgeTipListener_t5465C90B0B6D950477EBF899FDD53E83872A5A2A * __this, MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * ___behaviour0, const RuntimeMethod* method);
+// System.Void AntiAddictionSdk.Api.AntiAddiction::ShowAgeTipPage(AntiAddictionSdk.Api.AgeTipCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AntiAddiction_ShowAgeTipPage_m404009D69ABF03432D287F185D2F8D0442DBC357 (RuntimeObject* ___callback0, const RuntimeMethod* method);
 // System.String AntiAddictionSdk.Api.AgeTip::GetText()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AgeTip_GetText_mAA7AA81B2D8DADD0DEDDBF92C57910D4EC7B2FD1 (AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * __this, const RuntimeMethod* method);
 // System.Void MainBehaviour/HealthGameTipListener::.ctor(MainBehaviour)
@@ -3738,6 +3740,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject__ctor_m6146DBD19BCFFDB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient_PrivacyAgreeCallback_m24FA05F07A894D3E37B20E593D553B3A7158FCCF (intptr_t ___helperClient0, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient::PrivacyDisagreeCallback(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient_PrivacyDisagreeCallback_m4DFCB29D58AFF2A83D733119B94207160EA984C9 (intptr_t ___helperClient0, const RuntimeMethod* method);
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCPrivacyInit(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCPrivacyInit_m4DABEAF604F9F06AB27230321EEBF268A3C51059 (String_t* ___appId0, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyAgreeCallback::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TGCPrivacyAgreeCallback__ctor_m0C3B960580D95B2B3EB822B847A777ACE75A9B5C (TGCPrivacyAgreeCallback_t3C41917D9CA51071333995D60FE85E6B410437DA * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Void TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyDisagreeCallback::.ctor(System.Object,System.IntPtr)
@@ -3992,6 +3996,7 @@ IL2CPP_EXTERN_C intptr_t DEFAULT_CALL TGCCreateDay1Retention();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_Type(intptr_t, int32_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_StartCount(intptr_t, int32_t);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCSetDay1Retention_EndCount(intptr_t, int32_t);
+IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyInit(char*);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyShowDialog(intptr_t, Il2CppMethodPointer, Il2CppMethodPointer);
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToUserAgreement();
 IL2CPP_EXTERN_C void DEFAULT_CALL TGCPrivacyJumpToPrivacyPolicy();
@@ -6385,6 +6390,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyAntiAddictionClient_ShowHealthGameT
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void TGCenterSdk.Common.DummyPrivacyPolicyHelperClient::Init(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyPrivacyPolicyHelperClient_Init_m1B45DAB92C9E707D7D4AD604EEAB0CF99763716E (DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839 * __this, String_t* ___appId0, const RuntimeMethod* method)
+{
+	{
+		// public void Init(string appId) { }
+		return;
+	}
+}
 // System.Void TGCenterSdk.Common.DummyPrivacyPolicyHelperClient::SetAgreeListener(TGCenterSdk.Api.PrivacyPolicyHelper/AgreeListener)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DummyPrivacyPolicyHelperClient_SetAgreeListener_mECA4A32332611239395F0773A30AF924CEAB4406 (DummyPrivacyPolicyHelperClient_tA760F3FD14C238520B359076F8F2943A0396C839 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
 {
@@ -7396,6 +7409,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCSetDay1Retention_EndCount_mBB
 
 	// Native function invocation
 	reinterpret_cast<PInvokeFunc>(TGCSetDay1Retention_EndCount)(___retention0, ___endCount1);
+
+}
+// System.Void TGCenterSdk.Platforms.iOS.Externs::TGCPrivacyInit(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Externs_TGCPrivacyInit_m4DABEAF604F9F06AB27230321EEBF268A3C51059 (String_t* ___appId0, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*);
+
+	// Marshaling of parameter '___appId0' to native representation
+	char* ____appId0_marshaled = NULL;
+	____appId0_marshaled = il2cpp_codegen_marshal_string(___appId0);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(TGCPrivacyInit)(____appId0_marshaled);
+
+	// Marshaling cleanup of parameter '___appId0' native representation
+	il2cpp_codegen_marshal_free(____appId0_marshaled);
+	____appId0_marshaled = NULL;
 
 }
 // System.Void TGCenterSdk.Platforms.iOS.Externs::TGCPrivacyShowDialog(System.IntPtr,TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyAgreeCallback,TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient/TGCPrivacyDisagreeCallback)
@@ -8526,39 +8556,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_Start_mDBAC321F998F0B92E1E
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE8918F733CFF664566B7CA70F983B6B29632752);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
+	bool V_1 = false;
 	{
 		// Debug.Log("Start");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE, /*hidden argument*/NULL);
-		// if (TGCenter.IsUserAgreePolicy()) {
-		IL2CPP_RUNTIME_CLASS_INIT(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
-		bool L_0;
-		L_0 = TGCenter_IsUserAgreePolicy_m5BE7174BDE944A4C6ECAACD5CF6AEB67DE880F2C(/*hidden argument*/NULL);
-		V_0 = L_0;
+		// if (Application.platform == RuntimePlatform.IPhonePlayer) {
+		int32_t L_0;
+		L_0 = Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4(/*hidden argument*/NULL);
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)8))? 1 : 0);
 		bool L_1 = V_0;
 		if (!L_1)
 		{
-			goto IL_0020;
+			goto IL_002a;
+		}
+	}
+	{
+		// PrivacyPolicyHelper.Instance.Init("d7b11a60-4048-4b12-86ae-01ceed4f3164");
+		IL2CPP_RUNTIME_CLASS_INIT(PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3_il2cpp_TypeInfo_var);
+		PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * L_2;
+		L_2 = PrivacyPolicyHelper_get_Instance_mA461052DDD65EE4DF0DA5FD90B324F91E236000F(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		PrivacyPolicyHelper_Init_mCF7644208CD2C1AE525086D528B2A39FCC319B96(L_2, _stringLiteralCE8918F733CFF664566B7CA70F983B6B29632752, /*hidden argument*/NULL);
+	}
+
+IL_002a:
+	{
+		// if (TGCenter.IsUserAgreePolicy()) {
+		IL2CPP_RUNTIME_CLASS_INIT(TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = TGCenter_IsUserAgreePolicy_m5BE7174BDE944A4C6ECAACD5CF6AEB67DE880F2C(/*hidden argument*/NULL);
+		V_1 = L_3;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_003e;
 		}
 	}
 	{
 		// InitModooPlay();
 		MainBehaviour_InitModooPlay_mB6DCCC36721AD85008B5CA02E09D19733FB00D95(__this, /*hidden argument*/NULL);
-		goto IL_0029;
+		goto IL_0047;
 	}
 
-IL_0020:
+IL_003e:
 	{
 		// ShowDefaultPolicyDialog();
 		MainBehaviour_ShowDefaultPolicyDialog_mDDDA53D53BDD0E6A59D10481F57D9A47989E38D7(__this, /*hidden argument*/NULL);
 	}
 
-IL_0029:
+IL_0047:
 	{
 		// }
 		return;
@@ -8575,7 +8629,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TGCenter_t7A01AA650A3F96EAE0E6787DB2804C51C1FBA0B2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TimeLimitListener_t52E35AC71A4BB351FF157B88F72A4A458718CB08_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral06F6DBCB7FFEE255438B4AC7A5C1DEE040406FBA);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral141A00EF27D2234E32343CDA7C7B58EC960DDF76);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A5E706D6D83A6D9E3357CFF9C00B8924AAECD36);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26F22FD63112831520DDB8406C27CCE0FA761274);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3964927F1C570D70B8850DD9841300DE550C8640);
@@ -8584,6 +8637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral914EB038D7017D5392E02DCB16225EE56BC35FC7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral93C5618990903CF3D33660256B203153E1F12DED);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2463F45597998A094727FD126E852DC07FBB7DF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE8918F733CFF664566B7CA70F983B6B29632752);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD4383524921CB8484EC0571FE49BBF41F7C7934);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8619,10 +8673,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_InitModooPlay_mB6DCCC36721
 
 IL_002b:
 	{
-		// config.AppId = "97ed11f7-01f8-493c-ba1a-03b91056ac1a";
+		// config.AppId = "d7b11a60-4048-4b12-86ae-01ceed4f3164";
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_6 = V_0;
 		NullCheck(L_6);
-		L_6->set_AppId_3(_stringLiteral141A00EF27D2234E32343CDA7C7B58EC960DDF76);
+		L_6->set_AppId_3(_stringLiteralCE8918F733CFF664566B7CA70F983B6B29632752);
 		// config.AppleAppID = "1526771294";
 		InitConfig_tB77587871EE04B53CB86593F9C7461FF0B143A47 * L_7 = V_0;
 		NullCheck(L_7);
@@ -9077,6 +9131,83 @@ IL_000f:
 		return;
 	}
 }
+// System.Void MainBehaviour::ShowAgeTipIcon()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_ShowAgeTipIcon_m19EB9A65015872AC3CB27AD3123AB88A2BC402CD (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral310E497FFA181B18C8814A6E85912871AF8E6A3F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8D3B31C12591BFE43650F177CD0BE39E7ACE9003);
+		s_Il2CppMethodInitialized = true;
+	}
+	AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * V_0 = NULL;
+	Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * V_1 = NULL;
+	ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* V_2 = NULL;
+	bool V_3 = false;
+	bool V_4 = false;
+	{
+		// AgeTip ageTip = AntiAddiction.GetAgeTip();
+		IL2CPP_RUNTIME_CLASS_INIT(AntiAddiction_t1E52AAFE7B9A8CA505BFF17DC42E16946EA04079_il2cpp_TypeInfo_var);
+		AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * L_0;
+		L_0 = AntiAddiction_GetAgeTip_m34997893D176D5DEEAC9DCA46D56029E022425A5(/*hidden argument*/NULL);
+		V_0 = L_0;
+		// Texture2D icon = ageTip.GetIconTexture2D();
+		AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * L_1 = V_0;
+		NullCheck(L_1);
+		Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * L_2;
+		L_2 = AgeTip_GetIconTexture2D_m3FAF36F6AAF0C4A18C20F71B188C38CED09B5D29(L_1, /*hidden argument*/NULL);
+		V_1 = L_2;
+		// byte[] iconByteArray = ageTip.GetIconByteArray();
+		AgeTip_tBA6E59C9E7148844755A7BE471F3609D83C6ACA3 * L_3 = V_0;
+		NullCheck(L_3);
+		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_4;
+		L_4 = AgeTip_GetIconByteArray_m4B3274F0C4119C1F399A0E1EFB1ECDAB3F02CF05(L_3, /*hidden argument*/NULL);
+		V_2 = L_4;
+		// if (icon != null)
+		Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * L_5 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_5, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		V_3 = L_6;
+		bool L_7 = V_3;
+		if (!L_7)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		// Debug.Log(@"ShowCustomAgeTip, has icon");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral310E497FFA181B18C8814A6E85912871AF8E6A3F, /*hidden argument*/NULL);
+	}
+
+IL_002d:
+	{
+		// if (iconByteArray != null)
+		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_8 = V_2;
+		V_4 = (bool)((!(((RuntimeObject*)(ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*)L_8) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_9 = V_4;
+		if (!L_9)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		// Debug.Log(@"ShowCustomAgeTip, has iconByteArray");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral8D3B31C12591BFE43650F177CD0BE39E7ACE9003, /*hidden argument*/NULL);
+	}
+
+IL_0044:
+	{
+		// }
+		return;
+	}
+}
 // System.Void MainBehaviour::ShowAgeTip()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainBehaviour_ShowAgeTip_m24211F4B157611A878917F1E08B42D49F7F15C2C (MainBehaviour_tDE09AB0E3B7AB47BEC0D8229B68A94AA3FE0DEC6 * __this, const RuntimeMethod* method)
 {
@@ -9315,6 +9446,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper__ctor_m6EF58C5A21D28
 		return;
 	}
 }
+// System.Void TGCenterSdk.Api.PrivacyPolicyHelper::Init(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_Init_mCF7644208CD2C1AE525086D528B2A39FCC319B96 (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, String_t* ___appId0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// client.Init(appId);
+		RuntimeObject* L_0 = __this->get_client_1();
+		String_t* L_1 = ___appId0;
+		NullCheck(L_0);
+		InterfaceActionInvoker1< String_t* >::Invoke(0 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::Init(System.String) */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0, L_1);
+		// }
+		return;
+	}
+}
 // System.Void TGCenterSdk.Api.PrivacyPolicyHelper::SetAgreeListener(TGCenterSdk.Api.PrivacyPolicyHelper/AgreeListener)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_SetAgreeListener_m557D780B21D647C8D0C39806B6DB1E5CE2AE922A (PrivacyPolicyHelper_t5983E6361B35F6389228D994C018B16993468EA3 * __this, RuntimeObject* ___listener0, const RuntimeMethod* method)
 {
@@ -9329,7 +9479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_SetAgreeListener_m55
 		RuntimeObject* L_0 = __this->get_client_1();
 		RuntimeObject* L_1 = ___listener0;
 		NullCheck(L_0);
-		InterfaceActionInvoker1< RuntimeObject* >::Invoke(0 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::SetAgreeListener(TGCenterSdk.Api.PrivacyPolicyHelper/AgreeListener) */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0, L_1);
+		InterfaceActionInvoker1< RuntimeObject* >::Invoke(1 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::SetAgreeListener(TGCenterSdk.Api.PrivacyPolicyHelper/AgreeListener) */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0, L_1);
 		// }
 		return;
 	}
@@ -9347,7 +9497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_ShowPrivacyDialog_mC
 		// client.ShowPrivacyDialog();
 		RuntimeObject* L_0 = __this->get_client_1();
 		NullCheck(L_0);
-		InterfaceActionInvoker0::Invoke(1 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::ShowPrivacyDialog() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
+		InterfaceActionInvoker0::Invoke(2 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::ShowPrivacyDialog() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
 		// }
 		return;
 	}
@@ -9365,7 +9515,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_JumpToUserAgreement_
 		// client.JumpToUserAgreement();
 		RuntimeObject* L_0 = __this->get_client_1();
 		NullCheck(L_0);
-		InterfaceActionInvoker0::Invoke(2 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::JumpToUserAgreement() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
+		InterfaceActionInvoker0::Invoke(3 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::JumpToUserAgreement() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
 		// }
 		return;
 	}
@@ -9383,7 +9533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelper_JumpToPrivacyPolicy_
 		// client.JumpToPrivacyPolicy();
 		RuntimeObject* L_0 = __this->get_client_1();
 		NullCheck(L_0);
-		InterfaceActionInvoker0::Invoke(3 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::JumpToPrivacyPolicy() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
+		InterfaceActionInvoker0::Invoke(4 /* System.Void TGCenterSdk.Common.IPrivacyPolicyHelperClient::JumpToPrivacyPolicy() */, IPrivacyPolicyHelperClient_tDA8C8969D9B463BAEF2694E4E8D1EBDB10C932ED_il2cpp_TypeInfo_var, L_0);
 		// }
 		return;
 	}
@@ -9465,6 +9615,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient__ctor_m1CD2483
 		L_10 = AndroidJavaObject_Call_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC5ED59BBD9C24EFFD98D8C3819C7E15DFE08F412(L_8, _stringLiteralA733C7FC19A8317471D21AD091D1A9A6F973A728, L_9, /*hidden argument*/AndroidJavaObject_Call_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC5ED59BBD9C24EFFD98D8C3819C7E15DFE08F412_RuntimeMethod_var);
 		__this->set_helper_4(L_10);
 		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.Android.PrivacyPolicyHelperClient::Init(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient_Init_mA454C583B30DE5AEE606C27CC98800984A3810A7 (PrivacyPolicyHelperClient_tB067E8E989D92DA23AE4C378F99922F83EEB8AD9 * __this, String_t* ___appId0, const RuntimeMethod* method)
+{
+	{
+		// public void Init(string appId) { }
 		return;
 	}
 }
@@ -9644,6 +9802,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient__ctor_m2F94ADF
 		intptr_t L_1;
 		L_1 = GCHandle_op_Explicit_m0A74179B3DD6D87F0863EF55176F924D641E42BF(L_0, /*hidden argument*/NULL);
 		__this->set_helperClient_0((intptr_t)L_1);
+		// }
+		return;
+	}
+}
+// System.Void TGCenterSdk.Platforms.iOS.PrivacyPolicyHelperClient::Init(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrivacyPolicyHelperClient_Init_mE710E19EDCC1449DD274B2A48E34A7CFD1F1A85C (PrivacyPolicyHelperClient_tCE377D6E958FD4996E71424C6705E0B1CA0327E0 * __this, String_t* ___appId0, const RuntimeMethod* method)
+{
+	{
+		// Externs.TGCPrivacyInit(appId);
+		String_t* L_0 = ___appId0;
+		Externs_TGCPrivacyInit_m4DABEAF604F9F06AB27230321EEBF268A3C51059(L_0, /*hidden argument*/NULL);
 		// }
 		return;
 	}

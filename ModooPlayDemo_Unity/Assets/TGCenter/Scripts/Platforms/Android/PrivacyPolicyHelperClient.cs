@@ -15,6 +15,8 @@ namespace TGCenterSdk.Platforms.Android
         }
 
         #region IPrivacyPolicyHelperClient
+        public void Init(string appId) { }
+        
         public void SetAgreeListener(PrivacyPolicyHelper.AgreeListener listener) {
             this.listener = listener;
         }

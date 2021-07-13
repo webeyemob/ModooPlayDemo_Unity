@@ -4,6 +4,7 @@ namespace TGCenterSdk.Common
 {
     public class DummyPrivacyPolicyHelperClient : IPrivacyPolicyHelperClient {
         
+        public void Init(string appId) { }
         public void SetAgreeListener(PrivacyPolicyHelper.AgreeListener listener) { }
         public void ShowPrivacyDialog() { }
         public void JumpToUserAgreement() { }

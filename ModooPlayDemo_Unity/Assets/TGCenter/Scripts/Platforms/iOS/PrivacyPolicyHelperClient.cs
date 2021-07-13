@@ -21,6 +21,10 @@ namespace TGCenterSdk.Platforms.iOS
 
 
         #region IPrivacyPolicyHelperClient
+        public void Init(string appId) {
+            Externs.TGCPrivacyInit(appId);
+        }
+
         public void SetAgreeListener(PrivacyPolicyHelper.AgreeListener listener) {
             this.listener = listener;
         }
