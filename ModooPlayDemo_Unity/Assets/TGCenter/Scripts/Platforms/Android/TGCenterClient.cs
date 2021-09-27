@@ -46,6 +46,10 @@ namespace TGCenterSdk.Platforms.Android
         public void ClearCache() {
             tgCenterClass.CallStatic("clearCache", Utils.GetPlayerActivity());
         }
+
+        public void ShowDebugPage() {
+            tgCenterClass.CallStatic("showDebugPage", Utils.GetPlayerActivity());
+        }
         #endregion
     }
 }

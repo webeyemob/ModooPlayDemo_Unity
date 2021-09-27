@@ -5,6 +5,7 @@ allprojects {
         repositories {
             google()
             jcenter()
+            maven { url "../Upload-Plugin" }
 
             // ModooPlay
             maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
@@ -14,7 +15,7 @@ allprojects {
             classpath 'com.android.tools.build:gradle:4.0.2'
 
             // ModooPlay
-            classpath "com.tgcenter.unified:plugin:1.6"
+            classpath "com.tgcenter.unified:plugin:2.1"
         }
     }
 
@@ -27,6 +28,7 @@ allprojects {
         maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         maven { url "../Upload-Library" }
         maven { url "../Upload-AntiAddiction" }
+        maven { url "../Upload-Plugin" }
     }
 }
 

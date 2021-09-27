@@ -12,6 +12,7 @@ namespace TGCenterSdk.Platforms.Android
 
         public const string Class_PrivacyPolicyHelperBuilder = "com.nefarian.privacy.policy.PrivacyPolicyHelper$Builder";
         public const string Class_IPrivacyPolicyCallback = "com.nefarian.privacy.policy.IPrivacyPolicyCallback";
+        public const string Class_HookUtils = "com.nefarian.privacy.policy.utils.HookUtils";
 
         public static AndroidJavaObject GetPlayerActivity() {
             AndroidJavaClass playerClass = new AndroidJavaClass(UnityActivityClassName);

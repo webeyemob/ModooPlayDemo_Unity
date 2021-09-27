@@ -40,6 +40,10 @@ namespace TGCenterSdk.Platforms.iOS
         public void JumpToPrivacyPolicy() {
             Externs.TGCPrivacyJumpToPrivacyPolicy();
         }
+
+        public void HookMacAddress() { }
+        
+        public void UnHookMacAddress() { }
         #endregion
 
 

@@ -9,5 +9,8 @@ namespace TGCenterSdk.Common
         public void ShowPrivacyDialog() { }
         public void JumpToUserAgreement() { }
         public void JumpToPrivacyPolicy() { }
-    }    
+
+        public void HookMacAddress() { }
+        public void UnHookMacAddress() { }
+    }
 }

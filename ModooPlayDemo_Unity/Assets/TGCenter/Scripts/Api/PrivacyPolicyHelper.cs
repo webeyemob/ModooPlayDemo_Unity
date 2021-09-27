@@ -41,5 +41,13 @@ namespace TGCenterSdk.Api
         public void JumpToPrivacyPolicy() {
             client.JumpToPrivacyPolicy();
         }
+
+        public void HookMacAddress() {
+            client.HookMacAddress();
+        }
+
+        public void UnHookMacAddress() {
+            client.UnHookMacAddress();
+        }
     }
 }

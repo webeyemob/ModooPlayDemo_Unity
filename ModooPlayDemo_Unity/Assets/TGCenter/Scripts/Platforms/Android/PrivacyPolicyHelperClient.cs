@@ -29,6 +29,17 @@ namespace TGCenterSdk.Platforms.Android
         public void JumpToPrivacyPolicy() {
             helper.Call("jumpToPrivacyPolicy");
         }
+
+        public void HookMacAddress() {
+            GetHookUtils().CallStatic("hookMacAddress", "PrivacyDialog", Utils.GetPlayerActivity());
+        }
+        public void UnHookMacAddress() {
+            GetHookUtils().CallStatic("unHookMacAddress", "PrivacyDialog", Utils.GetPlayerActivity());
+        }
+
+        public AndroidJavaClass GetHookUtils() {
+            return new AndroidJavaClass(Utils.Class_HookUtils);
+        }
         #endregion
 
         #region IPrivacyPolicyCallback

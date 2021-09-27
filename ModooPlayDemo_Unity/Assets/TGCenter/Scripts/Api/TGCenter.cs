@@ -33,5 +33,9 @@ namespace TGCenterSdk.Api
         public static void ClearCache() {
             client.ClearCache();
         }
+
+        public static void ShowDebugPage() {
+            client.ShowDebugPage();
+        }
     }
 }

@@ -9,8 +9,8 @@ public class MainBehaviour : MonoBehaviour
     void OnGUI()
     {
         int x = 0;
-        int y = 250;
-        int d = 200;
+        int y = 50;
+        int d = 100;
         
         int w = 1000;
         int h = 150;
@@ -24,6 +24,8 @@ public class MainBehaviour : MonoBehaviour
         y += d;
         if (GUI.Button(new Rect(x, y, w, h), "Ad Test", style))
         {
+	    PrivacyPolicyHelper.Instance.HookMacAddress();
+	    PrivacyPolicyHelper.Instance.UnHookMacAddress();
         }
         y += d;
         if (GUI.Button(new Rect(x, y, w, h), "User Agreement", style))
@@ -80,6 +82,12 @@ public class MainBehaviour : MonoBehaviour
             TGCenter.ClearCache();
             AntiAddiction.Logout();
             GetUserInfo(null);
+        }
+
+	y += d;
+        if (GUI.Button(new Rect(x, y, w, h), "Debug Page", style))
+        {
+            TGCenter.ShowDebugPage();
         }
     }
 

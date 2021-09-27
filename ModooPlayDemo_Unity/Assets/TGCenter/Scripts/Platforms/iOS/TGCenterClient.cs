@@ -54,5 +54,7 @@ namespace TGCenterSdk.Platforms.iOS
         public void ClearCache() {
             Externs.TGCClearCache();
         }
+
+        public void ShowDebugPage() { }        
     }
 }

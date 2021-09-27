@@ -11,5 +11,7 @@ namespace TGCenterSdk.Common
         }
 
         public void ClearCache() { }
+
+        public void ShowDebugPage() { }
     }    
 }
