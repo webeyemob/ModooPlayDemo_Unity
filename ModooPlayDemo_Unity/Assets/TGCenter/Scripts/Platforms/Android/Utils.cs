@@ -1,5 +1,7 @@
 using UnityEngine;
 using TGCenterSdk.Api;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace TGCenterSdk.Platforms.Android
 {
@@ -14,11 +16,15 @@ namespace TGCenterSdk.Platforms.Android
         public const string Class_IPrivacyPolicyCallback = "com.nefarian.privacy.policy.IPrivacyPolicyCallback";
         public const string Class_HookUtils = "com.nefarian.privacy.policy.utils.HookUtils";
 
+        public const string Class_IPermissionCallback = "com.nefarian.privacy.policy.permissioncheck.PermissionResultListener";
+        public const string Class_PermissionHelper = "com.nefarian.privacy.policy.permissioncheck.PermissionHelper";
+
         public static AndroidJavaObject GetPlayerActivity() {
             AndroidJavaClass playerClass = new AndroidJavaClass(UnityActivityClassName);
             AndroidJavaObject activity = playerClass.GetStatic<AndroidJavaObject>("currentActivity");
             return activity;
         }
+
         public static string GetRetentionType(Day1Retention.RetentionTypes type) {
             switch(type) {
                 case Day1Retention.RetentionTypes.Hour:
@@ -28,6 +34,33 @@ namespace TGCenterSdk.Platforms.Android
                 default:
                     return "";
             }
+        }
+
+        public static AndroidJavaObject CreateMapByDictionary(Dictionary<string, string> dictionary)
+        {
+            if (dictionary == null) {
+                return null;
+            }
+
+            AndroidJavaObject map = new AndroidJavaObject("java.util.HashMap");
+            foreach(KeyValuePair<string, string> pair in dictionary) {
+                map.Call<string>("put", pair.Key, pair.Value);
+            }
+            return map;
+        }
+
+        public static ArrayList CreateArrayList(AndroidJavaObject list) {
+            if (list == null) {
+                return null;
+            }
+
+            ArrayList result = new ArrayList();
+            int size = list.Call<int>("size");
+            for(int i = 0; i < size; i++) {
+                result.Add(list.Call<string>("get", i));
+            }
+            
+            return result;
         }
     }
 }

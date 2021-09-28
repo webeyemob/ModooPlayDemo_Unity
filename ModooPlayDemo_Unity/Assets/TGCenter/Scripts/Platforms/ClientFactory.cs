@@ -24,5 +24,15 @@ namespace TGCenterSdk.Platforms
                 return new DummyPrivacyPolicyHelperClient();
             }
         }
+
+        public static IPermissionHelperClient PermissionHelperClient() {
+            if (Application.platform == RuntimePlatform.Android) {
+                return new TGCenterSdk.Platforms.Android.PermissionHelperClient();
+            } else if (Application.platform == RuntimePlatform.IPhonePlayer) {
+                return new TGCenterSdk.Platforms.iOS.PermissionHelperClient();
+            } else {
+                return new DummyPermissionHelperClient();
+            }
+        }
     }
 }

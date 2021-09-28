@@ -3,6 +3,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using TGCenterSdk.Api;
 using AntiAddictionSdk.Api;
+using System.Collections;
+using TGCenterSdk.Platforms.Android;
 
 public class MainBehaviour : MonoBehaviour
 {
@@ -101,15 +103,45 @@ public class MainBehaviour : MonoBehaviour
 if (Application.platform == RuntimePlatform.IPhonePlayer) {
             PrivacyPolicyHelper.Instance.Init("d7b11a60-4048-4b12-86ae-01ceed4f3164");
         }
+
+        PermissionHelper.Init(new PermissionListener(this));
+
         if (TGCenter.IsUserAgreePolicy()) {
-            // 用户已同意，初始化
-            InitModooPlay();
+            // 用户已同意，请求权限
+            RequestPermissions();
         } else {
             // 用户未同意
             // 展示默认的对话框
             ShowDefaultPolicyDialog();
             // 或者：展示 App 根据产品风格自定义的对话框
             // ShowCustomPolicyDialog();
+        }
+    }
+
+    private string[] requestPermission = {
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_PHONE_STATE"
+    };
+
+    private void RequestPermissions() {
+        AndroidJavaObject pmUtil = new AndroidJavaObject("com.tgcenter.unified.sdk.api.PermissionUtil");
+        bool checkResult = pmUtil.CallStatic<bool>("checkSelfPermissions", Utils.GetPlayerActivity(), requestPermission);
+        if (!checkResult) {
+            PermissionHelper.ShowDefaultPermissionDialog();
+        } else {
+            InitModooPlay();
+        }
+    }
+
+    private class PermissionListener : PermissionHelper.PermissionResultListener {
+        private MainBehaviour behaviour;
+        public PermissionListener(MainBehaviour behaviour) {
+            this.behaviour = behaviour;
+        }
+
+        public void OnRequestPermissionsResult(bool isAllGranted,  ArrayList deniedPermissions) {
+            Debug.Log("OnRequestPermissionsResult, isAllGranter : " + isAllGranted + ", deniedPermissions : " + deniedPermissions);
         }
     }
 
@@ -275,7 +307,7 @@ if (Application.platform == RuntimePlatform.IPhonePlayer) {
      */
     private void DealDialogAgreeResult(bool agree) {
         if (agree) {
-            InitModooPlay();
+            RequestPermissions();
         }
     }
 
