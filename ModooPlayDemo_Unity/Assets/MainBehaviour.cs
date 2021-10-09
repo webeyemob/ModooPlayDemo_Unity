@@ -100,21 +100,30 @@ public class MainBehaviour : MonoBehaviour
         Debug.Log("Start");
 
         // 检查用户是否同意了《用户协议和隐私政策》，如果同意则直接初始化，否则需要弹窗征得用户同意
-if (Application.platform == RuntimePlatform.IPhonePlayer) {
+        if (Application.platform == RuntimePlatform.IPhonePlayer) {
             PrivacyPolicyHelper.Instance.Init("d7b11a60-4048-4b12-86ae-01ceed4f3164");
-        }
-
-        PermissionHelper.Init(new PermissionListener(this));
-
-        if (TGCenter.IsUserAgreePolicy()) {
-            // 用户已同意，请求权限
-            RequestPermissions();
+            if (TGCenter.IsUserAgreePolicy()) {
+                // 用户已同意，初始化 ModooPlay
+                InitModooPlay();
+            } else {
+                // 用户未同意
+                // 展示默认的对话框
+                ShowDefaultPolicyDialog();
+                // 或者：展示 App 根据产品风格自定义的对话框
+                // ShowCustomPolicyDialog();
+            }
         } else {
-            // 用户未同意
-            // 展示默认的对话框
-            ShowDefaultPolicyDialog();
-            // 或者：展示 App 根据产品风格自定义的对话框
-            // ShowCustomPolicyDialog();
+            PermissionHelper.Init(new PermissionListener(this));
+            if (TGCenter.IsUserAgreePolicy()) {
+                // 用户已同意，请求权限
+                RequestPermissions();
+            } else {
+                // 用户未同意
+                // 展示默认的对话框
+                ShowDefaultPolicyDialog();
+                // 或者：展示 App 根据产品风格自定义的对话框
+                // ShowCustomPolicyDialog();
+            }
         }
     }
 
@@ -142,6 +151,7 @@ if (Application.platform == RuntimePlatform.IPhonePlayer) {
 
         public void OnRequestPermissionsResult(bool isAllGranted,  ArrayList deniedPermissions) {
             Debug.Log("OnRequestPermissionsResult, isAllGranter : " + isAllGranted + ", deniedPermissions : " + deniedPermissions);
+            InitModooPlay();
         }
     }
 
@@ -307,7 +317,11 @@ if (Application.platform == RuntimePlatform.IPhonePlayer) {
      */
     private void DealDialogAgreeResult(bool agree) {
         if (agree) {
-            RequestPermissions();
+            if(Application.platform == RuntimePlatform.IPhonePlayer) {
+                InitModooPlay();
+            } else {
+                RequestPermissions();
+            }
         }
     }
 
